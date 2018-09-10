@@ -86,11 +86,76 @@
   }
 
   \bookpart {
+    \tocItem \markup { "Note Reference" }
+    \header {
+      title = "Note Reference"
+      subtitle = "Subtitle"
+      subsubtitle = "Sub-subtitle"
+    }
+    \paper {
+      % Controls spacing between systems/staff-groups
+      system-system-spacing.basic-distance = #16
+    }
+
+    \markup {
+      \column {
+        \hspace #0
+        \wordwrap \abs-fontsize #12 {
+          "Showing octave groups in absolute notation."
+        }
+        \hspace #0
+        \hspace #0
+      }
+    }
+
+    \score {
+      \layout {
+        indent = 0.0\cm
+      }
+      \header {
+        piece = \markup { \bold "Piano" }
+      }
+
+      \new PianoStaff <<
+        \new Staff = "pianoTreble" <<
+          \override Score.BarNumber.transparent = ##t
+          \override Staff.TimeSignature.break-visibility = ##(#f #f #f)
+          \override Staff.TimeSignature.transparent = ##t
+          \trebleStaffNoteReference
+        >>
+        \new Staff = "pianoBass" <<
+          \override Score.BarNumber.transparent = ##t
+          \override Staff.TimeSignature.break-visibility = ##(#f #f #f)
+          \override Staff.TimeSignature.transparent = ##t
+          \bassStaffNoteReference
+        >>
+      >>
+    }
+
+    \score {
+      \layout {
+        \omit Voice.StringNumber
+        indent = 0.0\cm
+      }
+      \header {
+        piece = \markup { \bold "Guitar" }
+      }
+
+      \new Staff <<
+        \override Score.BarNumber.transparent = ##t
+        \override Staff.TimeSignature.break-visibility = ##(#f #f #f)
+        \override Staff.TimeSignature.transparent = ##t
+        \guitarNoteReference
+      >>
+    }
+  }
+
+  \bookpart {
     \tocItem \markup { "Keyboard Reference" }
     \header {
       title = "Keyboard Reference"
-      subtitle = "Subtitle 1"
-      subsubtitle = "Sub-subtitle 1"
+      subtitle = "Subtitle"
+      subsubtitle = "Sub-subtitle"
     }
     \paper {
       % Controls spacing between systems/staff-groups
@@ -128,8 +193,8 @@
     \tocItem \markup { "Guitar Reference" }
     \header {
       title = "Guitar Reference"
-      subtitle = "Subtitle 2"
-      subsubtitle = "Subsubtitle 2"
+      subtitle = "Subtitle"
+      subsubtitle = "Subsubtitle"
     }
     \paper {
       system-system-spacing.basic-distance = #16
