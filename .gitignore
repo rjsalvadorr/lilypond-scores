@@ -1,0 +1,5 @@
+# PDF outputs
+*.pdf
+*.ps
+*.mid
+*.midi
