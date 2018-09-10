@@ -7,3 +7,4 @@ versionNumber = \"$versionNumber\"" > src/config.ly
 
 cd src
 lilypond --output=../build/template template.ly
+lilypond --output=../build/reference reference.ly

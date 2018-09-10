@@ -1,9 +1,13 @@
 \version "2.18.2"
 \language "english"
 
+% File includes
+% Used here for including files that store pre-defined variables
 \include "globals.ly"
-\include "template-vars.ly"
+\include "reference-vars.ly"
 
+% Global header variables
+% Can be overriden in \book and \bookpart blocks
 \header {
     maintainer = \authorName
     maintainerEmail = \authorEmail
@@ -12,6 +16,8 @@
     }
 }
 
+% Global paper variables.
+% Can be overriden in \book and \bookpart blocks
 \paper {
     #(set-paper-size "letter")
     top-margin = 0.66\in
@@ -29,13 +35,18 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \book {
+
+  % Books can have multiple \bookparts, which can have their own
+  % \header and \paper settings.
   \bookpart {
     \header {
-      title = "Template"
-      subtitle = "Title Page"
+      title = "Lilypond Reference"
+      subtitle = "Showing how it's done!"
     }
 
     \paper {
+      % This first variable controls the distance between the top of page
+      % and the title/subtitle.
       top-markup-spacing.basic-distance = #20
       left-margin = 1.5\in
       right-margin = 1.5\in
@@ -46,7 +57,9 @@
         \center-column {
           \hspace #0
           \hspace #0
-          "Text can go here."
+          \wordwrap {
+            "This a living document, showing how the lilypond syntax works in actual use."
+          }
         }
       }
     }
@@ -73,13 +86,14 @@
   }
 
   \bookpart {
-    \tocItem \markup { "TOC item 1" }
+    \tocItem \markup { "Keyboard Reference" }
     \header {
-      title = "Score 1"
+      title = "Keyboard Reference"
       subtitle = "Subtitle 1"
-      subsubtitle = "Keyboard Example"
+      subsubtitle = "Sub-subtitle 1"
     }
     \paper {
+      % Controls spacing between systems/staff-groups
       system-system-spacing.basic-distance = #16
     }
 
@@ -87,7 +101,7 @@
       \column {
         \hspace #0
         \wordwrap \abs-fontsize #12 {
-          Text sample can go up here.
+          "Showing octave groups in absolute notation."
         }
         \hspace #0
         \hspace #0
@@ -100,22 +114,22 @@
       }
 
       \new PianoStaff <<
-        \new Staff = "up" <<
-          \trebleStaffExample
+        \new Staff = "pianoTreble" <<
+          \trebleStaffReference
         >>
-        \new Staff = "down" <<
-          \bassStaffExample
+        \new Staff = "pianoBass" <<
+          \bassStaffReference
         >>
       >>
     }
   }
 
   \bookpart {
-    \tocItem \markup { "TOC item 2" }
+    \tocItem \markup { "Guitar Reference" }
     \header {
-      title = "Score 2"
+      title = "Guitar Reference"
       subtitle = "Subtitle 2"
-      subsubtitle = "Guitar Example"
+      subsubtitle = "Subsubtitle 2"
     }
     \paper {
       system-system-spacing.basic-distance = #16
