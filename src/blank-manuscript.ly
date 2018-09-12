@@ -6,10 +6,7 @@
   % offset the left padding, also add 1mm as lilypond creates cropped
   % images with a little space on the right
   line-width = #(- line-width (* mm  3.000000) (* mm 1))
-}
-
-\layout {
-  
+  print-page-number = false
 }
 
 \header {
@@ -17,11 +14,11 @@
   tagline = ""
 }
 
-#(set-global-staff-size 22)
+#(set-global-staff-size 25)
 
 \score {
   {
-    \repeat unfold 10 { s1 \break }
+    \repeat unfold 20 { s1 \break }
   }
   \layout {
     indent = 0\in

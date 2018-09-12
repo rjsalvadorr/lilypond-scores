@@ -6,10 +6,8 @@
   % offset the left padding, also add 1mm as lilypond creates cropped
   % images with a little space on the right
   line-width = #(- line-width (* mm  3.000000) (* mm 1))
-}
-
-\layout {
-  
+  print-page-number = false
+  system-system-spacing.basic-distance = #16
 }
 
 \header {
@@ -17,19 +15,28 @@
   tagline = ""
 }
 
-#(set-global-staff-size 22)
+#(set-global-staff-size 25)
 
 \score {
   {
-    \repeat unfold 10 { s1 \break }
+    \new StaffGroup <<
+        \new Staff {
+          \override Staff.TimeSignature.break-visibility = ##(#f #f #f)
+          \override Staff.TimeSignature.transparent = ##t
+          \repeat unfold 10 { s1 \break }
+        }
+        \new TabStaff {
+          \repeat unfold 10 { s1 \break }
+        }
+      >>
   }
   \layout {
     indent = 0\in
     \context {
-      \Staff
+      \StaffGroup
       \remove "Time_signature_engraver"
-      \remove "Clef_engraver"
       \remove "Bar_engraver"
+      \override StaffGrouper.staff-staff-spacing.basic-distance = #16
     }
     \context {
       \Score
