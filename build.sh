@@ -11,3 +11,4 @@ lilypond --output=../output/template template.ly
 lilypond --output=../output/reference reference.ly
 lilypond --output=../output/blank-manuscript blank-manuscript.ly
 lilypond --output=../output/blank-manuscript-guitar blank-manuscript-guitar.ly
+lilypond --output=../output/blank-manuscript-piano blank-manuscript-piano.ly

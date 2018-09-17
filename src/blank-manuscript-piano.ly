@@ -7,7 +7,7 @@
   % images with a little space on the right
   line-width = #(- line-width (* mm  3.000000) (* mm 1))
   print-page-number = false
-  system-system-spacing.basic-distance = #20
+  system-system-spacing.basic-distance = #18
 }
 
 \header {
@@ -15,18 +15,21 @@
   tagline = ""
 }
 
-#(set-global-staff-size 27)
+#(set-global-staff-size 28)
 
 \score {
   {
-    \new StaffGroup <<
+    \new PianoStaff <<
         \new Staff {
           \override Staff.TimeSignature.break-visibility = ##(#f #f #f)
           \override Staff.TimeSignature.transparent = ##t
-          \clef "treble_8"
+          \clef treble
           \repeat unfold 8 { s1 \break }
         }
-        \new TabStaff {
+        \new Staff {
+          \override Staff.TimeSignature.break-visibility = ##(#f #f #f)
+          \override Staff.TimeSignature.transparent = ##t
+          \clef bass
           \repeat unfold 8 { s1 \break }
         }
       >>
@@ -34,10 +37,10 @@
   \layout {
     indent = 0\in
     \context {
-      \StaffGroup
+      \PianoStaff
       \remove "Time_signature_engraver"
       \remove "Bar_engraver"
-      \override StaffGrouper.staff-staff-spacing.basic-distance = #20
+      \override StaffGrouper.staff-staff-spacing.basic-distance = #14
     }
     \context {
       \Score
