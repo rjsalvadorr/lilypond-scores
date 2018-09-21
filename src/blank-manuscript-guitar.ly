@@ -17,41 +17,90 @@
 
 #(set-global-staff-size 27)
 
-\score {
-  {
-    \new StaffGroup <<
-        \new Staff {
-          \override Staff.TimeSignature.break-visibility = ##(#f #f #f)
-          \override Staff.TimeSignature.transparent = ##t
-          \clef "treble_8"
-          \repeat unfold 8 { s1 \break }
-        }
-        \new TabStaff {
-          \repeat unfold 8 { s1 \break }
-        }
-      >>
-  }
-  \layout {
-    indent = 0\in
-    \context {
-      \StaffGroup
-      \remove "Time_signature_engraver"
-      \remove "Bar_engraver"
-      \override StaffGrouper.staff-staff-spacing.basic-distance = #20
+\book {
+  \bookOutputName "blank-manuscript-guitar"
+  \bookpart {
+    \paper {
+      #(set-paper-size "letter")
+      ragged-last-bottom = ##f
+      line-width = 7.5\in
+      left-margin = 0.5\in
+      right-margin = 0.5\in
+      bottom-margin = 0.75\in
+      top-margin = 0.75\in
     }
-    \context {
-      \Score
-      \remove "Bar_number_engraver"
+
+    \score {
+      {
+        \new StaffGroup <<
+            \new Staff {
+              \override Staff.TimeSignature.break-visibility = ##(#f #f #f)
+              \override Staff.TimeSignature.transparent = ##t
+              \clef "treble_8"
+              \repeat unfold 8 { s1 \break }
+            }
+            \new TabStaff {
+              \repeat unfold 8 { s1 \break }
+            }
+          >>
+      }
+      \layout {
+        indent = 0\in
+        \context {
+          \StaffGroup
+          \remove "Time_signature_engraver"
+          \remove "Bar_engraver"
+          \override StaffGrouper.staff-staff-spacing.basic-distance = #20
+        }
+        \context {
+          \Score
+          \remove "Bar_number_engraver"
+        }
+      }
     }
   }
 }
 
-\paper {
-  #(set-paper-size "letter")
-  ragged-last-bottom = ##f
-  line-width = 7.5\in
-  left-margin = 0.5\in
-  right-margin = 0.5\in
-  bottom-margin = 0.75\in
-  top-margin = 0.75\in
+\book {
+  \bookOutputName "blank-manuscript-guitar-4bars"
+  \bookpart {
+    \paper {
+      #(set-paper-size "letter")
+      ragged-last-bottom = ##f
+      line-width = 7.5\in
+      left-margin = 0.5\in
+      right-margin = 0.5\in
+      bottom-margin = 0.75\in
+      top-margin = 0.75\in
+    }
+
+    \score {
+      {
+        \new StaffGroup <<
+            \new Staff {
+              \override Staff.TimeSignature.break-visibility = ##(#f #f #f)
+              \override Staff.TimeSignature.transparent = ##t
+              \clef "treble_8"
+              \repeat unfold 8 { s1 s1 s1 s1 \break }
+            }
+            \new TabStaff {
+              \repeat unfold 8 { s1 s1 s1 s1 \break }
+            }
+          >>
+      }
+      \layout {
+        indent = 0\in
+        \context {
+          \StaffGroup
+          \remove "Time_signature_engraver"
+          \remove "Bar_engraver"
+          \override StaffGrouper.staff-staff-spacing.basic-distance = #20
+        }
+        \context {
+          \Score
+          \remove "Bar_number_engraver"
+        }
+      }
+    }
+  }
 }
