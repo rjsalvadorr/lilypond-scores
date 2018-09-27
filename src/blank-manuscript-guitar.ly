@@ -1,6 +1,7 @@
 \version "2.18.2"
 
 \paper {
+  #(set-paper-size "letter")
   indent = 0\mm
   line-width = 160\mm
   % offset the left padding, also add 1mm as lilypond creates cropped
