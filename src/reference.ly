@@ -26,16 +26,10 @@
     bottom-margin = 0.66\in
 }
 
-#(set-global-staff-size 23)
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%% SCORE
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \book {
-
   % Books can have multiple \bookparts, which can have their own
   % \header and \paper settings.
   \bookpart {
@@ -47,7 +41,7 @@
     \paper {
       % This first variable controls the distance between the top of page
       % and the title/subtitle.
-      top-markup-spacing.basic-distance = #20
+      top-markup-spacing.basic-distance = #10
       left-margin = 1.5\in
       right-margin = 1.5\in
     }
@@ -89,28 +83,18 @@
     \tocItem \markup { "Note Reference" }
     \header {
       title = "Note Reference"
-      subtitle = "Subtitle"
-      subsubtitle = "Sub-subtitle"
+      subtitle = "Showing octave groups in absolute notation"
     }
     \paper {
+      top-markup-spacing.basic-distance = #5
       % Controls spacing between systems/staff-groups
-      system-system-spacing.basic-distance = #16
-    }
-
-    \markup {
-      \column {
-        \hspace #0
-        \wordwrap \abs-fontsize #12 {
-          "Showing octave groups in absolute notation."
-        }
-        \hspace #0
-        \hspace #0
-      }
+      system-system-spacing.basic-distance = #18
     }
 
     \score {
       \layout {
         indent = 0.0\cm
+        #(layout-set-staff-size 26)
       }
       \header {
         piece = \markup { \bold "Piano" }
@@ -136,6 +120,7 @@
       \layout {
         \omit Voice.StringNumber
         indent = 0.0\cm
+        #(layout-set-staff-size 26)
       }
       \header {
         piece = \markup { \bold "Guitar" }
@@ -146,85 +131,6 @@
         \override Staff.TimeSignature.break-visibility = ##(#f #f #f)
         \override Staff.TimeSignature.transparent = ##t
         \guitarNoteReference
-      >>
-    }
-  }
-
-  \bookpart {
-    \tocItem \markup { "Keyboard Reference" }
-    \header {
-      title = "Keyboard Reference"
-      subtitle = "Subtitle"
-      subsubtitle = "Sub-subtitle"
-    }
-    \paper {
-      % Controls spacing between systems/staff-groups
-      system-system-spacing.basic-distance = #16
-    }
-
-    \markup {
-      \column {
-        \hspace #0
-        \wordwrap \abs-fontsize #12 {
-          "Showing octave groups in absolute notation."
-        }
-        \hspace #0
-        \hspace #0
-      }
-    }
-
-    \score {
-      \layout {
-        indent = 0.0\cm
-      }
-
-      \new PianoStaff <<
-        \new Staff = "pianoTreble" <<
-          \trebleStaffReference
-        >>
-        \new Staff = "pianoBass" <<
-          \bassStaffReference
-        >>
-      >>
-    }
-  }
-
-  \bookpart {
-    \tocItem \markup { "Guitar Reference" }
-    \header {
-      title = "Guitar Reference"
-      subtitle = "Subtitle"
-      subsubtitle = "Subsubtitle"
-    }
-    \paper {
-      system-system-spacing.basic-distance = #16
-    }
-
-    \markup {
-      \column {
-        \hspace #0
-        \wordwrap \abs-fontsize #12 {
-          Text sample can go up here.
-        }
-        \hspace #0
-        \hspace #0
-      }
-    }
-
-    \score {
-      \layout {
-        \omit Voice.StringNumber
-        indent = 0.0\cm
-      }
-
-      \new StaffGroup <<
-        \new Staff <<
-          \guitarExample
-        >>
-        \new TabStaff <<
-          \set TabStaff.restrainOpenStrings = ##t
-          \guitarExampleTab
-        >>
       >>
     }
   }
