@@ -212,4 +212,57 @@
       }
     >>
   }
+
+  \score {
+    \layout {
+      \omit Voice.StringNumber
+      indent = 0.0\cm
+    }
+    \header {
+      piece = "This one might be good for tremolo"
+    }
+
+    \new StaffGroup <<
+      \new ChordNames {
+        \set chordChanges = ##t
+        \chordmode {
+          d2.:maj7
+          
+          g:maj7
+          
+          d:maj7
+          
+          g:7
+        }
+      }
+      \new Staff {
+        \clef "treble_8"
+        \time 6/8
+        \key b \minor
+        
+        d'16 b' fs' b' fs b' d'16 b' fs' b' fs b'
+        
+        d'16 cs'' fs' cs'' fs cs'' d'16 d'' fs' d'' fs d''
+
+        \bar "|."
+        
+        <d a cs' fs'>2.
+        
+        <g d' f' b'>2.
+
+        \bar "|."
+      }
+      \new TabStaff {
+        \time 6/8
+        
+        <d a cs' fs'>2.
+        
+        <g, fs b d'>2.
+        
+        <d a cs' fs'>2.
+        
+        <g d' f' b'>2.
+      }
+    >>
+  }
 }
