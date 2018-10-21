@@ -1,14 +1,15 @@
 \version "2.18.2"
 \language "english"
+#(define RH rightHandFinger)
 
 \bookpart {
   \tocItem \markup { "October 2018" }
   \paper {
     #(set-paper-size "letter")
-    top-margin = 0.66\in
-    left-margin = 0.75\in
-    right-margin = 0.75\in
-    bottom-margin = 0.66\in
+    top-margin = 0.5\in
+    left-margin = 0.66\in
+    right-margin = 0.66\in
+    bottom-margin = 0.5\in
   }
   \header {
     title = "October 2018"
@@ -18,6 +19,7 @@
   
   \score {
     \layout {
+      #(layout-set-staff-size 19)
       \omit Voice.StringNumber
       indent = 0.0\cm
     }
@@ -55,6 +57,7 @@
 
   \score {
     \layout {
+      #(layout-set-staff-size 19)
       \omit Voice.StringNumber
       indent = 0.0\cm
     }
@@ -169,6 +172,7 @@
   
   \score {
     \layout {
+      #(layout-set-staff-size 19)
       \omit Voice.StringNumber
       indent = 0.0\cm
     }
@@ -187,9 +191,13 @@
           
           g:maj7
           
+          s1
+          
           d:maj7
           
           g:7
+          
+          s1
           
           a:m
           
@@ -209,16 +217,18 @@
         <d a cs' fs'>1
         
         <g, fs b d'>1
+        
+        s1
 
         \bar "|."
         
         <d a cs' fs'>1
         
         <g d' f' b'>1
+        
+        s1
 
         \bar "|."
-        
-        \break
         
         \key a \minor
         
@@ -239,9 +249,13 @@
         
         <g, fs b d'>1
         
+        s1
+        
         <d a cs' fs'>1
         
         <g d' f' b'>1
+        
+        s1
         
         << { <a' c'' e''>1 } \\ { a,1 } >>
         
@@ -258,6 +272,7 @@
 
   \score {
     \layout {
+      #(layout-set-staff-size 19)
       \omit Voice.StringNumber
       indent = 0.0\cm
     }
@@ -281,6 +296,20 @@
           g
           
           fs
+          
+          b1.:m
+          
+          fs:m
+          
+          e2.:m
+        
+          cs2.:dim
+          
+          fs4.
+          
+          fs4.:7
+          
+          b2.:m
         }
       }
       \new Staff {
@@ -307,11 +336,8 @@
         << { fs'2. } \\ { <as cs'>2. } >>
         
         << { e'4. g' } \\ { <as cs'>4. <as cs'>4. } >>
-
-        \bar ":|."
-      }
-      \new TabStaff {
-        \time 6/8
+        
+        \break
         
         << { b'2. } \\ { <d' fs'>2. } >>
         
@@ -323,24 +349,106 @@
 
         \break
         
-        << { g'2. } \\ { <b d'>2. } >>
+        << { b'2. } \\ { <e'\3 g'\2>2. } >>
         
-        << { a'4. g' } \\ { <b d'>4. <b d'>4. } >>
+        << { cs''4. b' } \\ { <e'\3 g'\2>4. <e'\3 g'\2>4. } >>
         
-        << { fs'2. } \\ { <as cs'>2. } >>
+        << { as'4. as'4. } \\ { <cs'\3 fs'\2>4. <cs'\3 e'\2>4. } >>
         
-        << { e'4. g' } \\ { <as cs'>4. <as cs'>4. } >>
+        << { b16 d' fs' d' fs' b' b'4. } \\ { r4. <b d' fs'>4. } >>
+
+        \bar "|."
+      }
+      \new TabStaff {
+        \time 6/8
+        
+        << { b'2. } \\ { <d'\3 fs'\2>2. } >>
+        
+        << { cs''4. d'' } \\ { <d'\3 fs'\2>4. <d'\3 fs'\2>4. } >>
+        
+        << { a'2. } \\ { <cs'\3 fs'\2>2. } >>
+        
+        << { b'4. cs'' } \\ { <cs'\3 fs'\2>4. <cs'\3 fs'\2>4. } >>
+
+        \break
+        
+        << { g'2. } \\ { <b\3 d'\2>2. } >>
+        
+        << { a'4. g' } \\ { <b\3 d'\2>4. <b d'>4. } >>
+        
+        << { fs'2. } \\ { <as\3 cs'\2>2. } >>
+        
+        << { e'4. g' } \\ { <as\3 cs'\2>4. <as\3 cs'\2>4. } >>
+        
+        \break
+        
+        << { b'2. } \\ { <d'\3 fs'\2>2. } >>
+        
+        << { cs''4. d'' } \\ { <d'\3 fs'\2>4. <d'\3 fs'\2>4. } >>
+        
+        << { a'2. } \\ { <cs'\3 fs'\2>2. } >>
+        
+        << { b'4. cs'' } \\ { <cs'\3 fs'\2>4. <cs'\3 fs'\2>4. } >>
+
+        \break
+        
+        << { b'2. } \\ { <e'\3 g'\2>2. } >>
+        
+        << { cs''4. b' } \\ { <e'\3 g'\2>4. <e'\3 g'\2>4. } >>
+        
+        << { as'4. as'4. } \\ { <cs'\3 fs'\2>4. <cs'\3 e'\2>4. } >>
+        
+        << { b16\4 d'\3 fs'\2 d'\3 fs'\2 b' b'4. } \\ { r4. <b\4 d'\3 fs'\2>4. } >>
       }
     >>
   }
   
   \score {
     \layout {
+      #(layout-set-staff-size 19)
       \omit Voice.StringNumber
       indent = 0.0\cm
     }
     \header {
-      piece = "Tremolo example (same notes as above)"
+      piece = "Tremolo-ish example (same notes as above)"
+    }
+    \midi {
+    }
+
+    \new StaffGroup <<
+      \new Staff {
+        \set Staff.midiInstrument = #"acoustic guitar (nylon)"
+        \clef "treble_8"
+        \time 6/8
+        \key b \minor
+        \tempo 8 = 178
+        
+        d'16\RH #1 b'\RH #2 fs'\RH #1 b'\RH #2 fs'\RH #1 b'\RH #2 d' b' fs' b' fs' b'
+        
+        d'16 cs'' fs' cs'' fs' cs'' d' d'' fs' d'' fs' d''^"etc..."
+
+        \bar "|."
+      }
+      \new TabStaff {
+        \time 6/8
+        
+        d'16\3 b'\1 fs'\2 b'\1 fs'\2 b'\1 d'\3 b'\1 fs'\2 b'\1 fs'\2 b'\1
+        
+        d'16\3 cs''\1 fs'\2 cs''\1 fs'\2 cs''\1 d'\3 d''\1 fs'\2 d''\1 fs'\2 d''\1
+      }
+    >>
+  }
+  
+  \score {
+    \layout {
+      #(layout-set-staff-size 19)
+      \omit Voice.StringNumber
+      indent = 0.0\cm
+    }
+    \header {
+      piece = \markup \wordwrap {
+        Melody for the previous sketch.
+      }
     }
     \midi {
     }
@@ -352,6 +460,24 @@
           b1.:m
           
           fs:m
+          
+          g
+          
+          fs
+          
+          b1.:m
+          
+          fs:m
+          
+          e2.:m
+        
+          cs2.:dim
+          
+          fs4.
+          
+          fs4.:7
+          
+          b2.:m
         }
       }
       \new Staff {
@@ -361,26 +487,45 @@
         \key b \minor
         \tempo 8 = 178
         
-        d'16 b' fs' b' fs' b' d' b' fs' b' fs' b'
+        b'2.
         
-        d'16 cs'' fs' cs'' fs' cs'' d' d'' fs' d'' fs' d''
+        cs''4. d''
         
-        cs'16 a' fs' a' fs' a' cs' a' fs' a' fs' a'
+        a'2.
         
-        cs'16 b' fs' b' fs' b' cs' cs'' fs' cs'' fs' cs''^"etc..."
+        b'4. cs''
 
-        \bar ":|."
-      }
-      \new TabStaff {
-        \time 6/8
+        \break
         
-        d'16 b' fs' b' fs' b' d' b' fs' b' fs' b'
+        g'2.
         
-        d'16 cs'' fs' cs'' fs' cs'' d' d'' fs' d'' fs' d''
+        a'4. g'
         
-        cs'16 a' fs' a' fs' a' cs' a' fs' a' fs' a'
+        fs'2.
         
-        cs'16 b' fs' b' fs' b' cs' cs'' fs' cs'' fs' cs''
+        e'4. g'
+        
+        \break
+        
+        b'2.
+        
+        cs''4. d''
+        
+        a'2.
+        
+        b'4. cs''
+
+        \break
+        
+        b'2.
+        
+        cs''4. b'
+        
+        as'4. as'4.
+        
+        b16 d' fs' d' fs' b' b'4.
+
+        \bar "|."
       }
     >>
   }

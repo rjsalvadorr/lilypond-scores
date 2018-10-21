@@ -46,7 +46,7 @@ tocSection =
           \hspace #0
         }
       }
-      subtitle = \markup { \abs-fontsize #18 \medium "Drafts and neat ideas!" }
+      subtitle = \markup { \abs-fontsize #18 \medium "Drafts and neat ideas" }
     }
     \paper {
       top-markup-spacing.basic-distance = #20
