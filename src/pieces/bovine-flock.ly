@@ -20,7 +20,7 @@
   
   \score {
     \layout {
-      #(layout-set-staff-size 21)
+      #(layout-set-staff-size 19)
       \omit Voice.StringNumber
       indent = 0.0\cm
     }
@@ -65,7 +65,7 @@
         cs'16 a' fs' a' fs' a' cs' a' fs' a' fs' a'
         
         cs'16 b' fs' b' fs' b' cs' cs'' fs' cs'' fs' cs''
-
+        
         
         e'16\3 b' g'\2 b' g'\2 b' e'16\3 b' g'\2 b' g'\2 b'
         
@@ -80,38 +80,38 @@
       \new TabStaff {
         \time 6/8
         
-        d'16 b' fs' b' fs' b' d' b' fs' b' fs' b'
+        d'16\3 b' fs'\2 b' fs'\2 b' d'\3 b' fs'\2 b' fs'\2 b'
         
-        d'16 cs'' fs' cs'' fs' cs'' d' d'' fs' d'' fs' d''
+        d'16\3 cs'' fs'\2 cs'' fs'\2 cs'' d'\3 d'' fs'\2 d'' fs'\2 d''
         
-        cs'16 a' fs' a' fs' a' cs' a' fs' a' fs' a'
+        cs'16\3 a' fs'\2 a' fs'\2 a' cs'\3 a' fs'\2 a' fs'\2 a'
         
-        cs'16 b' fs' b' fs' b' cs' cs'' fs' cs'' fs' cs''
+        cs'16\3 b' fs'\2 b' fs'\2 b' cs'\3 cs'' fs'\2 cs'' fs'\2 cs''
 
         
-        b16 g' d' g' d' g' b g' d' g' d' g'
+        b16\3 g' d'\2 g' d'\2 g' b\3 g' d'\2 g' d'\2 g'
         
-        b16 a' d' a' d' a' b g' d' g' d' g'
+        b16\3 a' d'\2 a' d'\2 a' b\3 g' d'\2 g' d'\2 g'
         
-        as16 fs' cs' fs' cs' fs' as fs' cs' fs' cs' fs'
+        as16\3 fs' cs'\2 fs' cs'\2 fs' as\3 fs' cs'\2 fs' cs'\2 fs'
         
-        as16 e' cs' e' cs' e' as16 g' cs' g' cs' g'
+        as16\3 e' cs'\2 e' cs'\2 e' as\3 g' cs'\2 g' cs'\2 g'
         
         
-        d'16 b' fs' b' fs' b' d' b' fs' b' fs' b'
+        d'16\3 b' fs'\2 b' fs'\2 b' d'\3 b' fs'\2 b' fs'\2 b'
         
-        d'16 cs'' fs' cs'' fs' cs'' d' d'' fs' d'' fs' d''
+        d'16\3 cs'' fs'\2 cs'' fs'\2 cs'' d'\3 d'' fs'\2 d'' fs'\2 d''
         
-        cs'16 a' fs' a' fs' a' cs' a' fs' a' fs' a'
+        cs'16\3 a' fs'\2 a' fs'\2 a' cs'\3 a' fs'\2 a' fs'\2 a'
         
-        cs'16 b' fs' b' fs' b' cs' cs'' fs' cs'' fs' cs''
+        cs'16\3 b' fs'\2 b' fs'\2 b' cs'\3 cs'' fs'\2 cs'' fs'\2 cs''
 
         
         e'16\3 b' g'\2 b' g'\2 b' e'16\3 b' g'\2 b' g'\2 b'
         
         e'16\3 cs'' g'\2 cs'' g'\2 cs'' e'16\3 b' g'\2 b' g'\2 b'
         
-        cs'16\3 as' fs'\2 as' fs' as' cs'\3 as' e'\2 as' e'\2 as'
+        cs'16\3 as' fs'\2 as' fs'\2 as' cs'\3 as' e'\2 as' e'\2 as'
         
         << { b16 d' fs' d' fs' b' b'4. } \\ { s4. <b d' fs'>4. } >>
       }

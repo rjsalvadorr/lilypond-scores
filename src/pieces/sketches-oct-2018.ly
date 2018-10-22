@@ -524,6 +524,98 @@
         as'4. as'4.
         
         b16 d' fs' d' fs' b' b'4.
+        
+        \bar "|."
+
+      }
+    >>
+  }
+
+  \score {
+    \layout {
+      #(layout-set-staff-size 19)
+      \omit Voice.StringNumber
+      indent = 0.0\cm
+    }
+    \header {
+      piece = \markup \wordwrap {
+        Melody for the previous sketch, dropped two octaves and rewritten as a bassline.
+      }
+    }
+    \midi {
+    }
+
+    \new StaffGroup <<
+      \new ChordNames {
+        \set chordChanges = ##t
+        \chordmode {
+          b1.:m
+          
+          fs:m
+          
+          g
+          
+          fs
+          
+          b1.:m
+          
+          fs:m
+          
+          e2.:m
+        
+          cs2.:dim
+          
+          fs4.
+          
+          fs4.:7
+          
+          b2.:m
+        }
+      }
+      \new Staff {
+        \set Staff.midiInstrument = #"acoustic guitar (nylon)"
+        \clef "treble_8"
+        \time 6/8
+        \key b \minor
+        \tempo 8 = 178
+        
+        b,2.
+        
+        cs4. d
+        
+        a,2.
+        
+        b,4. cs
+
+        \break
+        
+        g,2.
+        
+        a,4. g,
+        
+        fs,2.
+        
+        e,4. g,
+        
+        \break
+        
+        b,2.
+        
+        cs4. d
+        
+        a,2.
+        
+        b,4. cs
+
+        \break
+        
+        b,2.
+        
+        cs4. b,
+        
+        as,4. fs,4.
+        
+        b,2.
 
         \bar "|."
       }
