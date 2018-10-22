@@ -15,11 +15,12 @@
     title = "Bovine Flock"
     subtitle = "Theme and variations"
     composer = "R. J. Salvador"
+    opus = "Op. 7"
   }
   
   \score {
     \layout {
-      #(layout-set-staff-size 19)
+      #(layout-set-staff-size 21)
       \omit Voice.StringNumber
       indent = 0.0\cm
     }
@@ -32,32 +33,6 @@
     }
 
     \new StaffGroup <<
-      \new ChordNames {
-        \set chordChanges = ##t
-        \chordmode {
-          b1.:m
-          
-          fs:m
-          
-          g
-          
-          fs
-          
-          b1.:m
-          
-          fs:m
-          
-          e2.:m
-        
-          cs2.:dim
-          
-          fs4.
-          
-          fs4.:7
-          
-          b2.:m
-        }
-      }
       \new Staff {
         \set Staff.midiInstrument = #"acoustic guitar (nylon)"
         \clef "treble_8"
@@ -65,220 +40,80 @@
         \key b \minor
         \tempo 8 = 178
         
-        << { b'2. } \\ { <d' fs'>2. } >>
+        d'16 b' fs' b' fs' b' d' b' fs' b' fs' b'
         
-        << { cs''4. d'' } \\ { <d' fs'>4. <d' fs'>4. } >>
+        d'16 cs'' fs' cs'' fs' cs'' d' d'' fs' d'' fs' d''
         
-        << { a'2. } \\ { <cs' fs'>2. } >>
+        cs'16 a' fs' a' fs' a' cs' a' fs' a' fs' a'
         
-        << { b'4. cs'' } \\ { <cs' fs'>4. <cs' fs'>4. } >>
+        cs'16 b' fs' b' fs' b' cs' cs'' fs' cs'' fs' cs''
 
-        \break
         
-        << { g'2. } \\ { <b d'>2. } >>
+        b16 g' d' g' d' g' b g' d' g' d' g'
         
-        << { a'4. g' } \\ { <b d'>4. <b d'>4. } >>
+        b16 a' d' a' d' a' b g' d' g' d' g'
         
-        << { fs'2. } \\ { <as cs'>2. } >>
+        as16 fs' cs' fs' cs' fs' as fs' cs' fs' cs' fs'
         
-        << { e'4. g' } \\ { <as cs'>4. <as cs'>4. } >>
+        as16 e' cs' e' cs' e' as16 g' cs' g' cs' g'
         
-        \break
         
-        << { b'2. } \\ { <d' fs'>2. } >>
+        d'16 b' fs' b' fs' b' d' b' fs' b' fs' b'
         
-        << { cs''4. d'' } \\ { <d' fs'>4. <d' fs'>4. } >>
+        d'16 cs'' fs' cs'' fs' cs'' d' d'' fs' d'' fs' d''
         
-        << { a'2. } \\ { <cs' fs'>2. } >>
+        cs'16 a' fs' a' fs' a' cs' a' fs' a' fs' a'
         
-        << { b'4. cs'' } \\ { <cs' fs'>4. <cs' fs'>4. } >>
+        cs'16 b' fs' b' fs' b' cs' cs'' fs' cs'' fs' cs''
 
-        \break
         
-        << { b'2. } \\ { <e'\3 g'\2>2. } >>
+        e'16\3 b' g'\2 b' g'\2 b' e'16\3 b' g'\2 b' g'\2 b'
         
-        << { cs''4. b' } \\ { <e'\3 g'\2>4. <e'\3 g'\2>4. } >>
+        e'16\3 cs'' g'\2 cs'' g'\2 cs'' e'16\3 b' g'\2 b' g'\2 b'
         
-        << { as'4. as'4. } \\ { <cs'\3 fs'\2>4. <cs'\3 e'\2>4. } >>
+        cs'16\3 as' fs'\2 as' fs' as' cs'\3 as' e'\2 as' e'\2 as'
         
-        << { b16 d' fs' d' fs' b' b'4. } \\ { r4. <b d' fs'>4. } >>
+        << { b16 d' fs' d' fs' b' b'4. } \\ { s4. <b d' fs'>4. } >>
 
         \bar "|."
       }
       \new TabStaff {
         \time 6/8
         
-        << { b'2. } \\ { <d'\3 fs'\2>2. } >>
+        d'16 b' fs' b' fs' b' d' b' fs' b' fs' b'
         
-        << { cs''4. d'' } \\ { <d'\3 fs'\2>4. <d'\3 fs'\2>4. } >>
+        d'16 cs'' fs' cs'' fs' cs'' d' d'' fs' d'' fs' d''
         
-        << { a'2. } \\ { <cs'\3 fs'\2>2. } >>
+        cs'16 a' fs' a' fs' a' cs' a' fs' a' fs' a'
         
-        << { b'4. cs'' } \\ { <cs'\3 fs'\2>4. <cs'\3 fs'\2>4. } >>
+        cs'16 b' fs' b' fs' b' cs' cs'' fs' cs'' fs' cs''
 
-        \break
         
-        << { g'2. } \\ { <b\3 d'\2>2. } >>
+        b16 g' d' g' d' g' b g' d' g' d' g'
         
-        << { a'4. g' } \\ { <b\3 d'\2>4. <b d'>4. } >>
+        b16 a' d' a' d' a' b g' d' g' d' g'
         
-        << { fs'2. } \\ { <as\3 cs'\2>2. } >>
+        as16 fs' cs' fs' cs' fs' as fs' cs' fs' cs' fs'
         
-        << { e'4. g' } \\ { <as\3 cs'\2>4. <as\3 cs'\2>4. } >>
+        as16 e' cs' e' cs' e' as16 g' cs' g' cs' g'
         
-        \break
         
-        << { b'2. } \\ { <d'\3 fs'\2>2. } >>
+        d'16 b' fs' b' fs' b' d' b' fs' b' fs' b'
         
-        << { cs''4. d'' } \\ { <d'\3 fs'\2>4. <d'\3 fs'\2>4. } >>
+        d'16 cs'' fs' cs'' fs' cs'' d' d'' fs' d'' fs' d''
         
-        << { a'2. } \\ { <cs'\3 fs'\2>2. } >>
+        cs'16 a' fs' a' fs' a' cs' a' fs' a' fs' a'
         
-        << { b'4. cs'' } \\ { <cs'\3 fs'\2>4. <cs'\3 fs'\2>4. } >>
+        cs'16 b' fs' b' fs' b' cs' cs'' fs' cs'' fs' cs''
 
-        \break
         
-        << { b'2. } \\ { <e'\3 g'\2>2. } >>
+        e'16\3 b' g'\2 b' g'\2 b' e'16\3 b' g'\2 b' g'\2 b'
         
-        << { cs''4. b' } \\ { <e'\3 g'\2>4. <e'\3 g'\2>4. } >>
+        e'16\3 cs'' g'\2 cs'' g'\2 cs'' e'16\3 b' g'\2 b' g'\2 b'
         
-        << { as'4. as'4. } \\ { <cs'\3 fs'\2>4. <cs'\3 e'\2>4. } >>
+        cs'16\3 as' fs'\2 as' fs' as' cs'\3 as' e'\2 as' e'\2 as'
         
-        << { b16\4 d'\3 fs'\2 d'\3 fs'\2 b' b'4. } \\ { r4. <b\4 d'\3 fs'\2>4. } >>
-      }
-    >>
-  }
-
-  \pageBreak
-
-  \score {
-    \layout {
-      #(layout-set-staff-size 19)
-      \omit Voice.StringNumber
-      indent = 0.0\cm
-    }
-    \header {
-      piece = \markup \wordwrap {
-        BONUS: Structural sketch of the theme
-      }
-    }
-    \midi {
-    }
-
-    \new StaffGroup <<
-      \new ChordNames {
-        \set chordChanges = ##t
-        \chordmode {
-          b1.:m
-          
-          fs:m
-          
-          g
-          
-          fs
-          
-          b1.:m
-          
-          fs:m
-          
-          e2.:m
-        
-          cs2.:dim
-          
-          fs4.
-          
-          fs4.:7
-          
-          b2.:m
-        }
-      }
-      \new Staff {
-        \set Staff.midiInstrument = #"acoustic guitar (nylon)"
-        \clef "treble_8"
-        \time 6/8
-        \key b \minor
-        \tempo 8 = 178
-        
-        << { b'2. } \\ { <d' fs'>2. } >>
-        
-        << { cs''4. d'' } \\ { <d' fs'>4. <d' fs'>4. } >>
-        
-        << { a'2. } \\ { <cs' fs'>2. } >>
-        
-        << { b'4. cs'' } \\ { <cs' fs'>4. <cs' fs'>4. } >>
-
-        \break
-        
-        << { g'2. } \\ { <b d'>2. } >>
-        
-        << { a'4. g' } \\ { <b d'>4. <b d'>4. } >>
-        
-        << { fs'2. } \\ { <as cs'>2. } >>
-        
-        << { e'4. g' } \\ { <as cs'>4. <as cs'>4. } >>
-        
-        \break
-        
-        << { b'2. } \\ { <d' fs'>2. } >>
-        
-        << { cs''4. d'' } \\ { <d' fs'>4. <d' fs'>4. } >>
-        
-        << { a'2. } \\ { <cs' fs'>2. } >>
-        
-        << { b'4. cs'' } \\ { <cs' fs'>4. <cs' fs'>4. } >>
-
-        \break
-        
-        << { b'2. } \\ { <e'\3 g'\2>2. } >>
-        
-        << { cs''4. b' } \\ { <e'\3 g'\2>4. <e'\3 g'\2>4. } >>
-        
-        << { as'4. as'4. } \\ { <cs'\3 fs'\2>4. <cs'\3 e'\2>4. } >>
-        
-        << { b16 d' fs' d' fs' b' b'4. } \\ { r4. <b d' fs'>4. } >>
-
-        \bar "|."
-      }
-      \new TabStaff {
-        \time 6/8
-        
-        << { b'2. } \\ { <d'\3 fs'\2>2. } >>
-        
-        << { cs''4. d'' } \\ { <d'\3 fs'\2>4. <d'\3 fs'\2>4. } >>
-        
-        << { a'2. } \\ { <cs'\3 fs'\2>2. } >>
-        
-        << { b'4. cs'' } \\ { <cs'\3 fs'\2>4. <cs'\3 fs'\2>4. } >>
-
-        \break
-        
-        << { g'2. } \\ { <b\3 d'\2>2. } >>
-        
-        << { a'4. g' } \\ { <b\3 d'\2>4. <b d'>4. } >>
-        
-        << { fs'2. } \\ { <as\3 cs'\2>2. } >>
-        
-        << { e'4. g' } \\ { <as\3 cs'\2>4. <as\3 cs'\2>4. } >>
-        
-        \break
-        
-        << { b'2. } \\ { <d'\3 fs'\2>2. } >>
-        
-        << { cs''4. d'' } \\ { <d'\3 fs'\2>4. <d'\3 fs'\2>4. } >>
-        
-        << { a'2. } \\ { <cs'\3 fs'\2>2. } >>
-        
-        << { b'4. cs'' } \\ { <cs'\3 fs'\2>4. <cs'\3 fs'\2>4. } >>
-
-        \break
-        
-        << { b'2. } \\ { <e'\3 g'\2>2. } >>
-        
-        << { cs''4. b' } \\ { <e'\3 g'\2>4. <e'\3 g'\2>4. } >>
-        
-        << { as'4. as'4. } \\ { <cs'\3 fs'\2>4. <cs'\3 e'\2>4. } >>
-        
-        << { b16\4 d'\3 fs'\2 d'\3 fs'\2 b' b'4. } \\ { r4. <b\4 d'\3 fs'\2>4. } >>
+        << { b16 d' fs' d' fs' b' b'4. } \\ { s4. <b d' fs'>4. } >>
       }
     >>
   }
