@@ -30,6 +30,8 @@
 %%%%%%%%%% SCORE
 
 \book {
+  \bookOutputName "lilypond-references"
+
   % Books can have multiple \bookparts, which can have their own
   % \header and \paper settings.
   \bookpart {

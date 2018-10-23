@@ -20,7 +20,7 @@
   
   \score {
     \layout {
-      #(layout-set-staff-size 19)
+      #(layout-set-staff-size 20)
       \omit Voice.StringNumber
       indent = 0.0\cm
     }
@@ -29,8 +29,7 @@
         Theme
       }
     }
-    \midi {
-    }
+    \midi {}
 
     \new StaffGroup <<
       \new Staff {
@@ -114,6 +113,112 @@
         cs'16\3 as' fs'\2 as' fs'\2 as' cs'\3 as' e'\2 as' e'\2 as'
         
         << { b16 d' fs' d' fs' b' b'4. } \\ { s4. <b d' fs'>4. } >>
+      }
+    >>
+  }
+  
+  \pageBreak
+
+  \score {
+    \header {
+      piece = "Variation 1"
+      opus = ##f
+    }
+    \layout {
+      #(layout-set-staff-size 20)
+      \omit Voice.StringNumber
+      indent = 0.0\cm
+    }
+    \midi {}
+    
+    \new StaffGroup <<
+      \new Staff {
+        \set Staff.midiInstrument = #"acoustic guitar (nylon)"
+        \clef "treble_8"
+        \key b \minor
+        \tempo 4 = 85
+        \time 3/4
+
+        << { d'4. e'8 d' cs' } \\ { <b, fs>2 r4 } >>
+
+        << { d'4 e' fs' } \\ { <b, fs>2 r4 } >>
+
+        << { <cs' fs'>2 r4 } \\ { a,4. b,8 a, g, } >>
+
+        << { <cs' fs'>2 r4 } \\ { a,4 b, c } >>
+        
+        \break
+
+        << { b4. cs'8 b as } \\ { <g, d>2 r4 } >>
+
+        << { b4 cs' b } \\ { <g, d>2 r4 } >>
+
+        << { <cs as>2 r4 } \\ { fs,4. g8 fs e } >>
+
+        << { <cs as>2. } \\ { fs,2 fs,4 } >>
+
+        \break
+
+        << { d'4. e'8 d' cs' } \\ { <b, fs>2 r4 } >>
+
+        << { d'4 e' fs' } \\ { <b, fs>2 r4 } >>
+
+        << { <cs' fs'>2 r4 } \\ { a,4. b,8 a, g, } >>
+
+        << { <cs' fs'>2 r4 } \\ { a,4 b, c } >>
+
+        \break
+
+        << { e'4. d'8 cs' e' } \\ { <b, g>4. r4. } >>
+
+        << { e'4 fs' b } \\ { <cs g>2 r4 } >>
+
+        << { <cs as>2 r4 } \\ { fs,4 fs, d } >>
+
+        << { <d' fs' b'>2. } \\ { b,2. } >>
+
+        \bar "|."
+      }
+      \new TabStaff {
+        \set TabStaff.restrainOpenStrings = ##t
+        \time 3/4
+
+        << { s2. } \\ { s2. } >>
+
+        << { s2. } \\ { s2. } >>
+
+        << { s2. } \\ { s2. } >>
+
+        << { s2. } \\ { s2. } >>
+
+
+        << { s2. } \\ { s2. } >>
+
+        << { s2. } \\ { s2. } >>
+
+        << { s2. } \\ { s2. } >>
+
+        << { s2. } \\ { s2. } >>
+
+
+        << { s2. } \\ { s2. } >>
+
+        << { s2. } \\ { s2. } >>
+
+        << { s2. } \\ { s2. } >>
+
+        << { s2. } \\ { s2. } >>
+        
+
+        << { s2. } \\ { s2. } >>
+
+        << { s2. } \\ { s2. } >>
+
+        << { s2. } \\ { s2. } >>
+
+        << { s2. } \\ { s2. } >>
+
+        \bar "|."
       }
     >>
   }
