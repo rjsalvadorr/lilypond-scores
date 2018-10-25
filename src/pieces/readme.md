@@ -59,4 +59,15 @@ In Progress!
 1. Aenean Nec Suscipit
 1. Ullamcorper Mi Posuere
 
+## Op. 7 - _Untitled_
+
+_Suite in B minor, for solo guitar_
+
+Started in October 2018.  
+In progress
+
++ _I - untitled_ (sketched)
++ _II - untitled_ (sketched)
++ _III - untitled_ (not started yet)
+
 &nbsp;

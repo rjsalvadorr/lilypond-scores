@@ -3,7 +3,7 @@
 #(define RH rightHandFinger)
 
 \bookpart {
-  \tocItem \markup { "October 2018" }
+  \tocItem \markup { "Bovine Flock (sketches)" }
   \paper {
     #(set-paper-size "letter")
     top-margin = 0.5\in
