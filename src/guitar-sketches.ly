@@ -94,5 +94,5 @@ tocSection =
   %%%%% OCTOBER 2018
 
   \include "pieces/sketches-oct-2018.ly"
-  \include "pieces/bovine-flock-sketches.ly"
+  \include "pieces/snowfall-sketches.ly"
 }

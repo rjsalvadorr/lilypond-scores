@@ -103,5 +103,5 @@ tocSection =
 
   \include "pieces/etude-5.ly"
 
-  \include "pieces/bovine-flock.ly"
+  \include "pieces/snowfall.ly"
 }

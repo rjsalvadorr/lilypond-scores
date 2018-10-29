@@ -3,7 +3,7 @@
 #(define RH rightHandFinger)
 
 \bookpart {
-  \tocItem \markup { "Bovine Flock" }
+  \tocItem \markup { "Snowfall" }
   \paper {
     #(set-paper-size "letter")
     top-margin = 0.5\in
@@ -12,7 +12,7 @@
     bottom-margin = 0.5\in
   }
   \header {
-    title = "Bovine Flock"
+    title = "Snowfall"
     subtitle = "Theme and variations"
     composer = "R. J. Salvador"
     opus = "Op. 7"
