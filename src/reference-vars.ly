@@ -45,6 +45,28 @@ theoryModulationOneUpper = {
   \clef "treble"
   \time 10/4
   \key c \major
+
+  <g' c'' e''>4^\markup \italic { "Original tonic ( I )" }
+  
+  <g' c'' e''>
+  
+  <g' c'' e''>
+  
+  r
+  
+  r^\markup \italic { "New tonic ( V )" }
+  
+  r
+  
+  r
+  
+  r
+  
+  r
+  
+  r
+  
+  \bar "|." \break
   
   <g' c'' e''>4^\markup \italic { "Original tonic ( I )" }
   
@@ -66,9 +88,19 @@ theoryModulationOneUpper = {
   
   <a' e''>^\markup \column \italic { "'evaded" "cadence'" }
   
-  \break
+  \bar "|." \break
   
-  r4
+  \key c \minor
+  
+  <g' c'' ef''>4^\markup \italic { "Original tonic ( i )" }
+  
+  r
+  
+  r
+  
+  r
+  
+  r^\markup \italic { "New tonic ( III )" }
   
   r
   
@@ -80,7 +112,9 @@ theoryModulationOneUpper = {
   
   r
   
-  r
+  \bar "|." \break
+  
+  <g' c'' ef''>4^\markup \italic { "Original tonic ( i )" }
   
   r
   
@@ -88,19 +122,7 @@ theoryModulationOneUpper = {
   
   r
   
-  \break
-  
-  r4
-  
-  r
-  
-  r
-  
-  r
-  
-  r
-  
-  r
+  r^\markup \italic { "New tonic ( v )" }
   
   r
   
@@ -110,116 +132,341 @@ theoryModulationOneUpper = {
   
   r
   
-  \break
+  s
   
-  r4
-  
-  r
-  
-  r
-  
-  r
-  
-  r
-  
-  r
-  
-  r
-  
-  r
-  
-  r
-  
-  r
-  
-  \break
+  \bar "|." 
 }
 
 theoryModulationOneLower = {
   \clef "bass"
   \time 10/4
   \key c \major
+
+  c4
   
-  e4_\markup \rN { I 6 }
+  e
   
-  d_\markup \rN { V 4 3 }
+  f
   
-  c_\markup \rN { I }
+  fs
   
-  gs,_\markup \rN { V 6 5 / vi }
+  g
   
-  a, _\markup \rN { i }
+  a
   
-  f_\markup \rN { iv 6 }
+  g
   
-  d_\markup \rN { ii o 6 }
+  c
   
-  e_\markup \rN { V 6 4 }
+  d
   
-  d_\markup \rN { V 4 2 }
-  
-  c_\markup \rN { i 6 }
-  
-  
-  r4
-  
-  r
-  
-  r
-  
-  r
-  
-  r
-  
-  r
-  
-  r
-  
-  r
-  
-  r
-  
-  r
+  g
   
   
-  r4
+  e4
   
-  r
+  d
   
-  r
+  c
   
-  r
+  gs,
   
-  r
+  a, 
   
-  r
+  f
   
-  r
+  d
   
-  r
+  e
   
-  r
+  d
   
-  r
+  c
+  
+  \key c \minor
+  
+  c4
+  
+  g
+  
+  c
+  
+  bf,
+  
+  ef
+  
+  c
+  
+  af
+  
+  bf
+  
+  bf
+  
+  ef
   
   
-  r4
+  c4
   
-  r
+  d
   
-  r
+  b,
   
-  r
+  c
   
-  r
+  bf,
   
-  r
+  c
   
-  r
+  d
   
-  r
+  d
   
-  r
+  g
   
-  r
+  s
+}
+
+theoryModulationOneBassDegrees = \lyricmode {
+  \override LyricText.self-alignment-X = #LEFT
+  
+  do
+  
+  mi
+  
+  fa
+  
+  fi
+  
+  "so/do"
+  
+  re
+  
+  do
+  
+  fa
+  
+  so
+  
+  do
+  
+  
+  
+  mi
+  
+  re
+  
+  do
+  
+  si
+  
+  "la/do"
+  
+  le
+  
+  fa
+  
+  so
+  
+  fa
+  
+  me
+  
+  
+  
+  do
+  
+  so
+  
+  do
+  
+  te
+  
+  "me/do"
+  
+  la
+  
+  fa
+  
+  so
+  
+  so
+  
+  do
+  
+  
+  
+  do
+  
+  do
+  
+  ti
+  
+  do
+  
+  "te/me"
+  
+  fa
+  
+  so
+  
+  so
+  
+  do
+}
+
+theoryModulationOneAnalysis = \lyricmode {
+  \override LyricText.self-alignment-X = #LEFT
+
+  \markup \rN { I }
+
+  \markup \rN { I 6 }
+
+  \markup \rN { ii 6 5 }
+
+  \markup \rN { vii o 7 / V }
+
+  \markup \rN { I }
+
+  \markup \rN { V 4 3 }
+
+  \markup \rN { I }
+
+  \markup \rN { ii 6 5 }
+
+  \markup \rN { V 7 }
+
+  \markup \rN { I }
+  
+
+  \markup \rN { I 6 }
+
+  \markup \rN { V 4 3 }
+
+  \markup \rN { I }
+
+  \markup \rN { V 6 5 / vi }
+
+  \markup \rN { i }
+
+  \markup \rN { iv 6 }
+
+  \markup \rN { ii o 6 }
+
+  \markup \rN { V 6 4 }
+
+  \markup \rN { V 4 2 }
+
+  \markup \rN { i 6 }
+  
+
+  \markup \rN { i }
+
+  \markup \rN { V }
+
+  \markup \rN { i }
+
+  \markup \rN { V 7 / III }
+
+  \markup \rN { I }
+
+  \markup \rN { IV 6 }
+
+  \markup \rN { ii 6 }
+
+  \markup \rN { V 8 6 4 }
+
+  \markup \rN { V 7 5 3 }
+
+  \markup \rN { I }
+  
+
+  \markup \rN { i }
+
+  \markup \rN { ii h 4 2 }
+
+  \markup \rN { V 6 5 }
+
+  \markup \rN { iv / v }
+
+  \markup \rN { i 6 }
+
+  \markup \rN { ii o 6 }
+
+  \markup \rN { V 8 6 4 }
+
+  \markup \rN { V 7 5 3 }
+
+  \markup \rN { i }
+}
+
+romanNumeralsNotes = {
+  \clef "treble"
+  \time 4/4
+  \key c \major
+  
+  <c' e' g'>1^\markup \column { root pos. }
+  
+  <e' g' c''>^\markup \column { 1st inv. }
+  
+  <g' c'' e''>^\markup \column { 2nd inv. }
+  
+  <c' e' g' b'>^\markup \column { 7th, root pos }
+  
+  <e' g' b' c''>^\markup \column { 7th, 1st inv. }
+  
+  <g' b' c'' e''>^\markup \column { 7th, 2nd inv. }
+  
+  <b' c'' e'' g''>^\markup \column { 7th, 3rd inv. }
+  
+  \bar "|." \break
+  
+  <c' e' g'>1
+  
+  <e' g' c''>
+  
+  <g' c'' e''>
+  
+  <c' e' g' b'>
+  
+  <e' g' b' c''>
+  
+  <g' b' c'' e''>
+  
+  <b' c'' e'' g''>
+  
+  \bar "|."
+}
+
+romanNumeralsAnalysis = \lyricmode {
+  \override LyricText.self-alignment-X = #LEFT
+  
+  \markup \rN { I 5 3 }1
+  
+  \markup \rN { I 6 3 }
+  
+  \markup \rN { I 6 4 }
+  
+  \markup \rN { I 7 5 3 }
+  
+  \markup \rN { I 6 5 3 }
+  
+  \markup \rN { I 6 4 3 }
+  
+  \markup \rN { I 6 4 2 }
+  
+
+  \markup \rN { I }
+  
+  \markup \rN { I 6 }
+  
+  \markup \rN { I 6 4 }
+  
+  \markup \rN { I 7 }
+  
+  \markup \rN { I 6 5 }
+  
+  \markup \rN { I 4 3 }
+  
+  \markup \rN { I 4 2 }
 }

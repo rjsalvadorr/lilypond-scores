@@ -88,6 +88,50 @@
 
     \markuplist \table-of-contents
   }
+  
+  \bookpart {
+    \tocItem \markup { "Harmonic analysis - Roman numeral notation" }
+    \header {
+      title = "Harmonic analysis - Roman numeral notation"
+      subtitle = " "
+    }
+    \paper {
+      top-markup-spacing.basic-distance = #5
+      % Controls spacing between systems/staff-groups
+      system-system-spacing.basic-distance = #18
+    }
+    
+    \markup {
+      \column {
+        \wordwrap {
+          Examples for roman numeral notation used in harmonic analysis.
+          The first line shows complete figure symbols, and the second line shows
+          the same chords, but with common abbreviations.
+        }
+        \hspace #0
+        \hspace #0
+      }
+    }
+
+    \score {
+      \layout {
+        indent = 0.0\cm
+        #(layout-set-staff-size 20)
+      }
+      \header {
+      }
+
+      \new StaffGroup <<
+        \new Staff <<
+          \override Score.BarNumber.transparent = ##t
+          \override Staff.TimeSignature.break-visibility = ##(#f #f #f)
+          \override Staff.TimeSignature.transparent = ##t
+          \romanNumeralsNotes
+        >>
+        \new Lyrics \romanNumeralsAnalysis
+      >>
+    }
+  }
 
   \bookpart {
     \tocItem \markup { "Modulating progressions" }
@@ -104,9 +148,10 @@
     \markup {
       \column {
         \wordwrap {
-          "Progressions that modulate from one key centre to another, typically using a 'pivot' technique."
-          "Chord symbols under the 'new tonic' mark are relative to the new tonic, not the old one."
-          ""
+          "- Progressions that modulate from one key centre to another, using a 'pivot' technique."
+          "- Chord symbols under the 'new tonic' mark are relative to the new tonic, not the old one."
+          "- Notes in solfege = bassline"
+          "- The chord progression and bassline can be considered the 'constants' for these progressions."
         }
         \hspace #0
         \hspace #0
@@ -129,12 +174,14 @@
           \override Staff.TimeSignature.transparent = ##t
           \theoryModulationOneUpper
         >>
+        \new Lyrics \theoryModulationOneBassDegrees
         \new Staff = "pianoBass" <<
           \override Score.BarNumber.transparent = ##t
           \override Staff.TimeSignature.break-visibility = ##(#f #f #f)
           \override Staff.TimeSignature.transparent = ##t
           \theoryModulationOneLower
         >>
+        \new Lyrics \theoryModulationOneAnalysis
       >>
     }
   }
