@@ -3,6 +3,7 @@
 
 % File includes
 % Used here for including files that store pre-defined variables
+\include "utils/roman_numeral_analysis_tool.ily"
 \include "globals.ly"
 \include "reference-vars.ly"
 
@@ -30,14 +31,22 @@
 %%%%%%%%%% SCORE
 
 \book {
-  \bookOutputName "lilypond-references"
+  \bookOutputName "reference"
 
   % Books can have multiple \bookparts, which can have their own
   % \header and \paper settings.
   \bookpart {
     \header {
-      title = "Lilypond Reference"
-      subtitle = "Showing how it's done!"
+      title = \markup {
+        \fill-line {
+          \center-column {
+            "Reference for"
+            "Music Theory & Lilypond"
+            \hspace #0
+          }
+        }
+      }
+      subtitle = "by RJ Salvador"
     }
 
     \paper {
@@ -52,9 +61,8 @@
       \fill-line {
         \center-column {
           \hspace #0
-          \hspace #0
           \wordwrap {
-            "This a living document, showing how the lilypond syntax works in actual use."
+            "Music theory notes, and Lilypond syntax examples."
           }
         }
       }
@@ -82,6 +90,56 @@
   }
 
   \bookpart {
+    \tocItem \markup { "Modulating progressions" }
+    \header {
+      title = "Modulating progressions"
+      subtitle = " "
+    }
+    \paper {
+      top-markup-spacing.basic-distance = #5
+      % Controls spacing between systems/staff-groups
+      system-system-spacing.basic-distance = #18
+    }
+    
+    \markup {
+      \column {
+        \wordwrap {
+          "Progressions that modulate from one key centre to another, typically using a 'pivot' technique."
+          "Chord symbols under the 'new tonic' mark are relative to the new tonic, not the old one."
+          ""
+        }
+        \hspace #0
+        \hspace #0
+      }
+    }
+
+    \score {
+      \layout {
+        indent = 0.0\cm
+        #(layout-set-staff-size 20)
+      }
+      \header {
+        piece = " "
+      }
+
+      \new PianoStaff <<
+        \new Staff = "pianoTreble" <<
+          \override Score.BarNumber.transparent = ##t
+          \override Staff.TimeSignature.break-visibility = ##(#f #f #f)
+          \override Staff.TimeSignature.transparent = ##t
+          \theoryModulationOneUpper
+        >>
+        \new Staff = "pianoBass" <<
+          \override Score.BarNumber.transparent = ##t
+          \override Staff.TimeSignature.break-visibility = ##(#f #f #f)
+          \override Staff.TimeSignature.transparent = ##t
+          \theoryModulationOneLower
+        >>
+      >>
+    }
+  }
+
+  \bookpart {
     \tocItem \markup { "Note Reference" }
     \header {
       title = "Note Reference"
@@ -96,7 +154,7 @@
     \score {
       \layout {
         indent = 0.0\cm
-        #(layout-set-staff-size 26)
+        #(layout-set-staff-size 22)
       }
       \header {
         piece = \markup { \bold "Piano" }
