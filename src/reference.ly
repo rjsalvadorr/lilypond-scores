@@ -132,6 +132,54 @@
       >>
     }
   }
+  
+  \bookpart {
+    \tocItem \markup { "Harmonic analysis - Cadence types" }
+    \header {
+      title = "Harmonic analysis - Cadence types"
+      subtitle = " "
+    }
+    \paper {
+      top-markup-spacing.basic-distance = #5
+      % Controls spacing between systems/staff-groups
+      system-system-spacing.basic-distance = #18
+    }
+    
+    \markup {
+      \column {
+        \wordwrap {
+          Examples of cadence types, used to end themes, sections, and pieces.
+        }
+        \hspace #0
+        \hspace #0
+      }
+    }
+
+    \score {
+      \layout {
+        indent = 0.0\cm
+        #(layout-set-staff-size 20)
+      }
+      \header {
+      }
+
+      \new PianoStaff <<
+        \new Staff = "pianoTreble" <<
+          \override Score.BarNumber.transparent = ##t
+          \override Staff.TimeSignature.break-visibility = ##(#f #f #f)
+          \override Staff.TimeSignature.transparent = ##t
+          \cadenceUpper
+        >>
+        \new Staff = "pianoBass" <<
+          \override Score.BarNumber.transparent = ##t
+          \override Staff.TimeSignature.break-visibility = ##(#f #f #f)
+          \override Staff.TimeSignature.transparent = ##t
+          \cadenceLower
+        >>
+        \new Lyrics \cadenceAnalysis
+      >>
+    }
+  }
 
   \bookpart {
     \tocItem \markup { "Modulating progressions" }

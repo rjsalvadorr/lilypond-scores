@@ -1,3 +1,6 @@
+%//////////////////////////////////////////////////////////////////////////////
+%/////   NOTE REFERENCES
+
 trebleStaffNoteReference = {
   \clef "treble"
   \time 29/4
@@ -40,6 +43,138 @@ guitarNoteReference = {
   e' f' g' a' b' c''^"c''" d''
   e''^"e''"
 }
+
+%//////////////////////////////////////////////////////////////////////////////
+%/////   CADENCES
+
+halfCadencesUpper = {
+  \clef "treble"
+  \time 4/4
+  \key c \major
+
+  <f' a' f''>2^"Half cadences" <g' b' g''>
+
+  \bar "|."
+
+  <e' c'' e''>4 <a' c'' f''> <a' d'' f''> <g' b' d''>
+
+  \bar "|."
+
+  r2 r
+
+  \bar "|."
+
+  r2 r
+
+  \bar "|."
+}
+
+halfCadencesLower = {
+  \clef "bass"
+  \time 4/4
+  \key c \major
+
+  c2 d
+
+  c4 f d g
+
+  r2 r
+
+  r2 r
+}
+
+halfCadencesAnalysis = \lyricmode {
+  \override LyricText.self-alignment-X = #LEFT
+
+  \markup \rN { I }2
+  \markup \rN { V }
+
+  \markup \rN { I }4
+  \markup \rN { IV }
+  \markup \rN { ii }
+  \markup \rN { V }
+
+  \markup \rN { I }
+  \markup \rN { V }
+
+  \markup \rN { I }
+  \markup \rN { V }
+}
+
+compoundCadencesUpper = {
+  \clef "treble"
+  \time 4/4
+  \key c \major
+
+  r4^"Compound cadences" r r r
+
+  \bar "|."
+
+  r4 r r r
+
+
+  \bar "|."
+
+  r4 r r r
+
+  \bar "|."
+
+  r4 r r r
+
+  \bar "|."
+}
+
+compoundCadencesLower = {
+  \clef "bass"
+  \time 4/4
+  \key c \major
+
+  r4 r r r
+
+  r4 r r r
+
+  r4 r r r
+
+  r4 r r r
+}
+
+compoundCadencesAnalysis = \lyricmode {
+  \override LyricText.self-alignment-X = #LEFT
+
+  \markup \rN { V 6 4 }4
+  \markup \rN { V 5 3}
+  \markup \rN { I }2
+
+  \markup \rN { V 6 4 }4
+  \markup \rN { V 5 3}
+  \markup \rN { I }2
+
+  \markup \rN { V 6 4 }4
+  \markup \rN { V 5 3}
+  \markup \rN { I }2
+
+  \markup \rN { V 6 4 }4
+  \markup \rN { V 5 3}
+  \markup \rN { I }2
+}
+
+cadenceUpper = {
+  \halfCadencesUpper \break
+  \compoundCadencesUpper
+}
+
+cadenceLower = {
+  \halfCadencesLower \break
+  \compoundCadencesLower
+}
+
+cadenceAnalysis = {
+  \halfCadencesAnalysis
+  \compoundCadencesAnalysis
+}
+
+%//////////////////////////////////////////////////////////////////////////////
+%/////   MODULATIONS
 
 theoryModulationOneUpper = {
   \clef "treble"
