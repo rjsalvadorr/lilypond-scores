@@ -60,11 +60,11 @@ halfCadencesUpper = {
 
   \bar "|."
 
-  r2 r
+  <a' c''>4 <g' c''> <g' b'>2
 
   \bar "|."
 
-  r2 r
+  <a' d''>2^"Phrygian cad. (minor key)" <gs' b' e''>
 
   \bar "|."
 }
@@ -78,9 +78,9 @@ halfCadencesLower = {
 
   c4 f d g
 
-  r2 r
+  <f, f>4 <g, e> <g, d>2
 
-  r2 r
+  f2 e
 }
 
 halfCadencesAnalysis = \lyricmode {
@@ -94,10 +94,11 @@ halfCadencesAnalysis = \lyricmode {
   \markup \rN { ii }
   \markup \rN { V }
 
-  \markup \rN { I }
-  \markup \rN { V }
+  \markup \rN { IV }4
+  \markup \rN { I 6 4 }
+  \markup \rN { V }2
 
-  \markup \rN { I }
+  \markup \rN { iv 6 }
   \markup \rN { V }
 }
 
