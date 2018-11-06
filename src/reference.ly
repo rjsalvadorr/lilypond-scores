@@ -5,7 +5,11 @@
 % Used here for including files that store pre-defined variables
 \include "utils/roman_numeral_analysis_tool.ily"
 \include "globals.ly"
-\include "reference-vars.ly"
+
+\include "reference-roman-numerals.ly"
+\include "reference-cadences.ly"
+\include "reference-modulations.ly"
+\include "reference-notes.ly"
 
 % Global header variables
 % Can be overriden in \book and \bookpart blocks
@@ -88,7 +92,7 @@
 
     \markuplist \table-of-contents
   }
-  
+
   \bookpart {
     \tocItem \markup { "Harmonic analysis - Roman numeral notation" }
     \header {
@@ -100,7 +104,7 @@
       % Controls spacing between systems/staff-groups
       system-system-spacing.basic-distance = #18
     }
-    
+
     \markup {
       \column {
         \wordwrap {
@@ -132,7 +136,7 @@
       >>
     }
   }
-  
+
   \bookpart {
     \tocItem \markup { "Harmonic analysis - Cadence types" }
     \header {
@@ -144,7 +148,7 @@
       % Controls spacing between systems/staff-groups
       system-system-spacing.basic-distance = #18
     }
-    
+
     \markup {
       \column {
         \wordwrap {
@@ -192,7 +196,7 @@
       % Controls spacing between systems/staff-groups
       system-system-spacing.basic-distance = #18
     }
-    
+
     \markup {
       \column {
         \wordwrap {
@@ -216,6 +220,7 @@
       }
 
       \new PianoStaff <<
+        \new Lyrics \theoryModulationOneChords
         \new Staff = "pianoTreble" <<
           \override Score.BarNumber.transparent = ##t
           \override Staff.TimeSignature.break-visibility = ##(#f #f #f)
