@@ -5,8 +5,11 @@ theoryModulationOneUpper = {
   \clef "treble"
   \time 10/4
   \key c \major
-
-  <g' c'' e''>4^\markup \italic { "Original tonic ( I )" }
+  
+  \once \override Score.RehearsalMark.self-alignment-X = #LEFT
+  \mark \markup \bold { "From I to V" }
+  
+  <g' c'' e''>4
 
   <g' c'' e''>
 
@@ -14,7 +17,7 @@ theoryModulationOneUpper = {
 
   r
 
-  r^\markup \italic { "New tonic ( V )" }
+  r
 
   r
 
@@ -27,8 +30,11 @@ theoryModulationOneUpper = {
   r
 
   \bar "|." \break
+  
+  \once \override Score.RehearsalMark.self-alignment-X = #LEFT
+  \mark \markup { \bold { "From I to vi" } ", ending in an evaded cadence" }
 
-  <g' c'' e''>4^\markup \italic { "Original tonic ( I )" }
+  <g' c'' e''>4
 
   <g' b' f''>
 
@@ -36,8 +42,7 @@ theoryModulationOneUpper = {
 
   <b' d'' e''>
 
-  <a' c'' e''>^\markup \italic { "New tonic ( vi )" }
-
+  <a' c'' e''>
   <a' d''>
 
   <f' b' d''>
@@ -46,13 +51,16 @@ theoryModulationOneUpper = {
 
   <gs' b' e''>
 
-  <a' e''>^\markup \column \italic { "'evaded" "cadence'" }
+  <a' e''>
 
   \bar "|." \break
 
   \key c \minor
+  
+  \once \override Score.RehearsalMark.self-alignment-X = #LEFT
+  \mark \markup \bold { "From i to III" }
 
-  <g' c'' ef''>4^\markup \italic { "Original tonic ( i )" }
+  <g' c'' ef''>4
 
   r
 
@@ -60,7 +68,7 @@ theoryModulationOneUpper = {
 
   r
 
-  r^\markup \italic { "New tonic ( III )" }
+  r
 
   r
 
@@ -73,8 +81,11 @@ theoryModulationOneUpper = {
   r
 
   \bar "|." \break
+  
+  \once \override Score.RehearsalMark.self-alignment-X = #LEFT
+  \mark \markup \bold { "From i to v" }
 
-  <g' c'' ef''>4^\markup \italic { "Original tonic ( i )" }
+  <g' c'' ef''>4
 
   r
 
@@ -82,7 +93,7 @@ theoryModulationOneUpper = {
 
   r
 
-  r^\markup \italic { "New tonic ( v )" }
+  r
 
   r
 
@@ -278,19 +289,19 @@ theoryModulationOneBassDegrees = \lyricmode {
 theoryModulationOneChords = \lyricmode {
   \override LyricText.self-alignment-X = #LEFT
 
-  C C Dm D♯° G D G Am D G
+  C C "Dm7" D♯° G D G "Am7" "D7" G
 
-  C C C C C C C C C Am
+  C "G7" C "E7" Am Dm B° Am "E7" Am
 
-  Cm C C C C C C C C E
+  Cm G Cm "C7" E♭ A♭ Fm E♭ "B♭7" E♭
 
-  Cm C C C C C C C C C
+  Cm "Dø7" "G7" Cm Gm A° Gm "D7" Gm
 }
 
 theoryModulationOneAnalysis = \lyricmode {
   \override LyricText.self-alignment-X = #LEFT
 
-  \markup \rN { I }
+  \markup \rN { I }4
 
   \markup \rN { I 6 }
 
@@ -325,14 +336,12 @@ theoryModulationOneAnalysis = \lyricmode {
 
   \markup \rN { ii o 6 }
 
-  \markup \rN { V 6 4 }
+  \markup \rN { V 6-------4 4-------2 }2
 
-  \markup \rN { V 4 2 }
-
-  \markup \rN { i 6 }
+  \markup \rN { i 6 }4
 
 
-  \markup \rN { i }
+  \markup \rN { i }4
 
   \markup \rN { V }
 
@@ -346,14 +355,12 @@ theoryModulationOneAnalysis = \lyricmode {
 
   \markup \rN { ii 6 }
 
-  \markup \rN { V 8 6 4 }
+  \markup \rN { V 8-------7 6-------5 4-------3 }2
 
-  \markup \rN { V 7 5 3 }
-
-  \markup \rN { I }
+  \markup \rN { I }4
 
 
-  \markup \rN { i }
+  \markup \rN { i }4
 
   \markup \rN { ii h 4 2 }
 
@@ -365,9 +372,7 @@ theoryModulationOneAnalysis = \lyricmode {
 
   \markup \rN { ii o 6 }
 
-  \markup \rN { V 8 6 4 }
+  \markup \rN { V 8-------7 6-------5 4-------3 }2
 
-  \markup \rN { V 7 5 3 }
-
-  \markup \rN { i }
+  \markup \rN { i }4
 }

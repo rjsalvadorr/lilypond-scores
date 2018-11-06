@@ -64,7 +64,7 @@
     \markup {
       \fill-line {
         \center-column {
-          \hspace #0
+          \vspace #1
           \wordwrap {
             "Music theory notes, and Lilypond syntax examples."
           }
@@ -94,10 +94,10 @@
   }
 
   \bookpart {
-    \tocItem \markup { "Harmonic analysis - Roman numeral notation" }
+    \tocItem \markup { "Harmony - Roman numeral notation" }
     \header {
-      title = "Harmonic analysis - Roman numeral notation"
-      subtitle = " "
+      title = "Harmony"
+      subtitle = "Roman numeral notation"
     }
     \paper {
       top-markup-spacing.basic-distance = #5
@@ -107,13 +107,13 @@
 
     \markup {
       \column {
+        \vspace #1
         \wordwrap {
           Examples for roman numeral notation used in harmonic analysis.
           The first line shows complete figure symbols, and the second line shows
           the same chords, but with common abbreviations.
         }
-        \hspace #0
-        \hspace #0
+        \vspace #1
       }
     }
 
@@ -138,10 +138,10 @@
   }
 
   \bookpart {
-    \tocItem \markup { "Harmonic analysis - Cadence types" }
+    \tocItem \markup { "Harmony - Cadence types" }
     \header {
-      title = "Harmonic analysis - Cadence types"
-      subtitle = " "
+      title = "Harmony"
+      subtitle = "Cadence types"
     }
     \paper {
       top-markup-spacing.basic-distance = #5
@@ -151,11 +151,11 @@
 
     \markup {
       \column {
+        \vspace #1
         \wordwrap {
           Examples of cadence types, used to end themes, sections, and pieces.
         }
-        \hspace #0
-        \hspace #0
+        \vspace #1
       }
     }
 
@@ -186,10 +186,10 @@
   }
 
   \bookpart {
-    \tocItem \markup { "Modulating progressions" }
+    \tocItem \markup { "Harmony - Modulating progressions" }
     \header {
-      title = "Modulating progressions"
-      subtitle = " "
+      title = "Harmony"
+      subtitle = "Modulating progressions"
     }
     \paper {
       top-markup-spacing.basic-distance = #5
@@ -199,14 +199,14 @@
 
     \markup {
       \column {
+        \vspace #1
         \wordwrap {
           "- Progressions that modulate from one key centre to another, using a 'pivot' technique."
           "- Chord symbols under the 'new tonic' mark are relative to the new tonic, not the old one."
           "- Notes in solfege = bassline"
           "- The chord progression and bassline can be considered the 'constants' for these progressions."
         }
-        \hspace #0
-        \hspace #0
+        \vspace #1
       }
     }
 

@@ -6,7 +6,10 @@ halfCadencesUpper = {
   \time 4/4
   \key c \major
 
-  <f' a' f''>2 \mark "Half cadences" <g' b' g''>
+  \once \override Score.RehearsalMark.self-alignment-X = #LEFT
+  \mark \markup { \bold { "Half cadences" } }
+
+  <f' a' f''>2 <g' b' g''>
 
   \bar "|."
 
@@ -60,8 +63,11 @@ compoundCadencesUpper = {
   \clef "treble"
   \time 4/4
   \key c \major
+  
+  \once \override Score.RehearsalMark.self-alignment-X = #LEFT
+  \mark \markup { \bold { "Compound cadences" } ", usually the 'cadential six-four'" }
 
-  <e' g' c''>4 \mark "Compound cadences" <d' g' b'>^"fa" <e' g' c''>^"mi/me" s
+  <e' g' c''>4 <d' g' b'>^"fa" <e' g' c''>^"mi/me" s
 
   \bar "|."
 
@@ -99,16 +105,14 @@ compoundCadencesAnalysis = \lyricmode {
   \markup \rN { V 5 3}
   \markup \rN { I }2
 
-  \markup \rN { V 8 6 4 }4
-  \markup \rN { V 7 5 3}
+  \markup \rN { V 8--7 6--5 4--3 }2
   \markup \rN { I }2
 
   \markup \rN { V 8 6 4 }4
   \markup \rN { V 7 5 3}
   \markup \rN { I }2
 
-  \markup \rN { V 6 4 }4
-  \markup \rN { V 5 3}
+  \markup \rN { V 6--5 4--3 }2
   \markup \rN { I }2
 }
 
