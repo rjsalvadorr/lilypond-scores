@@ -52,7 +52,7 @@ halfCadencesUpper = {
   \time 4/4
   \key c \major
 
-  <f' a' f''>2^"Half cadences" <g' b' g''>
+  <f' a' f''>2 \mark "Half cadences" <g' b' g''>
 
   \bar "|."
 
@@ -107,20 +107,19 @@ compoundCadencesUpper = {
   \time 4/4
   \key c \major
 
-  r4^"Compound cadences" r r r
+  <e' g' c''>4 \mark "Compound cadences" <d' g' b'>^"fa" <e' g' c''>^"mi/me" s
 
   \bar "|."
 
-  r4 r r r
-
-
-  \bar "|."
-
-  r4 r r r
+  <c'' e'' g''>4 <b' d'' f''>^"ti" <c'' e''>^"do" s
 
   \bar "|."
 
-  r4 r r r
+  <g' c'' e''>4 <f' b' d''> <e' g' c''> s
+
+  \bar "|."
+
+  <g' c'' e''>4 <g' b' d''> <e' g' c''> s
 
   \bar "|."
 }
@@ -130,13 +129,13 @@ compoundCadencesLower = {
   \time 4/4
   \key c \major
 
-  r4 r r r
+  g4 g, c s
+  
+  g4 g, c s
+  
+  g4 g, c s
 
-  r4 r r r
-
-  r4 r r r
-
-  r4 r r r
+  g4 g, c s
 }
 
 compoundCadencesAnalysis = \lyricmode {
@@ -146,12 +145,12 @@ compoundCadencesAnalysis = \lyricmode {
   \markup \rN { V 5 3}
   \markup \rN { I }2
 
-  \markup \rN { V 6 4 }4
-  \markup \rN { V 5 3}
+  \markup \rN { V 8 6 4 }4
+  \markup \rN { V 7 5 3}
   \markup \rN { I }2
 
-  \markup \rN { V 6 4 }4
-  \markup \rN { V 5 3}
+  \markup \rN { V 8 6 4 }4
+  \markup \rN { V 7 5 3}
   \markup \rN { I }2
 
   \markup \rN { V 6 4 }4
