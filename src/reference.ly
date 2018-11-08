@@ -10,6 +10,7 @@
 \include "reference-cadences.ly"
 \include "reference-modulations.ly"
 \include "reference-notes.ly"
+\include "reference-range.ly"
 
 % Global header variables
 % Can be overriden in \book and \bookpart blocks
@@ -235,6 +236,55 @@
           \theoryModulationOneLower
         >>
         \new Lyrics \theoryModulationOneAnalysis
+      >>
+    }
+  }
+  
+  \bookpart {
+    \tocItem \markup { "Instrument Ranges" }
+    \header {
+      title = "Instrument Ranges"
+      subtitle = "Range for various instruments and ensembles"
+    }
+    \paper {
+      top-markup-spacing.basic-distance = #5
+      % Controls spacing between systems/staff-groups
+      system-system-spacing.basic-distance = #18
+      ragged-right = ##f
+    }
+    
+    \markup {
+      \column {
+        \vspace #1
+        \wordwrap {
+          "Range for instruments and possible ranges for multiple instruments"
+        }
+        \vspace #1
+      }
+    }
+
+    \score {
+      \layout {
+        indent = 0.0\cm
+        #(layout-set-staff-size 22)
+      }
+      \header {
+        piece = \markup { \bold "Classical Guitar" }
+      }
+
+      \new PianoStaff <<
+        \new Staff = "pianoTreble" <<
+          \override Score.BarNumber.transparent = ##t
+          \override Staff.TimeSignature.break-visibility = ##(#f #f #f)
+          \override Staff.TimeSignature.transparent = ##t
+          \rangeGuitarUpper
+        >>
+        \new Staff = "pianoBass" <<
+          \override Score.BarNumber.transparent = ##t
+          \override Staff.TimeSignature.break-visibility = ##(#f #f #f)
+          \override Staff.TimeSignature.transparent = ##t
+          \rangeGuitarLower
+        >>
       >>
     }
   }
