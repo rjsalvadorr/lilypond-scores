@@ -239,7 +239,7 @@
       >>
     }
   }
-  
+
   \bookpart {
     \tocItem \markup { "Instrument Ranges" }
     \header {
@@ -252,7 +252,7 @@
       system-system-spacing.basic-distance = #18
       ragged-right = ##f
     }
-    
+
     \markup {
       \column {
         \vspace #1
@@ -286,6 +286,17 @@
           \rangeGuitarLower
         >>
       >>
+    }
+
+    \markup {
+      \fill-line {
+        \center-column {
+          \vspace #1
+          \general-align #Y #DOWN {
+            \epsfile #X #100 #"img/keyboard-guitar-ranges.eps"
+          }
+        }
+      }
     }
   }
 
