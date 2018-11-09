@@ -7,6 +7,7 @@
 \include "globals.ly"
 
 \include "reference-roman-numerals.ly"
+\include "reference-common-errors.ly"
 \include "reference-cadences.ly"
 \include "reference-modulations.ly"
 \include "reference-notes.ly"
@@ -30,6 +31,7 @@
     left-margin = 0.75\in
     right-margin = 0.75\in
     bottom-margin = 0.66\in
+    ragged-right = ##f
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -95,10 +97,9 @@
   }
 
   \bookpart {
-    \tocItem \markup { "Harmony - Roman numeral notation" }
+    \tocItem \markup { "Roman numeral notation" }
     \header {
-      title = "Harmony"
-      subtitle = "Roman numeral notation"
+      title = "Roman numeral notation"
     }
     \paper {
       top-markup-spacing.basic-distance = #5
@@ -139,10 +140,56 @@
   }
 
   \bookpart {
-    \tocItem \markup { "Harmony - Cadence types" }
+    \tocItem \markup { "Common voice leading errors" }
     \header {
-      title = "Harmony"
-      subtitle = "Cadence types"
+      title = "Common voice leading errors"
+    }
+    \paper {
+      top-markup-spacing.basic-distance = #5
+      % Controls spacing between systems/staff-groups
+      system-system-spacing.basic-distance = #18
+    }
+
+    \markup {
+      \column {
+        \vspace #1
+        \wordwrap {
+          Common errors when working on voice-leading.
+        }
+        \vspace #1
+      }
+    }
+
+    \score {
+      \layout {
+        indent = 0.0\cm
+        #(layout-set-staff-size 20)
+      }
+      \header {
+      }
+
+      \new PianoStaff <<
+        \new Staff = "pianoTreble" <<
+          \override Score.BarNumber.transparent = ##t
+          \override Staff.TimeSignature.break-visibility = ##(#f #f #f)
+          \override Staff.TimeSignature.transparent = ##t
+          \commonErrorsUpper
+        >>
+        \new Staff = "pianoBass" <<
+          \override Score.BarNumber.transparent = ##t
+          \override Staff.TimeSignature.break-visibility = ##(#f #f #f)
+          \override Staff.TimeSignature.transparent = ##t
+          \commonErrorsLower
+        >>
+        \new Lyrics \commonErrorsAnalysis
+      >>
+    }
+  }
+
+  \bookpart {
+    \tocItem \markup { "Cadence types" }
+    \header {
+      title = "Cadence types"
     }
     \paper {
       top-markup-spacing.basic-distance = #5
@@ -187,10 +234,9 @@
   }
 
   \bookpart {
-    \tocItem \markup { "Harmony - Modulating progressions" }
+    \tocItem \markup { "Modulating progressions" }
     \header {
-      title = "Harmony"
-      subtitle = "Modulating progressions"
+      title = "Modulating progressions"
     }
     \paper {
       top-markup-spacing.basic-distance = #5
@@ -250,7 +296,6 @@
       top-markup-spacing.basic-distance = #5
       % Controls spacing between systems/staff-groups
       system-system-spacing.basic-distance = #18
-      ragged-right = ##f
     }
 
     \markup {
