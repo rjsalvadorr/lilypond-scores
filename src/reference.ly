@@ -7,7 +7,7 @@
 \include "globals.ly"
 
 \include "reference-roman-numerals.ly"
-\include "reference-common-errors.ly"
+\include "reference-four-part-snippets.ly"
 \include "reference-cadences.ly"
 \include "reference-modulations.ly"
 \include "reference-notes.ly"
@@ -140,9 +140,9 @@
   }
 
   \bookpart {
-    \tocItem \markup { "Common voice leading errors" }
+    \tocItem \markup { "Four-part snippets" }
     \header {
-      title = "Common voice leading errors"
+      title = "Four-part snippets"
     }
     \paper {
       top-markup-spacing.basic-distance = #5
@@ -154,7 +154,7 @@
       \column {
         \vspace #1
         \wordwrap {
-          Common errors when working on voice-leading.
+          Short four-part chord progressions, for sketches.
         }
         \vspace #1
       }
@@ -173,15 +173,15 @@
           \override Score.BarNumber.transparent = ##t
           \override Staff.TimeSignature.break-visibility = ##(#f #f #f)
           \override Staff.TimeSignature.transparent = ##t
-          \commonErrorsUpper
+          \fourPartSnippetsUpper
         >>
         \new Staff = "pianoBass" <<
           \override Score.BarNumber.transparent = ##t
           \override Staff.TimeSignature.break-visibility = ##(#f #f #f)
           \override Staff.TimeSignature.transparent = ##t
-          \commonErrorsLower
+          \fourPartSnippetsLower
         >>
-        \new Lyrics \commonErrorsAnalysis
+        \new Lyrics \fourPartSnippetsAnalysis
       >>
     }
   }
