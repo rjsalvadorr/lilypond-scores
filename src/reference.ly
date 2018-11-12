@@ -184,6 +184,7 @@
             \keyTimeE \SopranoE \break
             \keyTimeF \SopranoF \break
             \SopranoG
+            \SopranoH
           }
           \new Voice = "Alto" {
             \voiceTwo
@@ -194,6 +195,7 @@
             \AltoE
             \AltoF
             \AltoG
+            \AltoH
           }
         >>
         \new Staff = "pianoBass" <<
@@ -211,6 +213,7 @@
             \keyTimeE \TenorE
             \keyTimeF \TenorF
             \TenorG
+            \TenorH
           }
           \new Voice = "Bass"  {
             \voiceTwo
@@ -221,6 +224,7 @@
             \BassE
             \BassF
             \BassG
+            \BassH
           }
         >>
         \new Lyrics \fourPartAnalysis

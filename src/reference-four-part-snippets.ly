@@ -325,7 +325,7 @@ SopranoG = {
   \once \override Score.RehearsalMark.self-alignment-X = #LEFT
   \mark \markup { "11-2" }
   
-  gs'2 gs'
+  gs'2^\markup \scaleDegree { 3 } gs'^\markup \scaleDegree { 3 }
   
   a' fs'
   
@@ -333,7 +333,7 @@ SopranoG = {
   
   \bar "||" \break
   
-  e'2 e'
+  e'2^\markup \scaleDegree { 1 } e'^\markup \scaleDegree { 1 }
   
   fs' ds'
   
@@ -341,7 +341,7 @@ SopranoG = {
   
   \bar "||"
   
-  b'2 cs''
+  b'2^\markup \scaleDegree { 5 } cs''^\markup \scaleDegree { 6 }
   
   cs'' b'
   
@@ -477,6 +477,73 @@ BassG = {
 
 %//////////////////////////////////////////////////////////////////////////////
 
+keyTimeH = { 
+  \key g \minor
+  \time 4/4
+}
+
+SopranoH = {
+  \keyTimeH
+  \once \override Score.RehearsalMark.self-alignment-X = #LEFT
+  \mark \markup { "Reduction - Mendelssohn, Song without Words, Op. 53-3 (Presto agitato)" }
+  
+  bf'1
+  
+  g''
+  
+  ef''
+  
+  c''
+  
+  a'
+  
+  fs'
+  
+  g'
+  
+  \bar "||"
+}
+
+AltoH = {
+  <d' g'>1
+  
+  d''
+  
+  bf'
+  
+  g'
+  
+  <c' ef'>
+  
+  <a c'>
+  
+  <g bf>
+}
+
+TenorH = {
+  \keyTimeH
+  
+  s1*7
+}
+
+BassH = {
+  g,1
+  
+  bf,
+  
+  g,
+  
+  ef,
+  
+  c,
+  
+  d,
+  
+  g,
+}
+
+%//////////////////////////////////////////////////////////////////////////////
+
 fourPartAnalysis = \lyricmode {
   % 5.10A
   \skip 1*4
@@ -519,4 +586,60 @@ fourPartAnalysis = \lyricmode {
   \markup \rN { ii 6 5 } \markup \rN { V 7 }
   
   \markup \rN { I } _2
+  
+  % 9-23
+  \markup \rN { I }2 \markup \rN { VII 6 }
+  
+  \markup \rN { I 6 } \markup \rN { II 6 }
+  
+  \markup \rN { V 7 }1
+  
+  \markup \rN { I }
+  
+  % 9-25
+  
+  \markup \rN { I }2 \markup \rN { II 6 }4 \markup \rN { V 7 }
+  
+  \markup \rN { I } \markup \rN { 6 } \markup \rN { 6 } _4
+  
+  \markup \rN { II 6 }2 \markup \rN { V 7 }
+  
+  \markup \rN { I }1
+  
+  % 10-13
+  \skip 1*4
+  
+  % 11-2
+  \markup \rN { I }2 \markup \rN { (VI) }
+  
+  \markup \rN { IV } \markup \rN { V }
+  
+  \markup \rN { I }1
+  
+  \markup \rN { I }2 \markup \rN { (VI) }
+  
+  \markup \rN { II 6 } \markup \rN { V 4 2 }
+  
+  \markup \rN { I 6 }1
+  
+  \markup \rN { I }2 \markup \rN { (VI) }
+  
+  \markup \rN { IV } \markup \rN { V 4 3 }
+  
+  \markup \rN { I }1
+  
+  % Mendelssohn, Songs without Words
+  \markup \rN { I 5 3 }1
+  
+  \markup \rN { I 6--- 3--- }
+  
+  \markup \rN { (VI) 6 }
+  
+  \markup \rN { (IV) 6 }
+  
+  \markup \rN { II 6 }
+  
+  \markup \rN { V 7 }
+  
+  \markup \rN { I }
 }
