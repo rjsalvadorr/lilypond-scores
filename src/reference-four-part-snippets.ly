@@ -93,6 +93,7 @@ BassB = {
   d2 r2
 }
 
+
 %//////////////////////////////////////////////////////////////////////////////
 
 keyTimeC = { 
@@ -267,4 +268,48 @@ BassF = {
   d e
   
   a, r2
+}
+
+fourPartAnalysis = \lyricmode {
+  % 5.10A
+  \skip 1*4
+  
+  % 3.3
+  _4 \markup \rN { 6 } \markup \rN { 6 4 } _
+  
+  \markup \rN { 6 } \markup \rN { 6 4 } \markup \rN { 6 } _
+  
+  _1
+  
+  % 3.4A
+  \markup \rN { 6 }4 _ \markup \rN { 6 4 } \markup \rN { 6 }
+  
+  _1
+  
+  % 3.4B
+  \markup \rN { 6 }4 _ \markup \rN { 6 4 } \markup \rN { 6 }
+  
+  _1
+  
+  % 3.15
+  \markup \rN { I }4 \markup \rN { V 7 } \markup \rN { I } \markup \rN { V 6 5 }
+  
+  \markup \rN { I } \markup \rN { V 4 3 } \markup \rN { I 6 } \markup \rN { V 4 2 }
+  
+  \markup \rN { I 6 }1
+  
+  % Mozart - Madamina
+  _2 \markup \rN { V }
+  
+  \markup \rN { I } \markup \rN { vi }
+  
+  \markup \rN { ii 6 5 } \markup \rN { V }
+  
+  \markup \rN { vi } \markup \rN { V 6 }
+  
+  \markup \rN { I } \markup \rN { vi }
+  
+  \markup \rN { ii 6 5 } \markup \rN { V 7 }
+  
+  \markup \rN { I } _2
 }

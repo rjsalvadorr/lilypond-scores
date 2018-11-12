@@ -219,6 +219,7 @@
             \BassF
           }
         >>
+        \new Lyrics \fourPartAnalysis
       >>
     }
   }
