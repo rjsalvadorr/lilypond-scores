@@ -10,7 +10,7 @@ keyTimeA = {
 
 SopranoA = {
   \once \override Score.RehearsalMark.self-alignment-X = #LEFT
-  \mark \markup { "Ex 5.10A" }
+  \mark \markup { "5.10A" }
   
   a'2 c''
   
@@ -60,7 +60,7 @@ keyTimeB = {
 
 SopranoB = {
   \once \override Score.RehearsalMark.self-alignment-X = #LEFT
-  \mark \markup { "Ex 3.3" }
+  \mark \markup { "3.3" }
   
   fs'4 a' a' d''
   
@@ -103,7 +103,7 @@ keyTimeC = {
 
 SopranoC = {
   \once \override Score.RehearsalMark.self-alignment-X = #LEFT
-  \mark \markup { "Ex 3.4A" }
+  \mark \markup { "3.4A" }
   
   a'4 f' e' d'
   
@@ -137,7 +137,7 @@ keyTimeD = {
 
 SopranoD = {
   \once \override Score.RehearsalMark.self-alignment-X = #LEFT
-  \mark \markup { "Ex 3.4B" }
+  \mark \markup { "3.4B" }
   
   e''4 d'' c'' d''
   
@@ -172,7 +172,7 @@ keyTimeE = {
 
 SopranoE = {
   \once \override Score.RehearsalMark.self-alignment-X = #LEFT
-  \mark \markup { "Ex 3.15" }
+  \mark \markup { "3.15" }
   
   d''4 c'' b' c''
   
@@ -269,6 +269,213 @@ BassF = {
   
   a, r2
 }
+
+%//////////////////////////////////////////////////////////////////////////////
+
+keyTimeG = { 
+  \key c \major
+  \time 4/4
+}
+
+SopranoG = {
+  \keyTimeG
+  
+  \once \override Score.RehearsalMark.self-alignment-X = #LEFT
+  \mark \markup { "9-23" }
+  
+  e''2 d''
+  
+  c'' d''
+  
+  b'1
+  
+  c''
+  
+  \bar "||"
+  
+  \key d \major
+  \once \override Score.RehearsalMark.self-alignment-X = #LEFT
+  \mark \markup { "9-25" }
+  
+  fs''2 <e'' g''>
+  
+  fs''4 e'' d'' fs''
+  
+  e''2 cs''
+  
+  d''1
+  
+  \bar "||" \break
+  
+  \key bf \major
+  \once \override Score.RehearsalMark.self-alignment-X = #LEFT
+  \mark \markup { "10-13" }
+  
+  f''2 ef''4 ef''
+  
+  d''2 a'4 bf'
+  
+  c'' ef'' d'' c''
+  
+  bf'1
+  
+  \bar "||"
+  
+  \key e \major
+  \once \override Score.RehearsalMark.self-alignment-X = #LEFT
+  \mark \markup { "11-2" }
+  
+  gs'2 gs'
+  
+  a' fs'
+  
+  gs'1
+  
+  \bar "||" \break
+  
+  e'2 e'
+  
+  fs' ds'
+  
+  e'1
+  
+  \bar "||"
+  
+  b'2 cs''
+  
+  cs'' b'
+  
+  b'1
+  
+  \bar "||"
+}
+
+AltoG = {
+  <g' c''>2 <f' b'>
+  
+  <e' g'> <d' a'>
+  
+  <d' f'>1
+  
+  <c' e'>
+  
+  
+  <a' d''>2 b'4 cs''
+  
+  <a' d''> <g' cs''> <a' d''> <a' d''>
+  
+  <g' b'>2 <e' g'>
+  
+  <d' fs'>1
+  
+  
+  <bf' d''>2 <g' c''>4 <f' c''>
+  
+  <f' bf'>2 <ef' f'>4 <d' f'>
+  
+  <c' g'> <g' c''> <f' bf'> <ef' a'>
+  
+  <d' f'>1
+  
+  
+  <b e'>2 <cs' e'>
+  
+  <cs' e'> <b ds'>
+  
+  <b e'>1
+  
+  
+  b2 cs'
+  
+  cs' b
+  
+  b1
+  
+  
+  <e' gs'>2 <e' gs'>
+  
+  <e' a'> <ds' a'>
+  
+  <e' gs'>1
+}
+
+TenorG = {
+  \keyTimeG
+  
+  s1*4
+  
+  \key d \major
+  
+  s1*4
+  
+  \key bf \major
+  
+  s1*4
+  
+  \key e \major
+  
+  s1*3
+  
+  gs2 gs
+  
+  a fs
+  
+  e1
+  
+  
+  s1*3
+}
+
+BassG = {
+  c2 d
+  
+  e f
+  
+  g1
+  
+  c
+  
+  
+  d2 g4 a
+  
+  d e fs d
+  
+  g2 a
+  
+  d1
+  
+  
+  bf,2 c4 a,
+  
+  bf,2 c4 d
+  
+  ef c d f,
+  
+  bf,1
+  
+  
+  e2 cs
+  
+  a, b,
+  
+  e1
+  
+  
+  e2 cs
+  
+  a, a,
+  
+  gs,1
+  
+  
+  e2 cs
+  
+  a, fs,
+  
+  e,1
+}
+
+%//////////////////////////////////////////////////////////////////////////////
 
 fourPartAnalysis = \lyricmode {
   % 5.10A
