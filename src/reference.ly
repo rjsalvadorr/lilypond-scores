@@ -173,15 +173,52 @@
           \override Score.BarNumber.transparent = ##t
           \override Staff.TimeSignature.break-visibility = ##(#f #f #f)
           \override Staff.TimeSignature.transparent = ##t
-          \fourPartSnippetsUpper
+          
+          \clef "treble"
+          \new Voice = "Sop"  {
+            \voiceOne
+            \keyTimeA \SopranoA \break
+            \keyTimeB \SopranoB
+            \keyTimeC \SopranoC \break
+            \keyTimeD \SopranoD
+            \keyTimeE \SopranoE \break
+            \keyTimeF \SopranoF
+          }
+          \new Voice = "Alto" {
+            \voiceTwo
+            \AltoA
+            \AltoB
+            \AltoC
+            \AltoD
+            \AltoE
+            \AltoF
+          }
         >>
         \new Staff = "pianoBass" <<
           \override Score.BarNumber.transparent = ##t
           \override Staff.TimeSignature.break-visibility = ##(#f #f #f)
           \override Staff.TimeSignature.transparent = ##t
-          \fourPartSnippetsLower
+          
+          \clef "bass"
+          \new Voice = "Tenor" {
+            \voiceOne
+            \keyTimeA \TenorA
+            \keyTimeB \TenorB
+            \keyTimeC \TenorC
+            \keyTimeD \TenorD
+            \keyTimeE \TenorE
+            \keyTimeF \TenorF
+          }
+          \new Voice = "Bass"  {
+            \voiceTwo
+            \BassA
+            \BassB
+            \BassC
+            \BassD
+            \BassE
+            \BassF
+          }
         >>
-        \new Lyrics \fourPartSnippetsAnalysis
       >>
     }
   }
