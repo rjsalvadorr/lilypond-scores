@@ -24,14 +24,16 @@ SopranoProgA = {
   c''
 
   b'
+  
+  \bar "||"
 
-  a'
+  a'^"1."
 
   gs'
 
   \bar ":|."
 
-  a'1 gs'2
+  a'1^"2." gs'2
 
   a'1.\fermata
 
