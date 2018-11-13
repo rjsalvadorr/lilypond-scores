@@ -7,9 +7,10 @@
 \include "globals.ly"
 
 \include "reference-roman-numerals.ly"
-\include "reference-four-part-snippets.ly"
 \include "reference-cadences.ly"
 \include "reference-modulations.ly"
+\include "reference-four-part-snippets.ly"
+\include "reference-grayson-progressions.ly"
 \include "reference-notes.ly"
 \include "reference-range.ly"
 
@@ -47,13 +48,13 @@
       title = \markup {
         \fill-line {
           \center-column {
-            "Reference for"
+            "NOTEBOOK"
             "Music Theory & Lilypond"
             \hspace #0
           }
         }
       }
-      subtitle = "by RJ Salvador"
+      subtitle = "RJ Salvador"
     }
 
     \paper {
@@ -135,99 +136,6 @@
           \romanNumeralsNotes
         >>
         \new Lyrics \romanNumeralsAnalysis
-      >>
-    }
-  }
-
-  \bookpart {
-    \tocItem \markup { "Four-part snippets" }
-    \header {
-      title = "Four-part snippets"
-    }
-    \paper {
-      top-markup-spacing.basic-distance = #5
-      % Controls spacing between systems/staff-groups
-      system-system-spacing.basic-distance = #18
-    }
-
-    \markup {
-      \column {
-        \vspace #1
-        \wordwrap {
-          Short four-part chord progressions, for sketches.
-        }
-        \vspace #1
-      }
-    }
-
-    \score {
-      \layout {
-        indent = 0.0\cm
-        #(layout-set-staff-size 20)
-      }
-      \header {
-      }
-
-      \new PianoStaff <<
-        \new Staff = "pianoTreble" <<
-          \override Score.BarNumber.transparent = ##t
-          \override Staff.TimeSignature.break-visibility = ##(#f #f #f)
-          \override Staff.TimeSignature.transparent = ##t
-          
-          \clef "treble"
-          \new Voice = "Sop"  {
-            \voiceOne
-            \keyTimeA \SopranoA \break
-            \keyTimeB \SopranoB
-            \keyTimeC \SopranoC \break
-            \keyTimeD \SopranoD
-            \keyTimeE \SopranoE \break
-            \keyTimeF \SopranoF \break
-            \SopranoG
-            \SopranoH
-          }
-          \new Voice = "Alto" {
-            \voiceTwo
-            \AltoA
-            \AltoB
-            \AltoC
-            \AltoD
-            \AltoE
-            \AltoF
-            \AltoG
-            \AltoH
-          }
-        >>
-        \new Staff = "pianoBass" <<
-          \override Score.BarNumber.transparent = ##t
-          \override Staff.TimeSignature.break-visibility = ##(#f #f #f)
-          \override Staff.TimeSignature.transparent = ##t
-          
-          \clef "bass"
-          \new Voice = "Tenor" {
-            \voiceOne
-            \keyTimeA \TenorA
-            \keyTimeB \TenorB
-            \keyTimeC \TenorC
-            \keyTimeD \TenorD
-            \keyTimeE \TenorE
-            \keyTimeF \TenorF
-            \TenorG
-            \TenorH
-          }
-          \new Voice = "Bass"  {
-            \voiceTwo
-            \BassA
-            \BassB
-            \BassC
-            \BassD
-            \BassE
-            \BassF
-            \BassG
-            \BassH
-          }
-        >>
-        \new Lyrics \fourPartAnalysis
       >>
     }
   }
@@ -328,6 +236,173 @@
           \theoryModulationOneLower
         >>
         \new Lyrics \theoryModulationOneAnalysis
+      >>
+    }
+  }
+
+  \bookpart {
+    \tocItem \markup { "Four-part snippets" }
+    \header {
+      title = "Four-part snippets"
+    }
+    \paper {
+      top-markup-spacing.basic-distance = #5
+      % Controls spacing between systems/staff-groups
+      system-system-spacing.basic-distance = #18
+    }
+
+    \markup {
+      \column {
+        \vspace #1
+        \wordwrap {
+          Short four-part chord progressions, for sketches.
+        }
+        \vspace #1
+      }
+    }
+
+    \score {
+      \layout {
+        indent = 0.0\cm
+        #(layout-set-staff-size 20)
+      }
+      \header {
+      }
+
+      \new PianoStaff <<
+        \new Staff = "pianoTreble" <<
+          \override Score.BarNumber.transparent = ##t
+          \override Staff.TimeSignature.break-visibility = ##(#f #f #f)
+          \override Staff.TimeSignature.transparent = ##t
+
+          \clef "treble"
+          \new Voice = "Sop"  {
+            \voiceOne
+            \keyTimeA \SopranoA \break
+            \keyTimeB \SopranoB
+            \keyTimeC \SopranoC \break
+            \keyTimeD \SopranoD
+            \keyTimeE \SopranoE \break
+            \keyTimeF \SopranoF \break
+            \SopranoG
+            \SopranoH
+          }
+          \new Voice = "Alto" {
+            \voiceTwo
+            \AltoA
+            \AltoB
+            \AltoC
+            \AltoD
+            \AltoE
+            \AltoF
+            \AltoG
+            \AltoH
+          }
+        >>
+        \new Staff = "pianoBass" <<
+          \override Score.BarNumber.transparent = ##t
+          \override Staff.TimeSignature.break-visibility = ##(#f #f #f)
+          \override Staff.TimeSignature.transparent = ##t
+
+          \clef "bass"
+          \new Voice = "Tenor" {
+            \voiceOne
+            \keyTimeA \TenorA
+            \keyTimeB \TenorB
+            \keyTimeC \TenorC
+            \keyTimeD \TenorD
+            \keyTimeE \TenorE
+            \keyTimeF \TenorF
+            \TenorG
+            \TenorH
+          }
+          \new Voice = "Bass"  {
+            \voiceTwo
+            \BassA
+            \BassB
+            \BassC
+            \BassD
+            \BassE
+            \BassF
+            \BassG
+            \BassH
+          }
+        >>
+        \new Lyrics \fourPartAnalysis
+      >>
+    }
+  }
+
+  \bookpart {
+    \tocItem \markup { "Chord Progressions - arr. by Richard Grayson" }
+    \header {
+      title = "Chord Progressions"
+      subtitle = "arr. by Richard Grayson"
+    }
+    \paper {
+      top-markup-spacing.basic-distance = #5
+      % Controls spacing between systems/staff-groups
+      system-system-spacing.basic-distance = #18
+    }
+
+    \markup {
+      \column {
+        \vspace #1
+        \wordwrap {
+          Short four-part chord progressions, for sketches.
+        }
+        \vspace #1
+      }
+    }
+
+    \score {
+      \layout {
+        indent = 0.0\cm
+        #(layout-set-staff-size 20)
+      }
+      \header {
+      }
+
+      \new PianoStaff <<
+        \new Staff = "pianoTreble" <<
+          \override Staff.TimeSignature #'break-visibility = #begin-of-line-visible
+          \set Staff.explicitKeySignatureVisibility = #begin-of-line-visible
+          \override Staff.KeyCancellation #'break-visibility = #all-invisible
+          \override Staff.KeyCancellation #'explicitKeySignatureVisibility = #all-invisible
+          \clef "treble"
+          \new Voice = "Sop"  {
+            \voiceOne
+            \SopranoProgA \break
+            \SopranoProgB \break
+            \sopranoProgC
+          }
+          \new Voice = "Alto" {
+            \voiceTwo
+            \AltoProgA
+            \AltoProgB
+            \altoProgC
+          }
+        >>
+        \new Staff = "pianoBass" <<
+          \override Staff.TimeSignature #'break-visibility = #begin-of-line-visible
+          \set Staff.explicitKeySignatureVisibility = #begin-of-line-visible
+          \override Staff.KeyCancellation #'break-visibility = #all-invisible
+          \override Staff.KeyCancellation #'explicitKeySignatureVisibility = #all-invisible
+          \clef "bass"
+          \new Voice = "Tenor" {
+            \voiceOne
+            \TenorProgA
+            \TenorProgB
+            \tenorProgC
+          }
+          \new Voice = "Bass"  {
+            \voiceTwo
+            \BassProgA
+            \BassProgB
+            \bassProgC
+          }
+        >>
+        \new Lyrics \progAnalysis
       >>
     }
   }
