@@ -208,172 +208,198 @@ analysisExamplesA = \lyricmode {
 %//////////////////////////////////////////////////////////////////////////////
 
 keyTimeExamplesB = {
-  \key d \major
+  \key c \major
   \time 2/4
 }
 
 sopranoExamplesB = {
   \keyTimeExamplesB
   \once \override Score.RehearsalMark.self-alignment-X = #LEFT
-  \mark \markup { "Pachelbel, Canon" }
+  \mark \markup { "Unit 7: I6, V6, and VII6" }
 
-  fs''2
-
-  e''
-
-  d''
-
-  cs''
-
-  b'
-
-  a'
-
-  b'
-
-  cs''
-
-  \bar ":|."
-
-  d''\fermata
+  s2
+  
+  s2
+  
+  s2
+  
+  \bar "||"
+  
+  s2
+  
+  s2
+  
+  s2
+  
+  \bar "||"
+  
+  s2
+  
+  s2
+  
+  s2
+  
+  s2
 
   \bar "|."
 }
 
 altoExamplesB = {
-  <a' d''>2
-
-  <a' cs''>
-
-  <fs' b'>
-
-  <fs' a'>
-
-  <d' g'>
-
-  <d' fs'>
-
-  <d' e'>
-
-  <e' g'>
-
-  <fs' a'>
+  s2
+  
+  s2
+  
+  s2
+  
+  
+  s2
+  
+  s2
+  
+  s2
+  
+  
+  s2
+  
+  s2
+  
+  s2
+  
+  s2
 }
 
 tenorExamplesB = {
   \keyTimeExamplesB
-  s2*9
+  s2*10
 }
 
 bassExamplesB = {
-  d2
-
-  a,
-
-  b,
-
-  fs,
-
-  g,
-
-  d,
-
-  g,
-
-  a,
-
-  d,
+  s2
+  
+  s2
+  
+  s2
+  
+  
+  s2
+  
+  s2
+  
+  s2
+  
+  
+  s2
+  
+  s2
+  
+  s2
+  
+  s2
 }
 
 analysisExamplesB = \lyricmode {
-  \markup \rN { I }2
-
-  \markup \rN { V }
-
-  \markup \rN { vi }
-
-  \markup \rN { iii }
-
-  \markup \rN { IV }
-
-  \markup \rN { I }
-
-  \markup \rN { ii 6 5 }
-
-  \markup \rN { V 7 }
-
-  \markup \rN { I }
+  _2*10
 }
 
 %//////////////////////////////////////////////////////////////////////////////
 
 keyTimeExamplesC = {
-  \key a \minor
-  \time 4/4
+  \key c \major
+  \time 2/4
 }
 
 sopranoExamplesC = {
   \keyTimeExamplesC
   \once \override Score.RehearsalMark.self-alignment-X = #LEFT
-  \mark \markup { "Paganini, Caprice no. 24" }
+  \mark \markup { "Unit 8: Inversions of V7" }
 
-  a'2 gs'
-
-  a' b'
-
-  a' gs'
-
-  a' b'
-
-  cs'' d''
-
-  b' c''
-
-  b'
+  s2
+  
+  s2
+  
+  \bar "||"
+  
+  s2
+  
+  s2
+  
+  \bar "||"
+  
+  s2
+  
+  s2
+  
+  \bar "||"
+  
+  s2
+  
+  s2
+  
+  s2
+  
+  s2
 
   \bar "|."
 }
 
 altoExamplesC = {
-  r1
-
-  r1
-
-  r1
-
-  r1
+  s2
+  
+  s2
+  
+  
+  s2
+  
+  s2
+  
+  
+  s2
+  
+  s2
+  
+  
+  s2
+  
+  s2
+  
+  s2
+  
+  s2
 }
 
 tenorExamplesC = {
   \keyTimeExamplesC
 
-  r1
-
-  r1
-
-  r1
-
-  r1
+  s2*8
 }
 
 bassExamplesC = {
-  r1
-
-  r1
-
-  r1
-
-  r1
+  s2
+  
+  s2
+  
+  
+  s2
+  
+  s2
+  
+  
+  s2
+  
+  s2
+  
+  
+  s2
+  
+  s2
+  
+  s2
+  
+  s2
 }
 
 analysisExamplesC = \lyricmode {
-  _1
-
-  _1
-
-  _1
-
-  _1
+  _2*8
 }
 
 %//////////////////////////////////////////////////////////////////////////////
