@@ -245,27 +245,28 @@ sopranoExamplesB = {
 }
 
 altoExamplesB = {
-  s2
+  <g' c''>4 <g' c''>
   
-  s2
+  <g' d''> <b' d''>
   
-  s2
-  
-  
-  s2
-  
-  s2
-  
-  s2
+  <g' c''>2
   
   
-  s2
+  <e' g'>4 <d' f'>
   
-  s2
+  <c' g'> g'
   
-  s2
+  <g' c''>2
   
-  s2
+  
+  
+  <g' c''>4 <g' d''>
+  
+  <g' c''> <f' b'>
+  
+  <g' c''> < g' c''>
+  
+  <g' b'>2
 }
 
 tenorExamplesB = {
@@ -529,14 +530,42 @@ sopranoExamplesD = {
   
   g''2
   
-  \key c \minor
   \bar "||"
+  \key c \minor
   
   ef''2
   
   d''4 b'
   
   c''2
+
+  \bar "||" \break
+  \time 4/4
+  \key c \major
+  
+  e''2 f''4 e''
+  
+  d''2 b'
+  
+  c''1
+  
+  \bar "||"
+  \time 2/4
+  
+  s4 g'_\markup \scaleDegree { 5 }^"(major)"
+  
+  a'_\markup \scaleDegree { 6 } b'_\markup \scaleDegree { 7 }
+  
+  c''4_\markup \scaleDegree { 8 } s4
+  
+  \bar "||"
+  \key c \minor
+  
+  s4 g'^\markup \scaleDegree { 5 }^"(minor)"
+  
+  a'^\markup \scaleDegree { 6 } b'^\markup \scaleDegree { 7 }
+  
+  c''4^\markup \scaleDegree { 8 } s4
 
   \bar "|."
 }
@@ -596,7 +625,7 @@ altoExamplesD = {
 tenorExamplesD = {
   \keyTimeExamplesD
 
-  s2*22
+  s2*31
 }
 
 bassExamplesD = {
@@ -649,6 +678,27 @@ bassExamplesD = {
   f4 f
   
   ef2
+  
+  
+  c2 d4 e
+  
+  f2 g
+  
+  c1
+  
+  
+  s4 c
+  
+  f d
+  
+  c s
+  
+  
+  s4 c
+  
+  f d
+  
+  c s
 }
 
 analysisExamplesD = \lyricmode {
@@ -713,6 +763,37 @@ analysisExamplesD = \lyricmode {
   \markup \rN { V 4 2 }
   
   \markup \rN { I 6 }2
+  
+  
+  \markup \rN { I }2
+  
+  \markup \rN { V 4 3 }4
+  
+  \markup \rN { I 6 }
+  
+  \markup \rN { II 6 }2
+  
+  \markup \rN { V 7 }
+  
+  \markup \rN { I }1
+  
+  
+  _4\markup \rN { I }4
+  
+  \markup \rN { IV }
+  
+  \markup \rN { VII 6 }
+  
+  \markup \rN { I } _4
+  
+  
+  _4\markup \rN { I }4
+  
+  \markup \rN { IV }
+  
+  \markup \rN { VII 6 }
+  
+  \markup \rN { I } _4
 }
 
 %//////////////////////////////////////////////////////////////////////////////

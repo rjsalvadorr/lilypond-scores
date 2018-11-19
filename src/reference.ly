@@ -325,7 +325,7 @@
             \BassD
             \BassE
             \BassF
-            \BassG
+             \BassG
             \BassH
           }
         >>
