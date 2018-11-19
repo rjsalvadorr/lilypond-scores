@@ -367,40 +367,38 @@
       \new PianoStaff <<
         \new Staff = "pianoTreble" <<
           \override Staff.TimeSignature #'break-visibility = #begin-of-line-visible
-          \set Staff.explicitKeySignatureVisibility = #begin-of-line-visible
-          \override Staff.KeyCancellation #'break-visibility = #all-invisible
-          \override Staff.KeyCancellation #'explicitKeySignatureVisibility = #all-invisible
           \clef "treble"
           \new Voice = "Soprano"  {
             \voiceOne
             \sopranoExamplesA \break
             \sopranoExamplesB \break
-            \sopranoExamplesC
+            \sopranoExamplesC \pageBreak
+            \sopranoExamplesD \break
           }
           \new Voice = "Alto" {
             \voiceTwo
             \altoExamplesA
             \altoExamplesB
             \altoExamplesC
+            \altoExamplesD
           }
         >>
         \new Staff = "pianoBass" <<
           \override Staff.TimeSignature #'break-visibility = #begin-of-line-visible
-          \set Staff.explicitKeySignatureVisibility = #begin-of-line-visible
-          \override Staff.KeyCancellation #'break-visibility = #all-invisible
-          \override Staff.KeyCancellation #'explicitKeySignatureVisibility = #all-invisible
           \clef "bass"
           \new Voice = "Tenor" {
             \voiceOne
             \tenorExamplesA
             \tenorExamplesB
             \tenorExamplesC
+            \tenorExamplesD
           }
           \new Voice = "Bass"  {
             \voiceTwo
             \bassExamplesA
             \bassExamplesB
             \bassExamplesC
+            \bassExamplesD
           }
         >>
         \new Lyrics \examplesAnalysis

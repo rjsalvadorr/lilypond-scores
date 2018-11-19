@@ -11,7 +11,7 @@ keyTimeExamplesA = {
 sopranoExamplesA = {
   \keyTimeExamplesA
   \once \override Score.RehearsalMark.self-alignment-X = #LEFT
-  \mark \markup { "Unit 6: I, V, and V7" }
+  \mark \markup { "Unit 6 - I, V, and V7" }
 
   c''4^\markup \scaleDegree { 1 } b'
   
@@ -215,31 +215,31 @@ keyTimeExamplesB = {
 sopranoExamplesB = {
   \keyTimeExamplesB
   \once \override Score.RehearsalMark.self-alignment-X = #LEFT
-  \mark \markup { "Unit 7: I6, V6, and VII6" }
+  \mark \markup { "Unit 7 - I6, V6, and VII6" }
 
-  s2
+  e''4 c''
   
-  s2
+  d'' g''
   
-  s2
-  
-  \bar "||"
-  
-  s2
-  
-  s2
-  
-  s2
+  e''2 
   
   \bar "||"
   
-  s2
+  c''4 b'
   
-  s2
+  c'' d''
   
-  s2
+  e''2
   
-  s2
+  \bar "||"
+  
+  e''4 g''
+  
+  e'' d''
+  
+  c'' e''
+  
+  d''2
 
   \bar "|."
 }
@@ -274,31 +274,65 @@ tenorExamplesB = {
 }
 
 bassExamplesB = {
-  s2
+  c4 e
   
-  s2
+  b, g,
   
-  s2
-  
-  
-  s2
-  
-  s2
-  
-  s2
+  c2
   
   
-  s2
+  c4 d
   
-  s2
+  e b,
   
-  s2
+  c2
   
-  s2
+  
+  c4 b,
+  
+  c d
+  
+  e c
+  
+  g2
 }
 
 analysisExamplesB = \lyricmode {
-  _2*10
+  \markup \rN { I }4
+  
+  \markup \rN { I 6 }
+  
+  \markup \rN { V 6 }
+  
+  \markup \rN { V }
+  
+  \markup \rN { I }2
+  
+  
+  \markup \rN { I }4
+  
+  \markup \rN { VII 6 }
+  
+  \markup \rN { I 6 }
+  
+  \markup \rN { V 6 }
+  
+  \markup \rN { I }2
+  
+  
+  \markup \rN { I }4
+  
+  \markup \rN { V 6 }
+  
+  \markup \rN { I }
+  
+  \markup \rN { VII 6 }
+  
+  \markup \rN { I 6 }
+  
+  \markup \rN { I }
+  
+  \markup \rN { V }2
 }
 
 %//////////////////////////////////////////////////////////////////////////////
@@ -311,33 +345,33 @@ keyTimeExamplesC = {
 sopranoExamplesC = {
   \keyTimeExamplesC
   \once \override Score.RehearsalMark.self-alignment-X = #LEFT
-  \mark \markup { "Unit 8: Inversions of V7" }
+  \mark \markup { "Unit 8 - Inversions of V7" }
 
-  s2
+  e''4 f''
   
-  s2
-  
-  \bar "||"
-  
-  s2
-  
-  s2
+  e''2
   
   \bar "||"
   
-  s2
+  e''4 f''
   
-  s2
+  g''2
   
   \bar "||"
   
-  s2
+  c''4 b'
   
-  s2
+  c''2
   
-  s2
+  \bar "||"
   
-  s2
+  g''4 g''
+  
+  g'' f''
+  
+  e'' d''
+  
+  e''2
 
   \bar "|."
 }
@@ -374,6 +408,172 @@ tenorExamplesC = {
 }
 
 bassExamplesC = {
+  c4 b,
+  
+  c2
+  
+  
+  c4 d
+  
+  e2
+  
+  
+  c4 f
+  
+  e2
+  
+  
+  c4 b,
+  
+  c d
+  
+  e f
+  
+  e2
+}
+
+analysisExamplesC = \lyricmode {
+  \markup \rN { I }4
+  
+  \markup \rN { V 6 5 }
+  
+  \markup \rN { I }2
+  
+  
+  \markup \rN { I }4
+  
+  \markup \rN { V 4 3 }
+  
+  \markup \rN { I 6 }2
+  
+  
+  \markup \rN { I }4
+  
+  \markup \rN { V 4 2 }
+  
+  \markup \rN { I 6 }2
+  
+  
+  \markup \rN { I }4
+  
+  \markup \rN { V 6 5 }
+  
+  \markup \rN { I }
+  
+  \markup \rN { V 4 3 }
+  
+  \markup \rN { I 6 }
+  
+  \markup \rN { V 4 2 }
+  
+  \markup \rN { I 6 }2
+}
+
+%//////////////////////////////////////////////////////////////////////////////
+
+keyTimeExamplesD = {
+  \key c \major
+  \time 2/4
+}
+
+sopranoExamplesD = {
+  \keyTimeExamplesD
+  \once \override Score.RehearsalMark.self-alignment-X = #LEFT
+  \mark \markup { "Unit 9 - Leading to V: IV, II, and II6" }
+
+  e''2^"(major only)"
+  
+  d''4 d''
+  
+  c''2
+  
+  \bar "||"
+  
+  e''2
+  
+  d''4 b'
+  
+  c''2
+  
+  \bar "||"
+  
+  g''2
+  
+  f''4 f''
+  
+  e''2
+  
+  \bar "||"
+  
+  g''2
+  
+  a''4 g''
+  
+  g''2
+  
+  \bar "||" \break
+  
+  e''2
+  
+  c''4 d''
+  
+  b'2
+  
+  c''2
+  
+  \bar "||"
+  
+  e''2
+  
+  d''4 d''
+  
+  g''2
+  
+  \key c \minor
+  \bar "||"
+  
+  ef''2
+  
+  d''4 b'
+  
+  c''2
+
+  \bar "|."
+}
+
+altoExamplesD = {
+  s2
+  
+  s2
+  
+  s2
+  
+  
+  s2
+  
+  s2
+  
+  s2
+  
+  
+  s2
+  
+  s2
+  
+  s2
+  
+  
+  s2
+  
+  s2
+  
+  s2
+  
+  
+  s2
+  
+  s2
+  
   s2
   
   s2
@@ -383,13 +583,8 @@ bassExamplesC = {
   
   s2
   
-  
   s2
   
-  s2
-  
-  
-  s2
   
   s2
   
@@ -398,8 +593,126 @@ bassExamplesC = {
   s2
 }
 
-analysisExamplesC = \lyricmode {
-  _2*8
+tenorExamplesD = {
+  \keyTimeExamplesD
+
+  s2*22
+}
+
+bassExamplesD = {
+  c2
+  
+  d4 g
+  
+  c2
+  
+  
+  c2
+  
+  f4 g
+  
+  c2
+  
+  
+  c2
+  
+  f4 g
+  
+  c2
+  
+  
+  c2
+  
+  f4 g
+  
+  c2
+  
+  
+  c2
+  
+  f2
+  
+  g2
+  
+  c2
+  
+  
+  c2
+  
+  f4 f
+  
+  e2
+  
+  
+  c2
+  
+  f4 f
+  
+  ef2
+}
+
+analysisExamplesD = \lyricmode {
+  \markup \rN { I }2
+  
+  \markup \rN { II }4
+  
+  \markup \rN { V 7 }
+  
+  \markup \rN { I }2
+  
+  
+  \markup \rN { I }2
+  
+  \markup \rN { II 6 }4
+  
+  \markup \rN { V 7 }
+  
+  \markup \rN { I }2
+  
+  
+  \markup \rN { I }2
+  
+  \markup \rN { IV }4
+  
+  \markup \rN { V 7 }
+  
+  \markup \rN { I }2
+  
+  
+  \markup \rN { I }2
+  
+  \markup \rN { IV }4
+  
+  \markup \rN { V }
+  
+  \markup \rN { I }2
+  
+  
+  \markup \rN { I }2
+  
+  \markup \rN { IV 5---6 }
+  
+  \markup \rN { V }
+  
+  \markup \rN { I }
+  
+  
+  \markup \rN { I }2
+  
+  \markup \rN { II 6 }4
+  
+  \markup \rN { V 4 2 }
+  
+  \markup \rN { I 6 }2
+  
+  
+  \markup \rN { I }2
+  
+  \markup \rN { II 6 }4
+  
+  \markup \rN { V 4 2 }
+  
+  \markup \rN { I 6 }2
 }
 
 %//////////////////////////////////////////////////////////////////////////////
@@ -409,4 +722,5 @@ examplesAnalysis = {
   \analysisExamplesA
   \analysisExamplesB
   \analysisExamplesC
+  \analysisExamplesD
 }
