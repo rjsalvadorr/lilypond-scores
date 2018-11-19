@@ -350,6 +350,7 @@
         \vspace #1
         \wordwrap {
           More four-part chord progressions, for sketches and playing around.
+          Mostly from 'Harmony and Voice Leading' by Aldwell & Schacter.
         }
         \vspace #1
       }

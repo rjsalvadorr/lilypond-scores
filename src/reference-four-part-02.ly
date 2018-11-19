@@ -4,111 +4,205 @@
 %/////   FOUR PART EXAMPLES 2
 
 keyTimeExamplesA = {
-  \key a \minor
-  \time 3/2
+  \key c \major
+  \time 2/4
 }
 
 sopranoExamplesA = {
   \keyTimeExamplesA
   \once \override Score.RehearsalMark.self-alignment-X = #LEFT
-  \mark \markup { "La Folia" }
+  \mark \markup { "Unit 6: I, V, and V7" }
 
-  a'1.
-
-  gs'
-
-  a'
-
-  b'
-
-  c''
-
-  b'
+  c''4^\markup \scaleDegree { 1 } b'
+  
+  c''2
 
   \bar "||"
 
-  a'^"1."
+  e''4^\markup \scaleDegree { 3 } d''
+  
+  e''2
 
-  gs'
+  \bar "||"
 
-  \bar ":|."
+  g''4^\markup \scaleDegree { 5 } g''
+  
+  g''2
+  
+  \bar "||"
 
-  a'1^"2." gs'2
+  e''4^\markup \scaleDegree { 3 } d''^\markup \scaleDegree { 2 }
+  
+  c''2^\markup \scaleDegree { 1 }
+  
+  \bar "||" \break
 
-  a'1.\fermata
+  c''4^\markup \scaleDegree { 1 } b'
+  
+  c''2
+  
+  \bar "||"
+
+  e''4^\markup \scaleDegree { 3 } f''
+  
+  e''2
+  
+  \bar "||"
+
+  e''4^\markup \scaleDegree { 3 } d''^\markup \scaleDegree { 2 }
+  
+  c''2^\markup \scaleDegree { 1 }
+  
+  \bar "||"
+
+  g''4 f''
+  
+  e''2
 
   \bar "|."
 }
 
 altoExamplesA = {
-  <c' e'>1.
-
-  <b e'>
-
-  <c' e'>
-
-  <d' g'>
-
-  <e' g'>
-
-  <d' g'>
-
-  <c' e'>
-
-  <b e'>
-
-  <c' e'>2 <d' f'> <b e'>
-
-  <c' e'>1.
+  <e' g'>4 <d' g'>
+  
+  <e' g'>2
+  
+  
+  <g' c''>4 <g' b'>
+  
+  <g' c''>2
+  
+  
+  <c'' e''>4 <b' d''>
+  
+  <c'' e''>2
+  
+  
+  <g' c''>4 <g' b'>
+  
+  <e' g'>2
+  
+  
+  <e' g'>4 <f' g'>
+  
+  <e' g'>2
+  
+  
+  <g' c''>4 <g' b'>
+  
+  <g' c''>2
+  
+  
+  <g' c''>4 <f' b'>
+  
+  <e' g'>2
+  
+  
+  <b' d''>2
+  
+  <g' c''>2
 }
 
 tenorExamplesA = {
   \keyTimeExamplesA
-  s1.*10
+  s2*8
+  s2*8
 }
 
 bassExamplesA = {
-  a,1.
-
-  e,
-
-  a,
-
-  g,
-
-  c
-
-  g,
-
-  a,
-
-  e,
-
-  a,2 d, e,
-
-  a,1.
+  c4 g
+  
+  c2
+  
+  
+  c4 g
+  
+  c2
+  
+  
+  c4 g
+  
+  c2
+  
+  
+  c4 g
+  
+  c2
+  
+  
+  c4 g
+  
+  c2
+  
+  
+  c4 g
+  
+  c2
+  
+  
+  c4 g
+  
+  c2
+  
+  
+  g,2
+  
+  c2
 }
 
 analysisExamplesA = \lyricmode {
-  \markup \rN { i }1.
-
+  \markup \rN { I }4
+  
   \markup \rN { V }
-
-  \markup \rN { i }
-
-  \markup \rN { VII }
-
-  \markup \rN { III }
-
-  \markup \rN { VII }
-
-  \markup \rN { i }
-
+  
+  \markup \rN { I }2
+  
+  
+  \markup \rN { I }4
+  
   \markup \rN { V }
-
-  \markup \rN { i }2 \markup \rN { iv } \markup \rN { V }
-
-  \markup \rN { i }1.
+  
+  \markup \rN { I }2
+  
+  
+  \markup \rN { I }4
+  
+  \markup \rN { V }
+  
+  \markup \rN { I }2
+  
+  
+  \markup \rN { I }4
+  
+  \markup \rN { V }
+  
+  \markup \rN { I }2
+  
+  
+  \markup \rN { I }4
+  
+  \markup \rN { V 7 }
+  
+  \markup \rN { I }2
+  
+  
+  \markup \rN { I }4
+  
+  \markup \rN { V 7 }
+  
+  \markup \rN { I }2
+  
+  
+  \markup \rN { I }4
+  
+  \markup \rN { V 7 }
+  
+  \markup \rN { I }2
+  
+  
+  \markup \rN { V 8---7 }2
+  
+  \markup \rN { I }2
 }
 
 %//////////////////////////////////////////////////////////////////////////////
