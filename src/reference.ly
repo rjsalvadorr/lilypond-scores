@@ -9,7 +9,8 @@
 \include "reference-roman-numerals.ly"
 \include "reference-cadences.ly"
 \include "reference-modulations.ly"
-\include "reference-four-part-snippets.ly"
+\include "reference-four-part-01.ly"
+\include "reference-four-part-02.ly"
 \include "reference-grayson-progressions.ly"
 \include "reference-notes.ly"
 \include "reference-range.ly"
@@ -241,9 +242,9 @@
   }
 
   \bookpart {
-    \tocItem \markup { "Four-part snippets" }
+    \tocItem \markup { "Four-part examples 1" }
     \header {
-      title = "Four-part snippets"
+      title = "Four-part examples 1"
     }
     \paper {
       top-markup-spacing.basic-distance = #5
@@ -333,6 +334,79 @@
     }
   }
 
+    \bookpart {
+    \tocItem \markup { "Four-part examples 2" }
+    \header {
+      title = "Four-part examples 2"
+    }
+    \paper {
+      top-markup-spacing.basic-distance = #5
+      % Controls spacing between systems/staff-groups
+      system-system-spacing.basic-distance = #18
+    }
+
+    \markup {
+      \column {
+        \vspace #1
+        \wordwrap {
+          More four-part chord progressions, for sketches and playing around.
+        }
+        \vspace #1
+      }
+    }
+
+    \score {
+      \layout {
+        indent = 0.0\cm
+        #(layout-set-staff-size 20)
+      }
+      \header {
+      }
+
+      \new PianoStaff <<
+        \new Staff = "pianoTreble" <<
+          \override Staff.TimeSignature #'break-visibility = #begin-of-line-visible
+          \set Staff.explicitKeySignatureVisibility = #begin-of-line-visible
+          \override Staff.KeyCancellation #'break-visibility = #all-invisible
+          \override Staff.KeyCancellation #'explicitKeySignatureVisibility = #all-invisible
+          \clef "treble"
+          \new Voice = "Soprano"  {
+            \voiceOne
+            \sopranoExamplesA \break
+            \sopranoExamplesB \break
+            \sopranoExamplesC
+          }
+          \new Voice = "Alto" {
+            \voiceTwo
+            \altoExamplesA
+            \altoExamplesB
+            \altoExamplesC
+          }
+        >>
+        \new Staff = "pianoBass" <<
+          \override Staff.TimeSignature #'break-visibility = #begin-of-line-visible
+          \set Staff.explicitKeySignatureVisibility = #begin-of-line-visible
+          \override Staff.KeyCancellation #'break-visibility = #all-invisible
+          \override Staff.KeyCancellation #'explicitKeySignatureVisibility = #all-invisible
+          \clef "bass"
+          \new Voice = "Tenor" {
+            \voiceOne
+            \tenorExamplesA
+            \tenorExamplesB
+            \tenorExamplesC
+          }
+          \new Voice = "Bass"  {
+            \voiceTwo
+            \bassExamplesA
+            \bassExamplesB
+            \bassExamplesC
+          }
+        >>
+        \new Lyrics \examplesAnalysis
+      >>
+    }
+  }
+
   \bookpart {
     \tocItem \markup { "Chord Progressions - arr. by Richard Grayson" }
     \header {
@@ -370,7 +444,7 @@
           \override Staff.KeyCancellation #'break-visibility = #all-invisible
           \override Staff.KeyCancellation #'explicitKeySignatureVisibility = #all-invisible
           \clef "treble"
-          \new Voice = "Sop"  {
+          \new Voice = "Soprano"  {
             \voiceOne
             \SopranoProgA \break
             \SopranoProgB \break
