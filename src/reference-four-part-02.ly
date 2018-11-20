@@ -60,6 +60,7 @@ sopranoExamplesA = {
   e''2
 
   \bar "|."
+  \break
 }
 
 altoExamplesA = {
@@ -242,6 +243,7 @@ sopranoExamplesB = {
   d''2
 
   \bar "|."
+  \break
 }
 
 altoExamplesB = {
@@ -375,31 +377,32 @@ sopranoExamplesC = {
   e''2
 
   \bar "|."
+  \break
 }
 
 altoExamplesC = {
-  s2
+  <g' c''>4 <g' d''>
   
-  s2
-  
-  
-  s2
-  
-  s2
+  <g' c''>2
   
   
-  s2
+  <g' c''>4 <g' b'>
   
-  s2
+  <g' c''>2
   
   
-  s2
+  <e' g'>4 <d' g'>
   
-  s2
+  <c' g'>2
   
-  s2
   
-  s2
+  <c'' e''>4 <d'' f''>
+  
+  <c'' e''> <g' b'>
+  
+  <g' c''> <g' b'>
+  
+  <g' c''>2
 }
 
 tenorExamplesC = {
@@ -508,7 +511,7 @@ sopranoExamplesD = {
   
   g''2
   
-  a''4 g''
+  a''4^\markup \scaleDegree { 6 } g''
   
   g''2
   
@@ -561,65 +564,88 @@ sopranoExamplesD = {
   \bar "||"
   \key c \minor
   
-  s4 g'^\markup \scaleDegree { 5 }^"(minor)"
+  s4 g'_\markup \scaleDegree { 5 }^"(minor)"
   
-  a'^\markup \scaleDegree { 6 } b'^\markup \scaleDegree { 7 }
+  a'_\markup \scaleDegree { 6 } b'_\markup \scaleDegree { 7 }
   
-  c''4^\markup \scaleDegree { 8 } s4
+  c''4_\markup \scaleDegree { 8 } s4
 
   \bar "|."
+  \break
 }
 
 altoExamplesD = {
-  s2
+  <g' c''>2
   
-  s2
+  <f' a'>4 <f' b'>
   
-  s2
-  
-  
-  s2
-  
-  s2
-  
-  s2
+  <e' g'>2
   
   
-  s2
+  <g' c''>2
   
-  s2
+  <f' a'>4 <f' g'>
   
-  s2
-  
-  
-  s2
-  
-  s2
-  
-  s2
+  <e' g'>2
   
   
-  s2
+  <c'' e''>2
   
-  s2
+  <a' c'>4 <g' b'>
   
-  s2
-  
-  s2
+  <g' c''>2
   
   
-  s2
+  <c'' e''>2
   
-  s2
+  <c'' f''>4 <b' d''>
   
-  s2
+  <c'' e''>2
   
   
-  s2
+  <g' c''>2
   
-  s2
+  <f' a'>
   
-  s2
+  <d' g'>
+  
+  <e' g'>
+  
+  
+  <g' c''>2
+  
+  <f' a'>4 <g' b'>
+  
+  <g' c''>2
+  
+  
+  <g' c''>2
+  
+  <f' af'>4 <d' g'>
+  
+  <c' g'>2
+  
+  
+  <g' c''>2 <g' b'>4 <g' c''>
+  
+  <f' a'>2 <f' g'>
+  
+  <e' g'>1
+  
+  \time 2/4
+  
+  s4 <c' e'>
+  
+  <c' f'> <d' f'>
+  
+  <e' g'> s
+  
+  
+  s4 <c' e'>
+  
+  <c' f'> <d' f'>
+  
+  <e' g'> s
 }
 
 tenorExamplesD = {
@@ -686,6 +712,7 @@ bassExamplesD = {
   
   c1
   
+  \time 2/4
   
   s4 c
   
@@ -798,10 +825,343 @@ analysisExamplesD = \lyricmode {
 
 %//////////////////////////////////////////////////////////////////////////////
 
+keyTimeExamplesE = {
+  \key c \major
+  \time 4/4
+}
+
+sopranoExamplesE = {
+  \keyTimeExamplesE
+  \once \override Score.RehearsalMark.self-alignment-X = #LEFT
+  \mark \markup { "Unit 10 - The Cadential 6 4" }
+
+  s1
+
+  s1
+
+  s1
+
+  s1
+
+  \bar "|."
+  \break
+}
+
+altoExamplesE = {
+  s1
+
+  s1
+
+  s1
+
+  s1
+}
+
+tenorExamplesE = {
+  \keyTimeExamplesE
+
+  s1
+
+  s1
+
+  s1
+
+  s1
+}
+
+bassExamplesE = {
+  s1
+
+  s1
+
+  s1
+
+  s1
+}
+
+analysisExamplesE = \lyricmode {
+  _1
+
+  _1
+
+  _1
+
+  _1
+}
+
+%//////////////////////////////////////////////////////////////////////////////
+
+keyTimeExamplesF = {
+  \key c \major
+  \time 4/4
+}
+
+sopranoExamplesF = {
+  \keyTimeExamplesF
+  \once \override Score.RehearsalMark.self-alignment-X = #LEFT
+  \mark \markup { "Unit 11 - VI and IV6" }
+
+  s1
+
+  s1
+
+  s1
+
+  s1
+
+  \bar "|."
+  \break
+}
+
+altoExamplesF = {
+  s1
+
+  s1
+
+  s1
+
+  s1
+}
+
+tenorExamplesF = {
+  \keyTimeExamplesF
+
+  s1
+
+  s1
+
+  s1
+
+  s1
+}
+
+bassExamplesF = {
+  s1
+
+  s1
+
+  s1
+
+  s1
+}
+
+analysisExamplesF = \lyricmode {
+  _1
+
+  _1
+
+  _1
+
+  _1
+}
+
+%//////////////////////////////////////////////////////////////////////////////
+
+keyTimeExamplesF = {
+  \key c \major
+  \time 4/4
+}
+
+sopranoExamplesF = {
+  \keyTimeExamplesF
+  \once \override Score.RehearsalMark.self-alignment-X = #LEFT
+  \mark \markup { "Unit 11 - VI and IV6" }
+
+  s1
+
+  s1
+
+  s1
+
+  s1
+
+  \bar "|."
+  \break
+}
+
+altoExamplesF = {
+  s1
+
+  s1
+
+  s1
+
+  s1
+}
+
+tenorExamplesF = {
+  \keyTimeExamplesF
+
+  s1
+
+  s1
+
+  s1
+
+  s1
+}
+
+bassExamplesF = {
+  s1
+
+  s1
+
+  s1
+
+  s1
+}
+
+analysisExamplesF = \lyricmode {
+  _1
+
+  _1
+
+  _1
+
+  _1
+}
+
+%//////////////////////////////////////////////////////////////////////////////
+
+keyTimeExamplesG = {
+  \key c \major
+  \time 4/4
+}
+
+sopranoExamplesG = {
+  \keyTimeExamplesG
+  \once \override Score.RehearsalMark.self-alignment-X = #LEFT
+  \mark \markup { "Unit 12 - Supertonic and Subdominant Seventh Chords" }
+
+  s1
+
+  s1
+
+  s1
+
+  s1
+
+  \bar "|."
+  \break
+}
+
+altoExamplesG = {
+  s1
+
+  s1
+
+  s1
+
+  s1
+}
+
+tenorExamplesG = {
+  \keyTimeExamplesG
+
+  s1
+
+  s1
+
+  s1
+
+  s1
+}
+
+bassExamplesG = {
+  s1
+
+  s1
+
+  s1
+
+  s1
+}
+
+analysisExamplesG = \lyricmode {
+  _1
+
+  _1
+
+  _1
+
+  _1
+}
+
+%//////////////////////////////////////////////////////////////////////////////
+
+keyTimeExamplesH = {
+  \key c \major
+  \time 4/4
+}
+
+sopranoExamplesH = {
+  \keyTimeExamplesH
+  \once \override Score.RehearsalMark.self-alignment-X = #LEFT
+  \mark \markup { "Unit 13 - Other Uses of IV, IV6, and VI" }
+
+  s1
+
+  s1
+
+  s1
+
+  s1
+
+  \bar "|."
+  \break
+}
+
+altoExamplesH = {
+  s1
+
+  s1
+
+  s1
+
+  s1
+}
+
+tenorExamplesH = {
+  \keyTimeExamplesH
+
+  s1
+
+  s1
+
+  s1
+
+  s1
+}
+
+bassExamplesH = {
+  s1
+
+  s1
+
+  s1
+
+  s1
+}
+
+analysisExamplesH = \lyricmode {
+  _1
+
+  _1
+
+  _1
+
+  _1
+}
+
+%//////////////////////////////////////////////////////////////////////////////
 
 examplesAnalysis = {
   \analysisExamplesA
   \analysisExamplesB
   \analysisExamplesC
   \analysisExamplesD
+  \analysisExamplesE
+  \analysisExamplesF
+  \analysisExamplesG
+  \analysisExamplesH
 }

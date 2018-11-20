@@ -29,10 +29,10 @@
 % Can be overriden in \book and \bookpart blocks
 \paper {
     #(set-paper-size "letter")
-    top-margin = 0.66\in
+    top-margin = 0.5\in
     left-margin = 0.75\in
     right-margin = 0.75\in
-    bottom-margin = 0.66\in
+    bottom-margin = 0.5\in
     ragged-right = ##f
 }
 
@@ -325,7 +325,7 @@
             \BassD
             \BassE
             \BassF
-             \BassG
+            \BassG
             \BassH
           }
         >>
@@ -366,14 +366,17 @@
 
       \new PianoStaff <<
         \new Staff = "pianoTreble" <<
-          \override Staff.TimeSignature #'break-visibility = #begin-of-line-visible
           \clef "treble"
           \new Voice = "Soprano"  {
             \voiceOne
-            \sopranoExamplesA \break
-            \sopranoExamplesB \break
+            \sopranoExamplesA
+            \sopranoExamplesB
             \sopranoExamplesC \pageBreak
-            \sopranoExamplesD \break
+            \sopranoExamplesD
+            \sopranoExamplesE
+            \sopranoExamplesF
+            \sopranoExamplesG
+            \sopranoExamplesH
           }
           \new Voice = "Alto" {
             \voiceTwo
@@ -381,10 +384,13 @@
             \altoExamplesB
             \altoExamplesC
             \altoExamplesD
+            \altoExamplesE
+            \altoExamplesF
+            \altoExamplesG
+            \altoExamplesH
           }
         >>
         \new Staff = "pianoBass" <<
-          \override Staff.TimeSignature #'break-visibility = #begin-of-line-visible
           \clef "bass"
           \new Voice = "Tenor" {
             \voiceOne
@@ -392,6 +398,10 @@
             \tenorExamplesB
             \tenorExamplesC
             \tenorExamplesD
+            \tenorExamplesE
+            \tenorExamplesF
+            \tenorExamplesG
+            \tenorExamplesH
           }
           \new Voice = "Bass"  {
             \voiceTwo
@@ -399,6 +409,10 @@
             \bassExamplesB
             \bassExamplesC
             \bassExamplesD
+            \bassExamplesE
+            \bassExamplesF
+            \bassExamplesG
+            \bassExamplesH
           }
         >>
         \new Lyrics \examplesAnalysis

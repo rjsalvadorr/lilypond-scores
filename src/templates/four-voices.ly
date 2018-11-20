@@ -8,47 +8,48 @@ soprano = {
   \once \override Score.RehearsalMark.self-alignment-X = #LEFT
   \mark \markup { "..." }
 
-  r1
+  s1
 
-  r1
+  s1
 
-  r1
+  s1
 
-  r1
+  s1
 
   \bar "|."
+  \break
 }
 
 alto = {
-  r1
+  s1
 
-  r1
+  s1
 
-  r1
+  s1
 
-  r1
+  s1
 }
 
 tenor = {
   \keyTime
 
-  r1
+  s1
 
-  r1
+  s1
 
-  r1
+  s1
 
-  r1
+  s1
 }
 
 bass = {
-  r1
+  s1
 
-  r1
+  s1
 
-  r1
+  s1
 
-  r1
+  s1
 }
 
 analysis = \lyricmode {
