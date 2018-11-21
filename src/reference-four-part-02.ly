@@ -555,20 +555,20 @@ sopranoExamplesD = {
   \bar "||"
   \time 2/4
   
-  s4 g'_\markup \scaleDegree { 5 }^"(major)"
+  s4 g'^\markup \scaleDegree { 5 }^"(major)"
   
-  a'_\markup \scaleDegree { 6 } b'_\markup \scaleDegree { 7 }
+  a'^\markup \scaleDegree { 6 } b'^\markup \scaleDegree { 7 }
   
-  c''4_\markup \scaleDegree { 8 } s4
+  c''4^\markup \scaleDegree { 8 } s4
   
   \bar "||"
   \key c \minor
   
-  s4 g'_\markup \scaleDegree { 5 }^"(minor)"
+  s4 g'^\markup \scaleDegree { 5 }^"(minor)"
   
-  a'_\markup \scaleDegree { 6 } b'_\markup \scaleDegree { 7 }
+  a'^\markup \scaleDegree { 6 } b'^\markup \scaleDegree { 7 }
   
-  c''4_\markup \scaleDegree { 8 } s4
+  c''4^\markup \scaleDegree { 8 } s4
 
   \bar "|."
   \break
@@ -631,27 +631,30 @@ altoExamplesD = {
   <f' a'>2 <f' g'>
   
   <e' g'>1
-  
-  \time 2/4
-  
-  s4 <c' e'>
-  
-  <c' f'> <d' f'>
-  
-  <e' g'> s
-  
+
   
   s4 <c' e'>
   
   <c' f'> <d' f'>
   
   <e' g'> s
+  
+  
+  s4 <c' ef'>
+  
+  <c' f'> <d' f'>
+  
+  <ef' g'> s
 }
 
 tenorExamplesD = {
   \keyTimeExamplesD
 
-  s2*31
+  s2*25
+  
+  s2*6
+  
+  s2*5
 }
 
 bassExamplesD = {
@@ -712,7 +715,6 @@ bassExamplesD = {
   
   c1
   
-  \time 2/4
   
   s4 c
   
@@ -827,7 +829,7 @@ analysisExamplesD = \lyricmode {
 
 keyTimeExamplesE = {
   \key c \major
-  \time 4/4
+  \time 2/4
 }
 
 sopranoExamplesE = {
@@ -835,58 +837,108 @@ sopranoExamplesE = {
   \once \override Score.RehearsalMark.self-alignment-X = #LEFT
   \mark \markup { "Unit 10 - The Cadential 6 4" }
 
-  s1
+  g''4 f''
 
-  s1
+  e'' d''
 
-  s1
-
-  s1
+  c''2
+  
+  \bar "||"
+  
+  e''4 d''
+  
+  c'' b'
+  
+  c''2
+  
+  \bar "||"
+  
+  e''4 d''
+  
+  c'' b'
+  
+  c''2
 
   \bar "|."
   \break
 }
 
 altoExamplesE = {
-  s1
-
-  s1
-
-  s1
-
-  s1
+  <c'' e''>4 <a' c''>
+  
+  <g' c''> <f' b'>
+  
+  <e' g'>2
+  
+  
+  <g' c''>4 <f' a'>
+  
+  <e' g'> <d' g'>
+  
+  <e' g'>2
+  
+  
+  <g' c''>4 <f' a'>
+  
+  <d' f'> <d' g'>
+  
+  <c' g'>2
 }
 
 tenorExamplesE = {
   \keyTimeExamplesE
 
-  s1
-
-  s1
-
-  s1
-
-  s1
+  s2 * 9
 }
 
 bassExamplesE = {
-  s1
-
-  s1
-
-  s1
-
-  s1
+  c4 f
+  
+  g g,
+  
+  c2
+  
+  
+  c4 f
+  
+  g g,
+  
+  c2
+  
+  
+  c4 f
+  
+  g f
+  
+  e2
 }
 
 analysisExamplesE = \lyricmode {
-  _1
-
-  _1
-
-  _1
-
-  _1
+  \markup \rN { I }4
+  
+  \markup \rN { IV }
+  
+  \markup \rN { V 8--7 6--5 3--4 }2
+  
+  \markup \rN { I }2
+  
+  
+  \markup \rN { I }4
+  
+  \markup \rN { II 6 }
+  
+  \markup \rN { V 6--5 4--3 }2
+  
+  \markup \rN { I }2
+ 
+ 
+  \markup \rN { I }4
+  
+  \markup \rN { II 6 }
+  
+  \markup \rN { V 6--4 4--2 }2
+  
+  \markup \rN { I 6 }2
 }
 
 %//////////////////////////////////////////////////////////////////////////////
