@@ -945,7 +945,7 @@ analysisExamplesE = \lyricmode {
 
 keyTimeExamplesF = {
   \key c \major
-  \time 4/4
+  \time 2/4
 }
 
 sopranoExamplesF = {
@@ -953,124 +953,184 @@ sopranoExamplesF = {
   \once \override Score.RehearsalMark.self-alignment-X = #LEFT
   \mark \markup { "Unit 11 - VI and IV6" }
 
-  s1
-
-  s1
-
-  s1
-
-  s1
-
-  \bar "|."
-  \break
-}
-
-altoExamplesF = {
-  s1
-
-  s1
-
-  s1
-
-  s1
-}
-
-tenorExamplesF = {
-  \keyTimeExamplesF
-
-  s1
-
-  s1
-
-  s1
-
-  s1
-}
-
-bassExamplesF = {
-  s1
-
-  s1
-
-  s1
-
-  s1
-}
-
-analysisExamplesF = \lyricmode {
-  _1
-
-  _1
-
-  _1
-
-  _1
-}
-
-%//////////////////////////////////////////////////////////////////////////////
-
-keyTimeExamplesF = {
+  c''4 c''
+  
+  c'' b'
+  
+  c''2
+  
+  \bar "||"
+  
+  c''2
+  
+  c''4^\markup \scaleDegree { 1 }^"(major)" d''^\markup \scaleDegree { 2 }
+  
+  e''2^\markup \scaleDegree { 3 }
+  
+  \bar "||"
+  \key c \minor
+  
+  c''2
+  
+  c''4^\markup \scaleDegree { 1 }^"(minor)" d''^\markup \scaleDegree { 2 }
+  
+  ef''2^\markup \scaleDegree { 3 }
+  
+  \bar "||"
   \key c \major
-  \time 4/4
-}
+  
+  e''4^\markup \scaleDegree { 3 }^"(major)" f''^\markup \scaleDegree { 4 }
+  
+  g''2^\markup \scaleDegree { 5 }
 
-sopranoExamplesF = {
-  \keyTimeExamplesF
-  \once \override Score.RehearsalMark.self-alignment-X = #LEFT
-  \mark \markup { "Unit 11 - VI and IV6" }
-
-  s1
-
-  s1
-
-  s1
-
-  s1
-
+  \bar "||"
+  \break
+  \key c \minor
+  
+  ef''4^\markup \scaleDegree { 3 }^"(minor)" f''^\markup \scaleDegree { 4 }
+  
+  g''2^\markup \scaleDegree { 5 }
+  
+  \bar "||"
+  \key c \major
+  
+  e''2^"(major)"
+  
+  f''4 f''
+  
+  e''2
+  
+  \bar "||"
+  
+  \key c \minor
+  
+  ef''2^"(minor)"
+  
+  f''4 f''
+  
+  ef''2
+  
   \bar "|."
   \break
 }
 
 altoExamplesF = {
-  s1
-
-  s1
-
-  s1
-
-  s1
+  s2*19
 }
 
 tenorExamplesF = {
   \keyTimeExamplesF
 
-  s1
-
-  s1
-
-  s1
-
-  s1
+  s2*19
 }
 
 bassExamplesF = {
-  s1
-
-  s1
-
-  s1
-
-  s1
+  c'4 a
+  
+  f g
+  
+  c2
+  
+  
+  c2
+  
+  a,4 g,
+  
+  c2
+  
+  
+  c2
+  
+  af,4 g,
+  
+  c2
+  
+  
+  c'4 a
+  
+  g2
+  
+  
+  c'4^"Phrygian cadence" af
+  
+  g2
+  
+  
+  c'2
+  
+  a4 b
+  
+  c'2
+  
+  
+  c'2
+  
+  a4 b
+  
+  c'2
 }
 
 analysisExamplesF = \lyricmode {
-  _1
-
-  _1
-
-  _1
-
-  _1
+  \markup \rN { I }4
+  
+  \markup \rN { VI }
+  
+  \markup \rN { IV }
+  
+  \markup \rN { V }
+  
+  \markup \rN { I }2
+  
+  
+  \markup \rN { I }2
+  
+  \markup \rN { VI }4
+  
+  \markup \rN { V }
+  
+  \markup \rN { I }2
+  
+  
+  \markup \rN { I }2
+  
+  \markup \rN { VI }4
+  
+  \markup \rN { V }
+  
+  \markup \rN { I }2
+  
+  
+  
+  \markup \rN { I }4
+  
+  \markup \rN { IV 6 }
+  
+  \markup \rN { V }2
+  
+  
+  \markup \rN { I }4
+  
+  \markup \rN { IV 6 }
+  
+  \markup \rN { V }2
+  
+  
+  \markup \rN { I }2
+  
+  \markup \rN { IV 6 }4
+  
+  \markup \rN { V 6 5 }
+  
+  \markup \rN { I }2
+  
+  
+  \markup \rN { I }2
+  
+  \markup \rN { IV 6 }4
+  
+  \markup \rN { V 6 5 }
+  
+  \markup \rN { I }2
 }
 
 %//////////////////////////////////////////////////////////////////////////////

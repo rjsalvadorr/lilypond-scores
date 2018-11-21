@@ -342,7 +342,7 @@
     \paper {
       top-markup-spacing.basic-distance = #5
       % Controls spacing between systems/staff-groups
-      system-system-spacing.basic-distance = #18
+      system-system-spacing.basic-distance = #22
     }
 
     \markup {
@@ -359,7 +359,7 @@
     \score {
       \layout {
         indent = 0.0\cm
-        #(layout-set-staff-size 20)
+        #(layout-set-staff-size 19)
       }
       \header {
       }
@@ -371,7 +371,7 @@
             \voiceOne
             \sopranoExamplesA
             \sopranoExamplesB
-            \sopranoExamplesC \pageBreak
+            \sopranoExamplesC
             \sopranoExamplesD
             \sopranoExamplesE
             \sopranoExamplesF
