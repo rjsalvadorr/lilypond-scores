@@ -2,6 +2,7 @@
 \language "english"
 
 date = #(strftime "%d-%m-%Y" (localtime (current-time)))
+\include "utils/roman_numeral_analysis_tool.ily"
 
 \paper {
   #(set-paper-size "letter")
@@ -36,7 +37,6 @@ tocSection =
   \bookOutputName "sketches"
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  %%%%% TITLE PAGE
 
   \bookpart {
     \header {
@@ -66,7 +66,6 @@ tocSection =
   }
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  %%%%% TABLE OF CONTENTS
 
   \bookpart {  
     \paper {
@@ -80,7 +79,6 @@ tocSection =
       
       tocTitleMarkup = \markup \huge \bold \column {
         \fill-line {
-          \null "Table of Contents" \null
         }
         \hspace #1
       }
@@ -91,8 +89,10 @@ tocSection =
   }
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  %%%%% OCTOBER 2018
 
   \include "pieces/sketches-oct-2018.ly"
+  
   \include "pieces/snowfall-sketches.ly"
+  
+  \include "pieces/sketches-nov-2018.ly"
 }

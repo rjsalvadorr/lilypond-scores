@@ -334,7 +334,7 @@
     }
   }
 
-    \bookpart {
+  \bookpart {
     \tocItem \markup { "Four-part examples 2" }
     \header {
       title = "Four-part examples 2"
