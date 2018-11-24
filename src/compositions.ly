@@ -33,7 +33,7 @@ tocSection =
 #(set-global-staff-size 21)
 
 \book {
-  \bookOutputName "guitar-pieces"
+  \bookOutputName "compositions"
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   %%%%% TITLE PAGE

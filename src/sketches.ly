@@ -33,7 +33,7 @@ tocSection =
 #(set-global-staff-size 21)
 
 \book {
-  \bookOutputName "guitar-sketches"
+  \bookOutputName "sketches"
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   %%%%% TITLE PAGE
@@ -42,7 +42,7 @@ tocSection =
     \header {
       title = \markup \abs-fontsize #34 {
         \center-column {
-          \line { "GUITAR SKETCHES" }
+          \line { "SKETCHES" }
           \hspace #0
         }
       }
