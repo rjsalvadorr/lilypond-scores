@@ -1015,13 +1015,67 @@ sopranoExamplesF = {
 }
 
 altoExamplesF = {
-  s2*19
+  <e' g'>4 <e' c''>
+  
+  <f' a'> <d' g'>
+  
+  <e' g'>2
+  
+  
+  <e' g'>2
+  
+  <e' c''>4 <g' b'>
+  
+  <g' c''>2
+  
+  
+  <ef' g'>2
+  
+  <e' c''>4 <g' b'>
+  
+  <g' c''>2
+  
+  
+  <g' c''>4 <a' c''>
+  
+  <b' d''>2
+  
+  
+  <g' c''>4 <c'' f''>
+  
+  <b' d''>2
+  
+  
+  <g' c''>2
+  
+  <a' c''>4 <g' d''>
+  
+  <g' c''>2
+  
+  
+  <g' c''>2
+  
+  <a' c''>4 <g' d''>
+  
+  <g' c''>2
 }
 
 tenorExamplesF = {
   \keyTimeExamplesF
 
-  s2*19
+  s2*11
+  
+  \key c \minor
+  
+  s2*2
+  
+  \key c \major
+  
+  s2*3
+  
+  \key c \minor
+  
+  s2*3
 }
 
 bassExamplesF = {
