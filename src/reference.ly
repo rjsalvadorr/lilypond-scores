@@ -197,6 +197,8 @@
       top-markup-spacing.basic-distance = #5
       % Controls spacing between systems/staff-groups
       system-system-spacing.basic-distance = #18
+      ragged-bottom = ##f
+      ragged-last-bottom = ##f
     }
 
     \markup {
@@ -250,6 +252,8 @@
       top-markup-spacing.basic-distance = #5
       % Controls spacing between systems/staff-groups
       system-system-spacing.basic-distance = #18
+      ragged-bottom = ##f
+      ragged-last-bottom = ##f
     }
 
     \markup {
@@ -343,6 +347,8 @@
       top-markup-spacing.basic-distance = #5
       % Controls spacing between systems/staff-groups
       system-system-spacing.basic-distance = #22
+      ragged-bottom = ##f
+      ragged-last-bottom = ##f
     }
 
     \markup {
@@ -365,6 +371,7 @@
       }
 
       \new PianoStaff <<
+        \new Lyrics \examplesBreakdown
         \new Staff = "pianoTreble" <<
           \clef "treble"
           \new Voice = "Soprano"  {

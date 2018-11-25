@@ -485,7 +485,7 @@ sopranoExamplesD = {
   \once \override Score.RehearsalMark.self-alignment-X = #LEFT
   \mark \markup { "Unit 9 - Leading to V: IV, II, and II6" }
 
-  e''2^"(major only)"
+  e''2
   
   d''4 d''
   
@@ -555,7 +555,7 @@ sopranoExamplesD = {
   \bar "||"
   \time 2/4
   
-  s4 g'^\markup \scaleDegree { 5 }^"(major)"
+  s4 g'^\markup \scaleDegree { 5 }
   
   a'^\markup \scaleDegree { 6 } b'^\markup \scaleDegree { 7 }
   
@@ -564,7 +564,7 @@ sopranoExamplesD = {
   \bar "||"
   \key c \minor
   
-  s4 g'^\markup \scaleDegree { 5 }^"(minor)"
+  s4 g'^\markup \scaleDegree { 5 }
   
   a'^\markup \scaleDegree { 6 } b'^\markup \scaleDegree { 7 }
   
@@ -963,7 +963,7 @@ sopranoExamplesF = {
   
   c''2
   
-  c''4^\markup \scaleDegree { 1 }^"(major)" d''^\markup \scaleDegree { 2 }
+  c''4^\markup \scaleDegree { 1 } d''^\markup \scaleDegree { 2 }
   
   e''2^\markup \scaleDegree { 3 }
   
@@ -972,14 +972,14 @@ sopranoExamplesF = {
   
   c''2
   
-  c''4^\markup \scaleDegree { 1 }^"(minor)" d''^\markup \scaleDegree { 2 }
+  c''4^\markup \scaleDegree { 1 } d''^\markup \scaleDegree { 2 }
   
   ef''2^\markup \scaleDegree { 3 }
   
   \bar "||"
   \key c \major
   
-  e''4^\markup \scaleDegree { 3 }^"(major)" f''^\markup \scaleDegree { 4 }
+  e''4^\markup \scaleDegree { 3 } f''^\markup \scaleDegree { 4 }
   
   g''2^\markup \scaleDegree { 5 }
 
@@ -987,14 +987,14 @@ sopranoExamplesF = {
   \break
   \key c \minor
   
-  ef''4^\markup \scaleDegree { 3 }^"(minor)" f''^\markup \scaleDegree { 4 }
+  ef''4^\markup \scaleDegree { 3 } f''^\markup \scaleDegree { 4 }
   
   g''2^\markup \scaleDegree { 5 }
   
   \bar "||"
   \key c \major
   
-  e''2^"(major)"
+  e''2
   
   f''4 f''
   
@@ -1004,7 +1004,7 @@ sopranoExamplesF = {
   
   \key c \minor
   
-  ef''2^"(minor)"
+  ef''2
   
   f''4 f''
   
@@ -1199,7 +1199,7 @@ sopranoExamplesG = {
   \once \override Score.RehearsalMark.self-alignment-X = #LEFT
   \mark \markup { "Unit 12 - Supertonic and Subdominant Seventh Chords" }
 
-  e''2^"(a)"
+  e''2
   
   d''4 d''
   
@@ -1207,7 +1207,7 @@ sopranoExamplesG = {
   
   \time 4/4
   
-  s2. g'4^"(b)"
+  s2. g'4
   
   a'2 g'4 f'
   
@@ -1216,42 +1216,42 @@ sopranoExamplesG = {
   
   \time 2/4
   
-  c''2^"(c)"
+  c''2
   
   c''4 b'
   
   c''2
   
   
-  c''2^"(d)"
+  c''2
   
   c''4 b'
   
   c''2
   
   
-  e''2^"(e)"
+  e''2
   
   e''4 d''
   
   c''2
   
   
-  e''2^"(f)"
+  e''2
   
   f''4 f''
   
   e''2
   
   
-  g''2^"(g) major"
+  g''2
   
   f''4 f''
   
   e''2
   
   
-  g''2^"(h) minor"
+  g''2
   
   f''4 f''
   
@@ -1530,7 +1530,7 @@ analysisExamplesG = \lyricmode {
 
 keyTimeExamplesH = {
   \key c \major
-  \time 4/4
+  \time 2/4
 }
 
 sopranoExamplesH = {
@@ -1538,61 +1538,288 @@ sopranoExamplesH = {
   \once \override Score.RehearsalMark.self-alignment-X = #LEFT
   \mark \markup { "Unit 13 - Other Uses of IV, IV6, and VI" }
 
-  s1
+  g'4 a'
+  
+  g'2
+  
+  
+  e''4 f''
+  
+  g''2
+  
+  
+  e''4 d''
+  
+  c'' b'
+  
+  c''2~
+  
+  c''
+  
+  
+  c''4 b'
+  
+  c''2
+  
+  
+  e''4 d''
+  
+  c''2
 
-  s1
-
-  s1
-
-  s1
-
-  \bar "|."
   \break
 }
 
 altoExamplesH = {
-  s1
-
-  s1
-
-  s1
-
-  s1
+  <c' e'>4  <c' f'>
+  
+  <c' e'>2
+  
+  
+  <g' c''>4  <a' c'>
+  
+  <g' c''>2
+  
+  
+  <g' c''>4  <f' a'>
+  
+  <e' g'> <d' g'>
+  
+  <e' g'> <f' a'>
+  
+  <e' g'>2
+  
+  
+  <e' g'>4  <d' f'>
+  
+  <c' e'>2
+  
+  
+  <g' c''>4  <f' b'>
+  
+  <e' c''>2
 }
 
 tenorExamplesH = {
   \keyTimeExamplesH
 
-  s1
+  s2
 
-  s1
+  s2
 
-  s1
+  \bar "||"
 
-  s1
+  s2
+
+  s2
+
+  \bar "||"
+
+  s2
+
+  s2
+
+  s2
+
+  s2
+
+  \bar "||"
+
+  s2
+
+  s2
+
+  \bar "||"
+
+  s2
+
+  s2
+
+  \bar "|."
 }
 
 bassExamplesH = {
-  s1
-
-  s1
-
-  s1
-
-  s1
+  c4 f
+  
+  c2
+  
+  
+  c'4 a
+  
+  e2
+  
+  
+  c4 f
+  
+  g g,
+  
+  c^"plagal cadence" f
+  
+  c2
+  
+  
+  c4 g^"deceptive cadences"
+  
+  a2
+  
+  
+  c4 g
+  
+  a2
 }
 
 analysisExamplesH = \lyricmode {
-  _1
-
-  _1
-
-  _1
-
-  _1
+  \markup \rN { I }4
+  
+  \markup \rN { IV }
+  
+  \markup \rN { I }2
+  
+  
+  \markup \rN { I }4
+  
+  \markup \rN { IV 6 }
+  
+  \markup \rN { I 6 }2
+  
+  
+  _2*2
+  
+  \markup \rN { I }4
+  
+  \markup \rN { IV }
+  
+  \markup \rN { I }2
+  
+  
+  \markup \rN { I }4
+  
+  \markup \rN { V 7 }
+  
+  \markup \rN { VI }2
+  
+  
+  \markup \rN { I }4
+  
+  \markup \rN { V 7 }
+  
+  \markup \rN { VI }2
 }
 
 %//////////////////////////////////////////////////////////////////////////////
+
+examplesBreakdown = \lyricmode {
+  %///// 6
+  
+  \markup \italic { "(a)" }2*2
+  
+  \markup \italic { "(b)" }2*2
+  
+  \markup \italic { "(c)" }2*2
+  
+  \markup \italic { "(d)" }2*2
+  
+  \markup \italic { "(e)" }2*2
+  
+  \markup \italic { "(f)" }2*2
+  
+  \markup \italic { "(g)" }2*2
+  
+  \markup \italic { "(h)" }2*2
+  
+  %///// 7
+  
+  \markup \italic { "(a)" }2*3
+  
+  \markup \italic { "(b)" }2*3
+  
+  \markup \italic { "(c)" }2*4
+  
+  %///// 8
+  
+  \markup \italic { "(a)" }2*2
+  
+  \markup \italic { "(b)" }2*2
+  
+  \markup \italic { "(c)" }2*2
+  
+  \markup \italic { "(d)" }2*4
+  
+  %///// 9
+  
+  \markup \italic { "(a) major only" }2*3
+  
+  \markup \italic { "(b)" }2*3
+  
+  \markup \italic { "(c)" }2*3
+  
+  \markup \italic { "(d)" }2*3
+  
+  \markup \italic { "(e)" }2*4
+  
+  \markup \italic { "(f) major" }2*3
+  
+  \markup \italic { "(g) minor" }2*3
+  
+  \markup \italic { "(h)" }1*3
+  
+  \markup \italic { "(i) major" }2*3
+  
+  \markup \italic { "(j) minor" }2*3
+  
+  %///// 10
+  
+  \markup \italic { "(a)" }2*3
+  
+  \markup \italic { "(b)" }2*3
+  
+  \markup \italic { "(c)" }2*3
+  
+  %///// 11
+  
+  \markup \italic { "(a)" }2*3
+  
+  \markup \italic { "(b) major" }2*3
+  
+  \markup \italic { "(c) minor" }2*3
+  
+  \markup \italic { "(d) major" }2*2
+  
+  \markup \italic { "(e) minor" }2*2
+  
+  \markup \italic { "(f) major" }2*3
+  
+  \markup \italic { "(g) minor" }2*3
+  
+  %///// 12
+  
+  \markup \italic { "(a)" }2*3
+  
+  \markup \italic { "(b)" }1*3
+  
+  \markup \italic { "(c)" }2*3
+  
+  \markup \italic { "(d)" }2*3
+  
+  \markup \italic { "(e)" }2*3
+  
+  \markup \italic { "(f)" }2*3
+  
+  \markup \italic { "(g) major" }2*3
+  
+  \markup \italic { "(h) minor" }2*3
+  
+  %///// 13
+  
+  \markup \italic { "(a)" }2*2
+  
+  \markup \italic { "(b)" }2*2
+  
+  \markup \italic { "(c)" }2*4
+  
+  \markup \italic { "(d)" }2*2
+  
+  \markup \italic { "(e)" }2*2
+}
 
 examplesAnalysis = {
   \analysisExamplesA
