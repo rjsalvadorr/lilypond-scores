@@ -365,7 +365,7 @@
     \score {
       \layout {
         indent = 0.0\cm
-        #(layout-set-staff-size 19)
+        #(layout-set-staff-size 20)
       }
       \header {
       }
