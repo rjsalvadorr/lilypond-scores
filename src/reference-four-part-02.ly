@@ -1191,7 +1191,7 @@ analysisExamplesF = \lyricmode {
 
 keyTimeExamplesG = {
   \key c \major
-  \time 4/4
+  \time 2/4
 }
 
 sopranoExamplesG = {
@@ -1199,58 +1199,331 @@ sopranoExamplesG = {
   \once \override Score.RehearsalMark.self-alignment-X = #LEFT
   \mark \markup { "Unit 12 - Supertonic and Subdominant Seventh Chords" }
 
-  s1
+  e''2^"(a)"
+  
+  d''4 d''
+  
+  c''2
+  
+  \time 4/4
+  
+  s2. g'4^"(b)"
+  
+  a'2 g'4 f'
+  
+  e'2. s4
+  
+  
+  \time 2/4
+  
+  c''2^"(c)"
+  
+  c''4 b'
+  
+  c''2
+  
+  
+  c''2^"(d)"
+  
+  c''4 b'
+  
+  c''2
+  
+  
+  e''2^"(e)"
+  
+  e''4 d''
+  
+  c''2
+  
+  
+  e''2^"(f)"
+  
+  f''4 f''
+  
+  e''2
+  
+  
+  g''2^"(g) major"
+  
+  f''4 f''
+  
+  e''2
+  
+  
+  g''2^"(h) minor"
+  
+  f''4 f''
+  
+  e''2
 
-  s1
-
-  s1
-
-  s1
-
-  \bar "|."
   \break
 }
 
 altoExamplesG = {
-  s1
-
-  s1
-
-  s1
-
-  s1
+  <g' c''>2
+  
+  <a' c''>4 <g' b'>
+  
+  <e' g'>2
+  
+  \time 4/4
+  
+  s2. <c' e'>4
+  
+  <c' d'>2 <b d'>
+  
+  <g c'>2. s4
+  
+  \time 2/4
+  
+  <e' g'>4 <e' a'>
+  
+  <d' a'> <d' g'>
+  
+  <e' g'>2
+  
+  
+  <c' g'>2
+  
+  <f' a'>4 <f' g'>
+  
+  <e' g'>2
+  
+  
+  <g' c''>2
+  
+  <a' c''>4 <d' b'>
+  
+  <e' g'>2
+  
+  
+  <g' c''>2
+  
+  <a' d''>4 <g' d''>
+  
+  <g' c''>2
+  
+  
+  <c'' e''>2
+  
+  <c'' e''>4 <g' d''>
+  
+  <g' c''>2
+  
+  \key c \minor
+  
+  <c'' ef''>2
+  
+  <c'' ef''>4 <g' d''>
+  
+  <g' c''>2
 }
 
 tenorExamplesG = {
   \keyTimeExamplesG
 
+  s2
+  
+  s2
+  
+  s2
+  
+  \time 4/4
+  
   s1
-
+  
   s1
-
+  
   s1
-
-  s1
+  
+  \time 2/4
+  
+  s2
+  
+  s2
+  
+  s2
+  
+  
+  s2
+  
+  s2
+  
+  s2
+  
+  
+  s2
+  
+  s2
+  
+  s2
+  
+  
+  s2
+  
+  s2
+  
+  s2
+  
+  
+  s2
+  
+  s2
+  
+  s2
+  
+  
+  s2
+  
+  s2
+  
+  s2
 }
 
 bassExamplesG = {
-  s1
-
-  s1
-
-  s1
-
-  s1
+  c2
+  
+  f4 g
+  
+  c2
+  
+  \bar "||"
+  \time 4/4
+  
+  s2. c4
+  
+  f2 g4 g,
+  
+  c2. s4
+  
+  \bar "||"
+  \time 2/4
+  
+  c'4 a
+  
+  f g
+  
+  c2
+  
+  \bar "||"
+  
+  e2
+  
+  d4 g
+  
+  c2
+  
+  \bar "||"
+  \break
+  
+  c2
+  
+  f4 g
+  
+  c2
+  
+  \bar "||"
+  
+  c2
+  
+  c4 b,
+  
+  c2
+  
+  \bar "||"
+  
+  c'2
+  
+  a4 b
+  
+  c'2
+  
+  \bar "||"
+  \key c \minor
+  
+  c'2
+  
+  a4 b
+  
+  c'2
+  
+  \bar "|."
 }
 
 analysisExamplesG = \lyricmode {
-  _1
-
-  _1
-
-  _1
-
-  _1
+  \markup \rN { I }2
+  
+  \markup \rN { II 6 5 }4
+  
+  \markup \rN { V }
+  
+  \markup \rN { I }2
+  
+  
+  _2. \markup \rN { I }4
+  
+  \markup \rN { II 6 5 }2
+  
+  \markup \rN { V 8-7 }
+  
+  \markup \rN { I }2. _4
+  
+  
+  \markup \rN { I }4
+  
+  \markup \rN { VI }
+  
+  \markup \rN { II 6 5 }
+  
+  \markup \rN { V }
+  
+  \markup \rN { I }2
+  
+  
+  \markup \rN { I 6 }2
+  
+  \markup \rN { II 7 }4
+  
+  \markup \rN { V 7 }
+  
+  \markup \rN { I }2
+  
+  
+  \markup \rN { I }2
+  
+  \markup \rN { IV 7 }4
+  
+  \markup \rN { V }
+  
+  \markup \rN { I }2
+  
+  
+  \markup \rN { I }2
+  
+  \markup \rN { II 4 2 }4
+  
+  \markup \rN { V 6 5 }
+  
+  \markup \rN { I }2
+  
+  
+  \markup \rN { I }2
+  
+  \markup \rN { IV 6 5 }4
+  
+  \markup \rN { V 6 5 }
+  
+  \markup \rN { I }2
+  
+  
+  \markup \rN { I }2
+  
+  \markup \rN { IV 6 5 }4
+  
+  \markup \rN { V 6 5 }
+  
+  \markup \rN { I }2
 }
 
 %//////////////////////////////////////////////////////////////////////////////
