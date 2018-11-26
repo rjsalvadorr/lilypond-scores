@@ -32,7 +32,7 @@
       #(layout-set-staff-size 20)
     }
     \header {
-      piece = "Sketch for rondo"
+      piece = "Sketch for rondo - main theme in C minor"
     }
 
     \new PianoStaff <<
@@ -149,7 +149,7 @@
       #(layout-set-staff-size 20)
     }
     \header {
-      piece = "Sketch for rondo, refined a bit"
+      piece = "Rondo main theme, refined a bit"
     }
 
     \new PianoStaff <<
@@ -259,6 +259,117 @@
         \markup \rN { V 7 }
         
         \markup \rN { I }1
+      }
+    >>
+  }
+  
+  \score {
+    \layout {
+      indent = 0.0\cm
+      #(layout-set-staff-size 20)
+    }
+    \header {
+      piece = "Rondo - 2nd theme in G minor"
+    }
+
+    \new PianoStaff <<
+      \new Staff = "pianoTreble" <<
+        \clef "treble"
+        \time 4/4
+        \key g \minor
+
+        \new Voice = "Soprano"  {
+          \voiceOne
+          \repeat volta 2 {
+            bf'1~
+            
+            bf'
+            
+            c''~
+            
+            c''
+            
+            bf'~
+            
+            bf'
+          }
+          
+          \alternative {
+            { a'1 f' }
+            { a'2 f' g'1 }
+          }
+          
+          \bar "|."
+        }
+        \new Voice = "Alto" {
+          \voiceTwo
+          \repeat volta 2 {
+            <d' g'>1~
+            
+            <d' g'>
+            
+            <d' fs'>~
+            
+            <d' fs'>
+            
+            <d' g'>~
+            
+            <d' g'>
+          }
+          
+          \alternative {
+            { <c' ef'>1 <c' d'> }
+            { <c' ef'>2 <c' d'> <b d'>1 }
+          }
+        }
+      >>
+      \new Staff = "pianoBass" <<
+        \clef "bass"
+        \time 4/4
+        \key g \minor
+
+        \new Voice = "Tenor" {
+          \voiceOne
+          s1
+        }
+        \new Voice = "Bass"  {
+          \voiceTwo
+          \repeat volta 2 {
+            g,1~
+            
+            g,
+            
+            af,~
+            
+            af,
+            
+            bf,~
+            
+            bf,
+          }
+          
+          \alternative {
+            { c1 d }
+            { c2 d g,1 }
+          }
+        }
+      >>
+      \new Lyrics \lyricmode {
+        \markup \rN { i }1*2
+        
+        \markup \rN { V 4 3 }1*2
+        
+        \markup \rN { i 6 }1*2
+        
+        \markup \rN { ii o 6 }1
+        
+        \markup \rN { V 7 }1
+        
+        \markup \rN { ii o 6 }2
+        
+        \markup \rN { V 7 }2
+        
+        \markup \rN { i 6 }1
       }
     >>
   }
