@@ -11,6 +11,7 @@
 \include "reference-modulations.ly"
 \include "reference-four-part-01.ly"
 \include "reference-four-part-02.ly"
+\include "reference-four-part-03.ly"
 \include "reference-grayson-progressions.ly"
 \include "reference-notes.ly"
 \include "reference-range.ly"
@@ -420,6 +421,166 @@
             \bassExamplesF
             \bassExamplesG
             \bassExamplesH
+          }
+        >>
+        \new Lyrics \examplesAnalysis
+      >>
+    }
+  }
+  
+  \bookpart {
+    \tocItem \markup { "Four-part examples 2.1" }
+    \header {
+      title = "Four-part examples 2.1"
+      subtitle = "Outer voices only"
+    }
+    \paper {
+      top-markup-spacing.basic-distance = #5
+      % Controls spacing between systems/staff-groups
+      system-system-spacing.basic-distance = #22
+      ragged-bottom = ##f
+      ragged-last-bottom = ##f
+    }
+
+    \markup {
+      \column {
+        \vspace #1
+        \wordwrap {
+          \italic { NOTE: Compared to the last chapter, this one only shows the outside voices! }
+          More four-part chord progressions, for sketches and playing around.
+          Mostly from 'Harmony and Voice Leading' by Aldwell & Schacter.
+        }
+        \vspace #1
+      }
+    }
+
+    \score {
+      \layout {
+        indent = 0.0\cm
+        #(layout-set-staff-size 20)
+      }
+      \header {
+      }
+
+      \new PianoStaff <<
+        \new Lyrics \examplesBreakdown
+        \new Staff = "pianoTreble" <<
+          \clef "treble"
+          \new Voice = "Soprano"  {
+            \voiceOne
+            \sopranoExamplesA
+            \sopranoExamplesB
+            \sopranoExamplesC
+            \sopranoExamplesD
+            \sopranoExamplesE
+            \sopranoExamplesF
+            \sopranoExamplesG
+            \sopranoExamplesH
+          }
+        >>
+        \new Staff = "pianoBass" <<
+          \clef "bass"
+          \new Voice = "Tenor" {
+            \voiceOne
+            \tenorExamplesA
+            \tenorExamplesB
+            \tenorExamplesC
+            \tenorExamplesD
+            \tenorExamplesE
+            \tenorExamplesF
+            \tenorExamplesG
+            \tenorExamplesH
+          }
+          \new Voice = "Bass"  {
+            \voiceTwo
+            \bassExamplesA
+            \bassExamplesB
+            \bassExamplesC
+            \bassExamplesD
+            \bassExamplesE
+            \bassExamplesF
+            \bassExamplesG
+            \bassExamplesH
+          }
+        >>
+        \new Lyrics \examplesAnalysis
+      >>
+    }
+  }
+  
+  \bookpart {
+    \tocItem \markup { "Four-part examples 2.2" }
+    \header {
+      title = "Four-part examples 2.2"
+      subtitle = "Outer voices only, for guitar"
+    }
+    \paper {
+      top-markup-spacing.basic-distance = #5
+      % Controls spacing between systems/staff-groups
+      system-system-spacing.basic-distance = #22
+      ragged-bottom = ##f
+      ragged-last-bottom = ##f
+    }
+
+    \markup {
+      \column {
+        \vspace #1
+        \wordwrap {
+          \italic { NOTE: Compared to the last chapter, this one only shows the outside voices! }
+          More four-part chord progressions, for sketches and playing around.
+          Mostly from 'Harmony and Voice Leading' by Aldwell & Schacter.
+        }
+        \vspace #1
+      }
+    }
+
+    \score {
+      \layout {
+        indent = 0.0\cm
+        #(layout-set-staff-size 20)
+      }
+      \header {
+      }
+
+      \new StaffGroup <<
+        \new Lyrics \examplesBreakdown
+        \new Staff = "pianoTreble" <<
+          \clef "treble_8"
+          \new Voice = "Soprano"  {
+            \voiceOne
+            \sopranoExamplesGtrA
+            \sopranoExamplesGtrB
+            \sopranoExamplesGtrC
+            \sopranoExamplesGtrD
+            \sopranoExamplesGtrE
+            \sopranoExamplesGtrF
+            \sopranoExamplesGtrG
+            \sopranoExamplesGtrH
+          }
+        >>
+        \new Staff = "pianoBass" <<
+          \clef "treble_8"
+          \new Voice = "Tenor" {
+            \voiceOne
+            \tenorExamplesGtrA
+            \tenorExamplesGtrB
+            \tenorExamplesGtrC
+            \tenorExamplesGtrD
+            \tenorExamplesGtrE
+            \tenorExamplesGtrF
+            \tenorExamplesGtrG
+            \tenorExamplesGtrH
+          }
+          \new Voice = "Bass"  {
+            \voiceTwo
+            \bassExamplesGtrA
+            \bassExamplesGtrB
+            \bassExamplesGtrC
+            \bassExamplesGtrD
+            \bassExamplesGtrE
+            \bassExamplesGtrF
+            \bassExamplesGtrG
+            \bassExamplesGtrH
           }
         >>
         \new Lyrics \examplesAnalysis
