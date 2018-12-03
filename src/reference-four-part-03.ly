@@ -277,27 +277,27 @@ tenorExamplesGtrB = {
 }
 
 bassExamplesGtrB = {
-  c,4 e,
+  c4 e
 
-  b,, g,,
+  b, g,
 
-  c,2
-
-
-  c,4 d,
-
-  e, b,,
-
-  c,2
+  c2
 
 
-  c,4 b,,
+  c4 d
 
-  c, d,
+  e b,
 
-  e, c,
+  c2
 
-  g,2
+
+  c4 b,
+
+  c d
+
+  e c
+
+  g2
 }
 
 analysisExamplesGtrB = \lyricmode {
@@ -412,28 +412,28 @@ tenorExamplesGtrC = {
 }
 
 bassExamplesGtrC = {
-  c,4 b,,
+  c4 b,
 
-  c,2
-
-
-  c,4 d,
-
-  e,2
+  c2
 
 
-  c,4 f,
+  c4 d
 
-  e,2
+  e2
 
 
-  c,4 b,,
+  c4 f
 
-  c, d,
+  e2
 
-  e, f,
 
-  e,2
+  c4 b,
+
+  c d
+
+  e f
+
+  e2
 }
 
 analysisExamplesGtrC = \lyricmode {
@@ -658,76 +658,76 @@ tenorExamplesGtrD = {
 }
 
 bassExamplesGtrD = {
-  c,2
+  c2
 
-  d,4 g,
+  d4 g
 
-  c,2
-
-
-  c,2
-
-  f,4 g,
-
-  c,2
+  c2
 
 
-  c,2
+  c2
 
-  f,4 g,
+  f4 g
 
-  c,2
-
-
-  c,2
-
-  f,4 g,
-
-  c,2
+  c2
 
 
-  c,2
+  c2
 
-  f,2
+  f4 g
 
-  g,2
-
-  c,2
+  c2
 
 
-  c,2
+  c2
 
-  f,4 f,
+  f4 g
 
-  e,2
-
-
-  c,2
-
-  f,4 f,
-
-  ef,2
+  c2
 
 
-  c,2 d,4 e,
+  c2
 
-  f,2 g,
+  f2
 
-  c,1
+  g2
 
-
-  s4 c,
-
-  f, d,
-
-  c, s
+  c2
 
 
-  s4 c,
+  c2
 
-  f, d,
+  f4 f
 
-  c, s
+  e2
+
+
+  c2
+
+  f4 f
+
+  ef2
+
+
+  c2 d4 e
+
+  f2 g
+
+  c1
+
+
+  s4 c
+
+  f d
+
+  c s
+
+
+  s4 c
+
+  f d
+
+  c s
 }
 
 analysisExamplesGtrD = \lyricmode {
@@ -892,25 +892,25 @@ tenorExamplesGtrE = {
 }
 
 bassExamplesGtrE = {
-  c,4 f,
+  c4 f
 
-  g, g,,
+  g g,
 
-  c,2
-
-
-  c,4 f,
-
-  g, g,,
-
-  c,2
+  c2
 
 
-  c,4 f,
+  c4 f
 
-  g, f,
+  g g,
 
-  e,2
+  c2
+
+
+  c4 f
+
+  g f
+
+  e2
 }
 
 analysisExamplesGtrE = \lyricmode {
@@ -1083,45 +1083,45 @@ bassExamplesGtrF = {
 
   f, g,
 
-  c,2
-
-
-  c,2
-
-  a,,4 g,,
-
-  c,2
-
-
-  c,2
-
-  af,,4 g,,
-
-  c,2
-
-
-  c4 a,
-
-  g,2
-
-
-  c4^"Phrygian cadence" af,
-
-  g,2
+  c2
 
 
   c2
 
-  a,4 b,
+  a,4 g,
 
   c2
 
 
   c2
 
-  a,4 b,
+  af,4 g,
 
   c2
+
+
+  c'4 a
+
+  g2
+
+
+  c'4^"Phrygian cadence" af
+
+  g2
+
+
+  c'2
+
+  a4 b
+
+  c'2
+
+
+  c'2
+
+  a4 b
+
+  c'2
 }
 
 analysisExamplesGtrF = \lyricmode {
@@ -1382,54 +1382,54 @@ tenorExamplesGtrG = {
 }
 
 bassExamplesGtrG = {
-  c,2
+  c2
 
-  f,4 g,
+  f4 g
 
-  c,2
+  c2
 
   \bar "||"
   \time 4/4
 
-  s2. c,4
+  s2. c4
 
-  f,2 g,4 g,,
+  f2 g4 g,
 
-  c,2. s4
+  c2. s4
 
   \bar "||"
   \time 2/4
 
-  c4 a,
+  c'4 a
 
-  f, g,
+  f g
 
-  c,2
+  c2
 
   \bar "||"
 
-  e,2
+  e2
 
-  d,4 g,
+  d4 g
 
-  c,2
+  c2
 
   \bar "||"
   \break
 
-  c,2
+  c2
 
-  f,4 g,
+  f4 g
 
-  c,2
+  c2
 
   \bar "||"
 
-  c,2
+  c2
 
-  c,4 b,,
+  c4 b,
 
-  c,2
+  c2
 
   \bar "||"
 
@@ -1638,33 +1638,33 @@ tenorExamplesGtrH = {
 }
 
 bassExamplesGtrH = {
-  c,4 f,
+  c4 f
 
-  c,2
-
-
-  c4 a,
-
-  e,2
+  c2
 
 
-  c,4 f,
+  c'4 a
 
-  g, g,,
-
-  c,^"plagal cadence" f,
-
-  c,2
+  e2
 
 
-  c,4 g,^"deceptive cadences"
+  c4 f
 
-  a,2
+  g g,
+
+  c^"plagal cadence" f
+
+  c2
 
 
-  c,4 g,
+  c4 g^"deceptive cadences"
 
-  a,2
+  a2
+
+
+  c4 g
+
+  a2
 }
 
 analysisExamplesGtrH = \lyricmode {
