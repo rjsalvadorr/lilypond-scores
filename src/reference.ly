@@ -661,6 +661,137 @@
       >>
     }
   }
+  
+  \bookpart {
+    \tocItem \markup { "Basic jazz progressions" }
+    \header {
+      title = "Basic jazz progressions"
+    }
+    \paper {
+      top-markup-spacing.basic-distance = #5
+      % Controls spacing between systems/staff-groups
+      system-system-spacing.basic-distance = #18
+    }
+
+    \markup {
+      \column {
+        \vspace #1
+        \wordwrap {
+          ...
+        }
+        \vspace #1
+      }
+    }
+
+    \score {
+      \layout {
+        indent = 0.0\cm
+        #(layout-set-staff-size 22)
+      }
+      \header {
+      }
+
+      \new PianoStaff <<
+        \new Staff = "pianoTreble" {
+          \override Staff.TimeSignature #'break-visibility = #begin-of-line-visible
+          \set Staff.explicitKeySignatureVisibility = #begin-of-line-visible
+          \override Staff.KeyCancellation #'break-visibility = #all-invisible
+          \override Staff.KeyCancellation #'explicitKeySignatureVisibility = #all-invisible
+          \clef "treble"
+          \time 4/4
+          
+          \key a \major
+          <fs'' a'' cs'''>2
+          <fs'' gs'' b''>2
+          
+          <e'' gs'' b''>2
+          <e'' fs'' a''>2
+          
+          <d'' fs'' a''>2
+          <d'' e'' gs''>2
+          
+          <cs'' e'' gs''>1
+          \break
+          
+          
+          \key d \major
+          <b' d'' fs''>2
+          <b' cs'' e''>2
+          
+          <a' cs'' e''>2
+          <a' b' d''>2
+          
+          <g' b' d''>2
+          <g' a' cs''>2
+          
+          <fs' a' cs''>1
+          \break
+          
+          
+          \key g \major
+          <e'' g'' b''>2
+          <e'' fs'' a''>2
+          
+          <d'' fs'' a''>2
+          <d'' e'' g''>2
+          
+          <c'' e'' g''>2
+          <c'' d'' fs''>2
+          
+          <b' d'' fs''>1
+        }
+        \new Staff = "pianoBass" {
+          \override Staff.TimeSignature #'break-visibility = #begin-of-line-visible
+          \set Staff.explicitKeySignatureVisibility = #begin-of-line-visible
+          \override Staff.KeyCancellation #'break-visibility = #all-invisible
+          \override Staff.KeyCancellation #'explicitKeySignatureVisibility = #all-invisible
+          \clef "bass"
+          \time 4/4
+          
+          \key a \major
+          d2
+          d2
+          
+          cs2          
+          cs2
+          
+          b,2          
+          b,2
+          
+          a,1
+          \break
+          
+          
+          \key d \major
+          g,2
+          g,2
+          
+          fs,2          
+          fs,2
+          
+          e,2          
+          e,2
+          
+          d,1
+          \break
+          
+          
+          \key g \major
+          c2
+          c2
+          
+          b,2          
+          b,2
+          
+          a,2          
+          a,2
+          
+          g,1
+          \break
+        }
+      >>
+    }
+  }
 
   \bookpart {
     \tocItem \markup { "Instrument Ranges" }
