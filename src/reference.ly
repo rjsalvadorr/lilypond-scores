@@ -13,6 +13,7 @@
 \include "reference-four-part-02.ly"
 \include "reference-four-part-03.ly"
 \include "reference-grayson-progressions.ly"
+\include "reference-jazz-progs.ly"
 \include "reference-notes.ly"
 \include "reference-range.ly"
 
@@ -692,54 +693,26 @@
       }
 
       \new PianoStaff <<
-        \new Staff = "pianoTreble" {
+        \new Lyrics \jazzProgGenericChords
+        \new Lyrics \jazzProgChords
+        \new Staff = "pianoTreble" <<
           \override Staff.TimeSignature #'break-visibility = #begin-of-line-visible
           \set Staff.explicitKeySignatureVisibility = #begin-of-line-visible
           \override Staff.KeyCancellation #'break-visibility = #all-invisible
           \override Staff.KeyCancellation #'explicitKeySignatureVisibility = #all-invisible
           \clef "treble"
           \time 4/4
-          
-          \key a \major
-          <fs'' a'' cs'''>2
-          <fs'' gs'' b''>2
-          
-          <e'' gs'' b''>2
-          <e'' fs'' a''>2
-          
-          <d'' fs'' a''>2
-          <d'' e'' gs''>2
-          
-          <cs'' e'' gs''>1
-          \break
-          
-          
-          \key d \major
-          <b' d'' fs''>2
-          <b' cs'' e''>2
-          
-          <a' cs'' e''>2
-          <a' b' d''>2
-          
-          <g' b' d''>2
-          <g' a' cs''>2
-          
-          <fs' a' cs''>1
-          \break
-          
-          
-          \key g \major
-          <e'' g'' b''>2
-          <e'' fs'' a''>2
-          
-          <d'' fs'' a''>2
-          <d'' e'' g''>2
-          
-          <c'' e'' g''>2
-          <c'' d'' fs''>2
-          
-          <b' d'' fs''>1
-        }
+          \new Voice = "Soprano"  {
+            \voiceOne
+            \jazzMelodyA
+          }
+          \new Voice = "Alto" {
+            \voiceTwo
+            \jazzProgA
+            \jazzProgB
+            \jazzProgC
+          }
+        >>
         \new Staff = "pianoBass" {
           \override Staff.TimeSignature #'break-visibility = #begin-of-line-visible
           \set Staff.explicitKeySignatureVisibility = #begin-of-line-visible
@@ -752,10 +725,10 @@
           d2
           d2
           
-          cs2          
+          cs2
           cs2
           
-          b,2          
+          b,2  
           b,2
           
           a,1
