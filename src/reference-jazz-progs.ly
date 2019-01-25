@@ -46,67 +46,89 @@ jazzChordsA = \lyricmode {
 
 %//////////////////////////////////////////////////////////////////////////////
 
-jazzProgB = {
+jazzMelodyB = {
   \key d \major
-  <b' d'' fs''>2
-  <b' cs'' e''>
+  fs''2 e''
   
-  <a' cs'' e''>
-  <a' b' d''>
+  e'' d''
   
-  <g' b' d''>
-  <g' a' cs''>
+  d'' cs''
   
-  <fs' a' cs''>1
+  cs''1
   \break
 }
 
+jazzProgB = {
+  <b' d''>2
+  <b' cs''>
+  
+  <a' cs''>
+  <a' b'>
+  
+  <g' b'>
+  <g' a'>
+  
+  <fs' a'>1
+}
+
 jazzChordsB = \lyricmode {
-  \markup { "Dmaj7" }2
+  \markup { "Gmaj7" }2
 
-  \markup { "G♯m7♭5" }
-
-  \markup { "C♯m7" }
+  \markup { "C♯m7♭5" }
 
   \markup { "F♯m7" }
 
-  \markup { "Bm7" }
+  \markup { "B♯m7" }
 
-  \markup { "E7" }
+  \markup { "Em7" }
 
-  \markup { "Amaj7" }1
+  \markup { "A7" }
+
+  \markup { "Dmaj7" }1
 }
 
 %//////////////////////////////////////////////////////////////////////////////
 
-jazzProgC = {
+jazzMelodyC = {
   \key g \major
-  <e'' g'' b''>2
-  <e'' fs'' a''>
+  b''2 a''
   
-  <d'' fs'' a''>
-  <d'' e'' g''>
+  a'' g''
   
-  <c'' e'' g''>
-  <c'' d'' fs''>
+  g'' fs''
   
-  <b' d'' fs''>1
+  fs''1
+  \break
+}
+
+
+jazzProgC = {
+  <e'' g''>2
+  <e'' fs''>
+  
+  <d'' fs''>
+  <d'' e''>
+  
+  <c'' e''>
+  <c'' d''>
+  
+  <b' d''>1
 }
 
 jazzChordsC = \lyricmode {
-  \markup { "Dmaj7" }2
+  \markup { "Cmaj7" }2
 
-  \markup { "G♯m7♭5" }
-
-  \markup { "C♯m7" }
-
-  \markup { "F♯m7" }
+  \markup { "F♯m7♭5" }
 
   \markup { "Bm7" }
 
-  \markup { "E7" }
+  \markup { "Em7" }
 
-  \markup { "Amaj7" }1
+  \markup { "Am7" }
+
+  \markup { "D7" }
+
+  \markup { "Gmaj7" }1
 }
 
 %//////////////////////////////////////////////////////////////////////////////

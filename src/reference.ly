@@ -705,6 +705,8 @@
           \new Voice = "Soprano"  {
             \voiceOne
             \jazzMelodyA
+            \jazzMelodyB
+            \jazzMelodyC
           }
           \new Voice = "Alto" {
             \voiceTwo
