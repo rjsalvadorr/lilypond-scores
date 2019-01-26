@@ -678,7 +678,7 @@
       \column {
         \vspace #1
         \wordwrap {
-          ...
+          A basic circle progression, repeated through every key.
         }
         \vspace #1
       }
@@ -687,7 +687,7 @@
     \score {
       \layout {
         indent = 0.0\cm
-        #(layout-set-staff-size 22)
+        #(layout-set-staff-size 23)
       }
       \header {
       }
@@ -707,12 +707,30 @@
             \jazzMelodyA
             \jazzMelodyB
             \jazzMelodyC
+            \jazzMelodyD
+            \jazzMelodyE
+            \jazzMelodyF
+            \jazzMelodyG
+            \jazzMelodyH
+            \jazzMelodyI
+            \jazzMelodyJ
+            \jazzMelodyK
+            \jazzMelodyL
           }
           \new Voice = "Alto" {
             \voiceTwo
             \jazzProgA
             \jazzProgB
             \jazzProgC
+            \jazzProgD
+            \jazzProgE
+            \jazzProgF
+            \jazzProgG
+            \jazzProgH
+            \jazzProgI
+            \jazzProgJ
+            \jazzProgK
+            \jazzProgL
           }
         >>
         \new Staff = "pianoBass" {
@@ -734,7 +752,7 @@
           b,2
           
           a,1
-          \break
+          \bar "||"
           
           
           \key d \major
@@ -748,7 +766,7 @@
           e,2
           
           d,1
-          \break
+          \bar "||"
           
           
           \key g \major
@@ -762,7 +780,133 @@
           a,2
           
           g,1
-          \break
+          \bar "||"
+          
+          
+          \key c \major
+          f,2
+          f,
+          
+          e,
+          e,
+          
+          d,
+          d,
+          
+          c,1
+          \bar "||"
+          
+          
+          \key f \major
+          bf,2
+          bf,
+          
+          a,
+          a,
+          
+          g,
+          g,
+          
+          f,1
+          \bar "||"
+          
+          
+          \key bf \major
+          ef2
+          ef
+          
+          d
+          d
+          
+          c
+          c
+          
+          bf,1
+          \bar "||"
+          
+          
+          \key ef \major
+          af,2
+          af,
+          
+          g,
+          g,
+          
+          f,
+          f,
+          
+          ef,1
+          \bar "||"
+          
+          
+          \key af \major
+          df2
+          df
+          
+          c
+          c
+          
+          bf,
+          bf,
+          
+          af,1
+          \bar "||"
+          
+          
+          \key df \major
+          gf,2
+          gf,
+          
+          f,
+          f,
+          
+          ef,
+          ef,
+          
+          df,1
+          \bar "||"
+          
+          
+          \key fs \major
+          b,2
+          b,
+          
+          as,
+          as,
+          
+          gs,
+          gs,
+          
+          fs,1
+          \bar "||"
+          
+          
+          \key b \major
+          e2
+          e
+          
+          ds
+          ds
+          
+          cs
+          cs
+          
+          b,1
+          \bar "||"
+          
+          
+          \key e \major
+          a,2
+          a,
+          
+          gs,
+          gs,
+          
+          fs,
+          fs,
+          
+          e,1
+          \bar "||"
         }
       >>
     }
