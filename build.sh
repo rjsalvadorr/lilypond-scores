@@ -12,12 +12,14 @@ if [[ "$1" != "" && ("$1" == "--all" || "$1" == "-a") ]]; then
   lilypond --output=../output/reference reference.ly
   lilypond --output=../output/blank-manuscript blank-manuscript.ly
   lilypond --output=../output/blank-manuscript-guitar blank-manuscript-guitar.ly
+  lilypond --output=../output/blank-tabs-guitar blank-tabs-guitar.ly
   lilypond --output=../output/blank-manuscript-piano blank-manuscript-piano.ly
   lilypond --output=../output/sketches sketches.ly
   lilypond --output=../output/compositions compositions.ly
 elif [[ "$1" != "" && ("$1" == "--blanks" || "$1" == "-b") ]]; then
   lilypond --output=../output/blank-manuscript blank-manuscript.ly
   lilypond --output=../output/blank-manuscript-guitar blank-manuscript-guitar.ly
+  lilypond --output=../output/blank-tabs-guitar blank-tabs-guitar.ly
   lilypond --output=../output/blank-manuscript-piano blank-manuscript-piano.ly
 elif [[ "$1" != "" && ("$1" == "--references" || "$1" == "-r") ]]; then
   lilypond --output=../output/reference reference.ly
